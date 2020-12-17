@@ -1,0 +1,50 @@
+main {
+    width: 70%;
+    margin: 0 30px 30px 30px;
+    min-height: 100vh;
+}
+.drawing {
+    margin-bottom: -4px;
+    background-color: $blue1;
+    img {
+        width: 100%;
+        
+    }
+}
+
+.introduction {
+    min-height: 100vh;
+    background-color: #ffffff;
+    h3 {
+        font-family: $montserrat2;
+        font-size: 50px;
+        font-weight: 600;
+        margin: 0;
+        padding: 70px 100px 2px 6rem;
+        background-color: $yellow1;
+        letter-spacing: 0.2rem;
+    }
+    p {
+        font-family: $montserrat1;
+        font-size: 20px;
+        margin: 0 6rem;
+        margin-top: 40px;
+        line-height: 35px;
+    }
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    p {
+        width: 600px;
+        line-height: 35px;
+    }
+    .photo {
+    width: 500px;
+    height: 500px;
+    background-color: $grey1;
+    margin-right: 6rem;
+}
+}

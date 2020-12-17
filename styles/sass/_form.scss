@@ -1,0 +1,51 @@
+.visuallyHidden {
+    position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+}
+
+.formWrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 8rem;
+}
+.sideMessage {
+    text-align: center;
+    h6 {
+        font-family: $rubik;
+        font-size: 30px;
+    }
+    a {
+        font-family: $rubik;
+        font-size: 20px;
+        text-decoration: none;
+        color: #000000;
+    }
+}
+.socialMedia .fab {
+    font-size: 13px;
+    color: #000000;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid;
+    margin: 5px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+        width: 40rem;
+        padding: 1rem;
+        font-family: $rubik;
+        font-size: 16px;
+    }
+    textarea {
+        width: 40rem;
+        resize: none;
+        padding: 1rem;
+        font-family: $rubik;
+        font-size: 16px;
+    }
+}
