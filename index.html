@@ -22,23 +22,25 @@
 
     <div class="wrapper">
 
-        <header class="overheadHeader overlay">
+        <div class="burgerIconBox">
+            <button class="mobileMenuIcon burgerIcon">
+            <i class="fa fa-bars"></i>
+            </button>
+            <button class="mobileMenuIcon closeIcon">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <header class="overheadHeader">
             <nav class="overheadNav">
-                <div class="burgerIconBox">
-                    <button class="burgerIcon">
-                    <i class="fa fa-bars"></i>
-                    </button>
-                    <button class="closeIcon">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-            </nav>
-            <ul class="overheadNavLinks">
-                <li><a href="">Who are Yu?</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <ul class="overheadNavLinks">
+                <li><a href="#introduction" class="navLinks">Who are Yu?</a></li>
+                <li><a href="#skills" class="navLinks">Skills</a></li>
+                <li><a href="#projectsHeader" class="navLinks">Projects</a></li>
+                <li><a href="#contactMe" class="navLinks">Contact</a></li>
             </ul>
+            </nav>
+            
         </header>
 
         <div class="landingWrapper">
@@ -59,8 +61,8 @@
                         <ul class="navigationLinks">
                             <li><a href="#introduction">Who are Yu?</a></li>
                             <li><a href="#skills">Skills</a></li>
-                            <li><a href="">Projects</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="#projectsHeader">Projects</a></li>
+                            <li><a href="#contactMe">Contact</a></li>
                         </ul>
                         <div class="socialWrap">
                         </div>
@@ -100,19 +102,13 @@
 
                 <!-- Short introduction about me -->
                 <div class="aboutMe">
-                    <p>I'm a touring drummer turned web-developer based out of west-end Toronto. Challenging myself
-                        everyday by trying to master new tools and concepts in web-development, as well as trying to
-                        tackle some sick drum-fills and funk beats.
-                        Fueled by the drumming of Afro-beat master Tony Allen, and kiwis and coffee, I spend my free
-                        time delving deep into not only learning about web-development trends, but also learning how to
-                        create thoughtful web
-                        design. Lately, Swiss Modernism has been my design obsession. I'm stoked on creating beautiful
-                        and engaging user experiences, and hope we can do that together! Let's build something!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod a, neque numquam iusto asperiores dolor facere officia officiis ratione recusandae necessitatibus aperiam consequuntur, natus reprehenderit maiores minima sint commodi aspernatur. Molestias quidem enim saepe doloremque ad labore necessitatibus sint laboriosam cum corporis. Distinctio unde recusandae, quisquam delectus alias nemo quam, provident voluptates sapiente minima sint qui corrupti tenetur. Deleniti, at, eveniet est ducimus a reprehenderit dolore assumenda illum provident.</p>
                     <div class="photo"></div>
                 </div>
             </article>
 
-            <h4 class="overHidden" id="skills" data-aos="fade-up">Skills</h4>
+            <div id="skills"></div>
+            <h4 data-aos="fade-up">Skills</h4>
             <article class="skills overHidden" data-aos="zoom-in">
                 <div class="skillsContainer">
                     <div class="skillWrap html5">
@@ -167,10 +163,11 @@
 
             </article>
 
-            <h4 data-aos="fade-up" class="overHidden">Projects</h4>
+            <div id="projectsHeader"></div>
+            <h4 data-aos="fade-up">Projects</h4>
             <article class="projects">
                 <section class="projectSection project1 overHidden" data-aos="fade-up">
-                    <div class="thumbnail"></div>
+                    <a href="https://feelin-so-fly-like-a-g6.github.io/project-6/" class="thumbnail"></a>
                     <div class="projectDescription">
                         <div class="skillsUsed">
                             <p>HTML5</p>
@@ -198,27 +195,27 @@
                     </div>
                 </section>
                 <section class="projectSection project2 overHidden" data-aos="fade-up">
-                    <div class="thumbnail"></div>
+                    <a href="https://yuisdrawing.github.io/yeonjin-yu-project-five/" class="thumbnail"></a>
                     <div class="projectDescription">
                         <div class="skillsUsed">
                             <p>HTML5</p>
                             <p>CSS3</p>
                             <p>SCSS</p>
                             <p>JavaScript</p>
-                            <p>jQuery</p>
+                            <p>React</p>
                         </div>
-                        <h5><a href="https://feelin-so-fly-like-a-g6.github.io/project-6/">Take a Sip.</a></h5>
+                        <h5><a href="https://yuisdrawing.github.io/yeonjin-yu-project-five/">Take a Sip.</a></h5>
                         <p class="appDetails">Hey there, are you dehydrated?<br />
                             If you're not getting enough water in your system, you should consider tracking your weekly
                             water intake. Take a Sip can help.
-                            <br /><a href="https://github.com/feelin-so-fly-like-a-g6/project-6" class="codeLink">Check
+                            <br /><a href="https://github.com/Yuisdrawing/yeonjin-yu-project-five" class="codeLink">Check
                                 out the code</a>
                         </p>
                         <p class="developedWith"></p>
                     </div>
                 </section>
                 <section class="projectSection project3 overHidden" data-aos="fade-up">
-                    <div class="thumbnail"></div>
+                    <a href="https://team-teemo-top.github.io/dave-ratcliffe-yeonjin-yu-project-four/" class="thumbnail"></a>
                     <div class="projectDescription">
                         <div class="skillsUsed">
                             <p>HTML5</p>
@@ -229,10 +226,10 @@
                             <p>Rest APIs</p>
                             <p>Pair programming</p>
                         </div>
-                        <h5><a href="https://feelin-so-fly-like-a-g6.github.io/project-6/">Who's that Pokemon?</a></h5>
+                        <h5><a href="https://team-teemo-top.github.io/dave-ratcliffe-yeonjin-yu-project-four/">Who's that Pokemon?</a></h5>
                         <p class="appDetails">Classic pokemon guessing game.<br />Can you get all 8 of Pokemon gym
                             badges?
-                            <br /><a href="https://github.com/feelin-so-fly-like-a-g6/project-6" class="codeLink">Check
+                            <br /><a href="https://github.com/team-teemo-top/dave-ratcliffe-yeonjin-yu-project-four" class="codeLink">Check
                                 out the code</a>
                         </p>
                         <p class="developedWith">Developed with:
@@ -244,7 +241,7 @@
 
             </article>
 
-            <article class="contactMe">
+            <article class="contactMe" id="contactMe">
                 <h4 data-aos="zoom-in" class="overHidden">Contact Yu</h4>
 
 

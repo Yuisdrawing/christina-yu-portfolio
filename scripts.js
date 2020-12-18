@@ -10,23 +10,26 @@
 // hide close icons, links, and dark overlay on document ready
 $(document).ready(function() {
     $('.closeIcon').first().hide();
-    $('.overheadNavLinks').first().hide();
-    $('.overheadHeader').removeClass('overlay');
+    // $('.overheadNavLinks').first().hide();
 });
 
 // burger icon displays initially hidden elements onClick
 // then burger icon hides as well
 // then reappears when close icon is clicked
-$('.burgerIcon').on('click', () => {
+
+$('.burgerIcon').click(function () {
+    $('.overheadHeader').addClass('open');
     $('.burgerIcon').hide();
     $('.closeIcon').show();
-    $('.overheadNavLinks').show();
-    $('.overheadHeader').addClass('overlay');
-})
-
-$('.closeIcon').on('click', () => {
-    $('.burgerIcon').show();
-    $('.closeIcon').first().hide();
-    $('.overheadNavLinks').first().hide();
-    $('.overheadHeader').removeClass('overlay');
-})
+    
+    $('.navLinks').on('click', () => {
+        $('.overheadHeader').removeClass('open');
+        $('.closeIcon').hide();
+        $('.burgerIcon').show();
+    })
+    $('.closeIcon').on('click', () => {
+        $('.overheadHeader').removeClass('open');
+        $('.closeIcon').hide();
+        $('.burgerIcon').show();
+    })
+});

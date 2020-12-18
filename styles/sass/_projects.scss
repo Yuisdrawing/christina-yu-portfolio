@@ -6,6 +6,8 @@
     margin-top: 3rem;
     justify-content: center;
     .thumbnail {
+        box-sizing: border-box;
+        border: 10px double $yellow1;
         width: 50%;
         height: 500px;
         background-color: $yellow1;
@@ -21,6 +23,16 @@
 
 .project1 .thumbnail {
     background-image: url(/assets/haikuAhoy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.project2 .thumbnail {
+    background-image: url(/assets/takeASip.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.project3 .thumbnail {
+    background-image: url(/assets/pokemon.jpg);
     background-size: cover;
     background-position: center;
 }
