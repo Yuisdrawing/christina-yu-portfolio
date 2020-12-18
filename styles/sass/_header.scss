@@ -1,17 +1,53 @@
-header {
+.overheadHeader {
+    position: absolute;
+    z-index: 30;
+    .overheadNav {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+.overheadNavLinks {
+    margin: 0;
+    display: flex;
+        li {
+            a {
+            color: #000000;
+            background-color: $yellow1;
+            font-family: $khula;
+            font-size: 20px;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #000000;
+            padding: 5px 8px 0 8px;
+            transition: 0.1s;
+        }
+        a:hover {
+            color: #000000;
+            background-color: $yellow1;
+        }
+    }
+}
+
+
+
+
+
+
+
+.sidebar {
     left: 0;
     top: 0;
     height: 100vh;
     // width: 25%;
     overflow-x: hidden;
     overflow-y: auto;
-    z-index: 10;
 }
 
 
-header,
+.sidebar,
 .profile,
-nav,
 .navigationLinks {
     display: flex;
     flex-direction: column;
@@ -28,7 +64,7 @@ ul {
 }
 
 
-header {
+.sidebar {
     background-color: $blue1;
     background: linear-gradient(180deg, rgba(120,129,153,1) 71%, rgba(146,149,157,1) 100%);
 }
@@ -36,39 +72,42 @@ header {
 .profile {
     margin-bottom: 40px;
     text-align: center;
-    h1 {
-        font-family: $sulphur;
-        font-size: 50px;
-        font-weight: 300;
-        text-transform: uppercase;
-        margin-bottom: 0;
-        color: #ffffff;
+    .nameAndTitle {
+        h1 {
+            font-family: $sulphur;
+            font-size: 50px;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            color: #ffffff;
+        }
+        h1::after {
+            content: '';
+            display: block;
+            height: 0.8rem;
+            width: 35%;
+            border-bottom: 1px solid #ffffff;
+            margin: 0 auto;
+        }
+        h2 {
+            font-family: $sulphur;
+            font-weight: 300;
+            font-size: 16px;
+            margin-top: 1.1rem;
+            color: #ffffff;
+        }
     }
-    h1::after {
-        content: '';
-        display: block;
-        height: 0.8rem;
-        width: 35%;
-        border-bottom: 1px solid #ffffff;
-        margin: 0 auto;
-    }
-    h2 {
-        font-family: $sulphur;
-        font-weight: 300;
-        font-size: 16px;
-        margin-top: 1.1rem;
-        color: #ffffff;
-    }
+    
 }
 
 .profilePicture {
-    height: 18rem;
+    height: 17rem;
     transition: 0.2s cubic-bezier(.01,1.01,.84,.99);
     img {
         border: 4px solid $yellow1;
         border-radius: 50%;
-        width: 45%;
-        margin-top: 60px;
+        width: 50%;
+        margin-top: 4rem;
         transition: 0.2s cubic-bezier(.01,1.01,.84,.99);
     }
 }
@@ -99,12 +138,3 @@ header {
     }
 }
 
-
-
-.designCredit {
-    font-family: $rubik;
-    font-weight: 200;
-    font-size: 12px;
-    color: #ffffff;
-    margin-top: 0;
-}

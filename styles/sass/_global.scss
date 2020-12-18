@@ -8,6 +8,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.wrapper {
+  position: relative;
+}
+
+.overHidden {
+  overflow-x: hidden;
+}
+
 .landingWrapper {
     display: flex;
 }
