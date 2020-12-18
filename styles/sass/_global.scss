@@ -4,8 +4,14 @@ body {
     margin: 0;
     background-color: $grey2;
 }
-
-.wrapper {
-    display: flex;
-    justify-content: space-between;
+html {
+  scroll-behavior: smooth;
 }
+
+.landingWrapper {
+    display: flex;
+}
+// .wrapper {
+//     display: flex;
+//     justify-content: space-between;
+// }
