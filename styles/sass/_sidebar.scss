@@ -1,0 +1,117 @@
+
+.sidebar {
+    left: 0;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    width: 8.5rem;
+    background-color: $darkGrey;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    z-index: 50;
+    img {
+        z-index: 51;
+        width: 200px;
+    }
+}
+
+.navigationLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+ul {
+    padding-inline-start: 0; // gets rid of the padding from the bullet
+    li { // Gets rid of the list bullets
+        list-style: none;
+    }
+}
+.navigationLinks li {
+    margin: 7px 0;
+}
+
+
+
+
+
+
+
+
+
+img.navIcons {
+    width: 60px;
+    margin-top: 2rem;
+}
+// jiggle effect from:https://jsfiddle.net/sunnypmody/8gdEr/
+img.navIcons:hover {
+    -webkit-animation: jiggle 0.2s infinite;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-name: jiggle;
+  -moz-animation-iteration-count: infinite;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+}
+@-moz-keyframes jiggle {
+    0% {
+        -moz-transform: rotate(-1.5deg);
+    }
+    50% {
+        -moz-transform: rotate(1.5deg);
+    }
+}
+
+@-webkit-keyframes jiggle {
+    0% {
+        -webkit-transform: rotate(-1.5deg);
+        }
+    50% {
+        -webkit-transform: rotate(1.5deg);
+    }
+}
+// jiggle effect from:https://jsfiddle.net/sunnypmody/8gdEr/
+
+
+
+
+.hoverBubble {
+    display: inline;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    z-index: 52;
+    .tooltip {
+        background-image: url(/assets/navTooltip.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 210px;
+        height: 60px;
+    }
+}
+// .revealAnimation {
+//     transform: scaleX(0);
+//     transform-origin: left;
+//     animation: grow-left ease 0.2s forwards;
+//     animation-delay: 0s;
+// }
+// @keyframes reveal {
+//     from {
+//         transform: scaleX(0);
+//     }
+//     to {
+//         transform: scaleX(1);
+//     }
+// }
+
+p.bubbleText {
+    text-align: center;
+    padding-top: 20px;
+
+    // font-styles
+    font-family: $khula;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+}

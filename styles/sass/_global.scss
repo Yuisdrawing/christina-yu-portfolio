@@ -3,6 +3,7 @@ body {
     height: 100%;
     margin: 0;
     background-color: $grey2;
+    background-image: url(/assets/repeatbackground.png);
 }
 html {
   scroll-behavior: smooth;
@@ -23,3 +24,5 @@ html {
 //     display: flex;
 //     justify-content: space-between;
 // }
+
+

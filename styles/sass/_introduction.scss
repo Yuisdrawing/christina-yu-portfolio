@@ -1,6 +1,6 @@
 main {
-    width: 100%;
-    margin: 0 auto;
+    width: 93%;
+    margin: 0 0 0 auto;
     min-height: 100vh;
     // display: flex;
     // flex-direction: column;
@@ -14,14 +14,26 @@ main {
     h3 {
         font-family: $montserrat2;
         font-size: 50px;
-        font-weight: 600;
+        font-weight: 800;
         margin: 0;
         padding: 70px 100px 2px 6rem;
-        background-color: $yellow1;
+        background-color: $bgGrey;
+        background-image: url(/assets/slashbackground.png);
         letter-spacing: 0.2rem;
         width: calc(100% + 1px);
         box-sizing: border-box;
         border: 15px solid #ffffff;
+
+        // text shadow from: https://css-tricks.com/adding-stroke-to-web-text/
+        text-shadow: 1px 1px 0 #ffffff,
+        -1px -1px 0 #ffffff,  
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
+        span {
+            color: $accentBlue;
+            text-shadow: none;
+        }
     }
     p {
         font-family: $montserrat1;

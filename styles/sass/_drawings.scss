@@ -1,20 +1,28 @@
 .drawing {
+    margin: 0 0 0 auto;
     height: 100vh;
-    background-color: $yellow1;
+    background-color: $bgGrey;
     position: relative;
-    img:nth-child(1) {
-        position: relative;
-        bottom: 0;
-        width: 100%;
-        height: 100vh;
-    }
+    background-image: url(/assets/repeatbackground.png);
     img {
-        width: 100%;
         position: absolute;
-        left: 0;
+    }
+    img.me {
+        height: 70%;
+        right: 30rem;
         bottom: 0;
+    }
+    img.coffee {
+        height: 40%;
+        left: -100rem;
+        bottom: 10rem;
     }
 }
+
+
+
+
+
 
 .animate__animated {
     --animate-duration: 1s;

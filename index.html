@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=`, initial-scale=1.0">
     <link rel="stylesheet" href="styles\style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400&family=Merriweather:wght@300;400;700&family=Montserrat+Alternates:ital,wght@0,300;0,400;600;800;1,300;1,400&family=Montserrat:ital,wght@0,200;0,400;1,200;1,400&family=Play:wght@400;700&family=Rubik:ital,wght@0,300;0,400;1,300;1,400;1,500&family=Sulphur+Point:wght@300;400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400&family=Merriweather:wght@300;400;700&family=Montserrat+Alternates:ital,wght@0,300;0,400;600;800;1,300;1,400&family=Montserrat:ital,wght@0,200;0,400;1,200;1,400&family=Play:wght@400;700&family=Rubik:ital,wght@0,300;0,400;1,300;1,400;1,500&family=Sulphur+Point:wght@300;400;700&family=Short+Stack&display=swap
+        rel=" stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -24,7 +23,7 @@
 
         <div class="burgerIconBox">
             <button class="mobileMenuIcon burgerIcon">
-            <i class="fa fa-bars"></i>
+                <i class="fa fa-bars"></i>
             </button>
             <button class="mobileMenuIcon closeIcon">
                 <i class="fas fa-times"></i>
@@ -34,60 +33,80 @@
         <header class="overheadHeader">
             <nav class="overheadNav">
                 <ul class="overheadNavLinks">
-                <li><a href="#introduction" class="navLinks">Who are Yu?</a></li>
-                <li><a href="#skills" class="navLinks">Skills</a></li>
-                <li><a href="#projectsHeader" class="navLinks">Projects</a></li>
-                <li><a href="#contactMe" class="navLinks">Contact</a></li>
-            </ul>
+                    <li><a href="#introduction" class="navLinks">Who are Yu?</a></li>
+                    <li><a href="#skills" class="navLinks">Skills</a></li>
+                    <li><a href="#projectsHeader" class="navLinks">Projects</a></li>
+                    <li><a href="#contactMe" class="navLinks">Contact</a></li>
+                </ul>
             </nav>
-            
+
         </header>
 
+
+
+        
         <div class="landingWrapper">
+
+            <!--Sidebar //////////////////////////////-->
             <aside class="sidebar">
-                <div class="profile">
-                    <div class="profilePicture">
-                        <img src="assets/profile.png" alt="">
-                    </div>
+                <nav>
+                    <ul class="navigationLinks">
+                        <li>
+                            <a href="#introduction" id="introNav">
+                                <img src="assets/navIcons/introIcon.png" alt="" class="navIcons introIcon">
+                            </a>
+                            <div class="hoverBubble introBubble">
+                                <div class="tooltip">
+                                    <p class="bubbleText">Who are Yu?</p>
+                                </div>
+                            </div>
+                        </li>
 
-                    <div class="nameAndTitle">
-                        <h1 class="name">Christina Yu</h1>
-                    <h2 class="title">Front-End Developer</h2>
-                    </div>
-                    
-                </div>
+                        <li>
+                            <a href="#skills" id="skillsNav">
+                                <img src="assets/navIcons/skillsIcon.png" alt="" class="navIcons skillsIcon">
+                            </a>
+                            <div class="hoverBubble skillsBubble">
+                                <div class="tooltip">
+                                    <p class="bubbleText">Skills</p>
+                                </div>
+                            </div>
+                        </li>
 
-                    <nav>
-                        <ul class="navigationLinks">
-                            <li><a href="#introduction">Who are Yu?</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#projectsHeader">Projects</a></li>
-                            <li><a href="#contactMe">Contact</a></li>
-                        </ul>
-                        <div class="socialWrap">
-                        </div>
-                    </nav>
-                <!-- <div class="moreInfoBubbles">
-                    <div class="bubbleLine"></div>
-                    <div class="bubble">
-                        Hi
-                    </div>
-                </div> -->
+                        <li>
+                            <a href="#projectsHeader" id="projectsNav">
+                                <img src="assets/navIcons/projectsIcon.png" alt="" class="navIcons projectsIcon">
+                            </a>
+                            <div class="hoverBubble projectsBubble">
+                                <div class="tooltip">
+                                    <p class="bubbleText">Projects</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#contactMe" id="contactNav">
+                                <img src="assets/navIcons/contactIcon.png" alt="" class="navIcons contactIcon">
+                            </a>
+                            <div class="hoverBubble contactBubble">
+                                <div class="tooltip">
+                                    <p class="bubbleText">Contact</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
             </aside>
+            <!--Sidebar Ends //////////////////////////////-->
+
+
+
 
             <section class="drawing">
-                <img src="assets/emptyBackground.png" alt="">
-                <img src="assets/background.png" alt="">
-                <img src="assets/computer.png" alt=""
-                    class="animate__animated animate__fadeInDown animate__delay-1s computer overHidden">
-
-                <img src="assets/art.png" alt=""
-                    class="animate__animated animate__fadeInUp animate__delay-1s art overHidden">
-
-                <img src="assets/coffee.png" alt=""
+                <img src="assets/floatBackground.png" alt=""
                     class="animate__animated animate__fadeInDown animate__delay-1s coffee overHidden">
 
-                <img src="assets/me.png" alt=""
+                <img src="assets/blinkSideEye/blinkSide.gif" alt=""
                     class="animate__animated animate__fadeInUp animate__delay-1s me overHidden">
             </section>
         </div>
@@ -95,14 +114,19 @@
         <!--Main content of the page-->
         <main id="introduction">
             <article class="introduction overHidden" data-aos="fade-up">
-                <h3>I'm Christina Yu.</h3>
+                <h3>I<span>'</span>m <span>Christina Yu</span>.</h3>
                 <p>It's not you, it's Yu.<br />
                     So yes, it's me.<br />
                     (My highschool teachers used to just call me "Hey, Yu!!!" and they loved it.)</p>
 
                 <!-- Short introduction about me -->
                 <div class="aboutMe">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod a, neque numquam iusto asperiores dolor facere officia officiis ratione recusandae necessitatibus aperiam consequuntur, natus reprehenderit maiores minima sint commodi aspernatur. Molestias quidem enim saepe doloremque ad labore necessitatibus sint laboriosam cum corporis. Distinctio unde recusandae, quisquam delectus alias nemo quam, provident voluptates sapiente minima sint qui corrupti tenetur. Deleniti, at, eveniet est ducimus a reprehenderit dolore assumenda illum provident.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod a, neque numquam iusto asperiores
+                        dolor facere officia officiis ratione recusandae necessitatibus aperiam consequuntur, natus
+                        reprehenderit maiores minima sint commodi aspernatur. Molestias quidem enim saepe doloremque ad
+                        labore necessitatibus sint laboriosam cum corporis. Distinctio unde recusandae, quisquam
+                        delectus alias nemo quam, provident voluptates sapiente minima sint qui corrupti tenetur.
+                        Deleniti, at, eveniet est ducimus a reprehenderit dolore assumenda illum provident.</p>
                     <div class="photo"></div>
                 </div>
             </article>
@@ -208,14 +232,16 @@
                         <p class="appDetails">Hey there, are you dehydrated?<br />
                             If you're not getting enough water in your system, you should consider tracking your weekly
                             water intake. Take a Sip can help.
-                            <br /><a href="https://github.com/Yuisdrawing/yeonjin-yu-project-five" class="codeLink">Check
+                            <br /><a href="https://github.com/Yuisdrawing/yeonjin-yu-project-five"
+                                class="codeLink">Check
                                 out the code</a>
                         </p>
                         <p class="developedWith"></p>
                     </div>
                 </section>
                 <section class="projectSection project3 overHidden" data-aos="fade-up">
-                    <a href="https://team-teemo-top.github.io/dave-ratcliffe-yeonjin-yu-project-four/" class="thumbnail"></a>
+                    <a href="https://team-teemo-top.github.io/dave-ratcliffe-yeonjin-yu-project-four/"
+                        class="thumbnail"></a>
                     <div class="projectDescription">
                         <div class="skillsUsed">
                             <p>HTML5</p>
@@ -226,10 +252,12 @@
                             <p>Rest APIs</p>
                             <p>Pair programming</p>
                         </div>
-                        <h5><a href="https://team-teemo-top.github.io/dave-ratcliffe-yeonjin-yu-project-four/">Who's that Pokemon?</a></h5>
+                        <h5><a href="https://team-teemo-top.github.io/dave-ratcliffe-yeonjin-yu-project-four/">Who's
+                                that Pokemon?</a></h5>
                         <p class="appDetails">Classic pokemon guessing game.<br />Can you get all 8 of Pokemon gym
                             badges?
-                            <br /><a href="https://github.com/team-teemo-top/dave-ratcliffe-yeonjin-yu-project-four" class="codeLink">Check
+                            <br /><a href="https://github.com/team-teemo-top/dave-ratcliffe-yeonjin-yu-project-four"
+                                class="codeLink">Check
                                 out the code</a>
                         </p>
                         <p class="developedWith">Developed with:
@@ -276,24 +304,24 @@
                         </div>
                     </form>
                     <aside class="sideMessage overHidden" data-aos="zoom-in-up">
-                    <h6>Get in touch.</h6>
-                    <a href="mailto:christina.yu.code@gmail.com">christina.yu.code@gmail.com</a>
-                    <ul class="socialMedia">
-                        <li><a href="https://www.linkedin.com/in/christina-yu-31b4bb108/"><i
-                                    class="fab fa-linkedin-in"></i></a></li>
+                        <h6>Get in touch.</h6>
+                        <a href="mailto:christina.yu.code@gmail.com">christina.yu.code@gmail.com</a>
+                        <ul class="socialMedia">
+                            <li><a href="https://www.linkedin.com/in/christina-yu-31b4bb108/"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
 
-                        <li><a href="https://twitter.com/yuiscoding"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://twitter.com/yuiscoding"><i class="fab fa-twitter"></i></a></li>
 
-                        <li><a href="https://github.com/Yuisdrawing"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://github.com/Yuisdrawing"><i class="fab fa-github"></i></a></li>
 
-                        <li><a href="https://christina-yu-code.medium.com/"><i class="fab fa-medium-m"></i></a></li>
-                    </ul>
-                </aside>
+                            <li><a href="https://christina-yu-code.medium.com/"><i class="fab fa-medium-m"></i></a></li>
+                        </ul>
+                    </aside>
                 </div>
 
 
 
-                
+
             </article>
 
 

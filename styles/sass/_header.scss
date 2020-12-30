@@ -48,7 +48,7 @@
     transform: translate(-50%, -50%);
         li {
             margin-bottom: 4rem;
-            animation: fadeInRight .5s ease forwards;
+            animation: fadeInDown .5s ease forwards;
             animation-delay: .35s;
             a {
                 color: #ffffff;
@@ -67,7 +67,7 @@
         
     }
 }
-@keyframes fadeInRight {
+@keyframes fadeInDown {
   0% {
     opacity: 0;
     left: 20%;
@@ -77,111 +77,3 @@
     left: 0;
   }
 }
-
-
-
-
-
-
-.sidebar {
-    left: 0;
-    top: 0;
-    height: 100vh;
-    // width: 25%;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-
-.sidebar,
-.profile,
-.navigationLinks {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-ul {
-    padding-inline-start: 0; // gets rid of the padding from the bullet
-    li { // Gets rid of the list bullets
-        list-style: none;
-    }
-}
-.socialMedia {
-    display: flex;
-}
-
-
-.sidebar {
-    background-color: $blue1;
-    background: linear-gradient(180deg, rgba(120,129,153,1) 71%, rgba(146,149,157,1) 100%);
-}
-
-.profile {
-    margin-bottom: 40px;
-    text-align: center;
-    .nameAndTitle {
-        h1 {
-            font-family: $sulphur;
-            font-size: 50px;
-            font-weight: 300;
-            text-transform: uppercase;
-            margin-bottom: 0;
-            color: #ffffff;
-        }
-        h1::after {
-            content: '';
-            display: block;
-            height: 0.8rem;
-            width: 35%;
-            border-bottom: 1px solid #ffffff;
-            margin: 0 auto;
-        }
-        h2 {
-            font-family: $sulphur;
-            font-weight: 300;
-            font-size: 16px;
-            margin-top: 1.1rem;
-            color: #ffffff;
-        }
-    }
-    
-}
-
-.profilePicture {
-    height: 17rem;
-    transition: 0.2s cubic-bezier(.01,1.01,.84,.99);
-    img {
-        border: 4px solid $yellow1;
-        border-radius: 50%;
-        width: 50%;
-        margin-top: 4rem;
-        transition: 0.2s cubic-bezier(.01,1.01,.84,.99);
-    }
-}
-// .profilePicture:hover {
-//     img {
-//         border: 1px solid $blue2;
-//         margin-top: 20px;
-//         width: 25%;
-//         filter: grayscale(50%);
-//     }
-// }
-
-.navigationLinks li {
-    margin: 7px 0;
-    a {
-        font-family: $khula;
-        font-size: 20px;
-        font-weight: 800;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #ffffff;
-        padding: 5px 8px 0 8px;
-        transition: 0.1s;
-    }
-    a:hover {
-        color: #000000;
-        background-color: $yellow1;
-    }
-}
-

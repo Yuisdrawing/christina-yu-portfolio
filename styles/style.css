@@ -240,6 +240,7 @@ body {
   height: 100%;
   margin: 0;
   background-color: #e9e9eb;
+  background-image: url(/assets/repeatbackground.png);
 }
 
 html {
@@ -260,24 +261,120 @@ html {
   display: flex;
 }
 
-.drawing {
+.sidebar {
+  left: 0;
+  top: 0;
   height: 100vh;
-  background-color: #ffdd65;
-  position: relative;
+  position: fixed;
+  width: 8.5rem;
+  background-color: #1a1a1a;
+  z-index: 50;
 }
 
-.drawing img:nth-child(1) {
-  position: relative;
-  bottom: 0;
-  width: 100%;
+.sidebar img {
+  z-index: 51;
+  width: 200px;
+}
+
+.navigationLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8rem;
+}
+
+ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.navigationLinks li {
+  margin: 7px 0;
+}
+
+img.navIcons {
+  width: 60px;
+  margin-top: 2rem;
+}
+
+img.navIcons:hover {
+  -webkit-animation: jiggle 0.2s infinite;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-name: jiggle;
+  -moz-animation-iteration-count: infinite;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+}
+
+@-webkit-keyframes jiggle {
+  0% {
+    -webkit-transform: rotate(-1.5deg);
+  }
+  50% {
+    -webkit-transform: rotate(1.5deg);
+  }
+}
+
+.hoverBubble {
+  display: inline;
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  z-index: 52;
+}
+
+.hoverBubble .tooltip {
+  background-image: url(/assets/navTooltip.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 210px;
+  height: 60px;
+}
+
+p.bubbleText {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Khula", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.drawing {
+  margin: 0 0 0 auto;
   height: 100vh;
+  background-color: #e6e6e6;
+  position: relative;
+  background-image: url(/assets/repeatbackground.png);
 }
 
 .drawing img {
-  width: 100%;
   position: absolute;
-  left: 0;
+}
+
+.drawing img.me {
+  height: 70%;
+  right: 30rem;
   bottom: 0;
+}
+
+.drawing img.coffee {
+  height: 40%;
+  left: -100rem;
+  bottom: 10rem;
 }
 
 .animate__animated {
@@ -301,8 +398,8 @@ html {
 }
 
 main {
-  width: 100%;
-  margin: 0 auto;
+  width: 93%;
+  margin: 0 0 0 auto;
   min-height: 100vh;
 }
 
@@ -315,15 +412,22 @@ main {
 .introduction h3 {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 800;
   margin: 0;
   padding: 70px 100px 2px 6rem;
-  background-color: #ffdd65;
+  background-color: #e6e6e6;
+  background-image: url(/assets/slashbackground.png);
   letter-spacing: 0.2rem;
   width: calc(100% + 1px);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 15px solid #ffffff;
+  text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff,   1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+.introduction h3 span {
+  color: #006c6f;
+  text-shadow: none;
 }
 
 .introduction p {
@@ -424,8 +528,8 @@ main {
 
 .overheadNavLinks li {
   margin-bottom: 4rem;
-  -webkit-animation: fadeInRight .5s ease forwards;
-          animation: fadeInRight .5s ease forwards;
+  -webkit-animation: fadeInDown .5s ease forwards;
+          animation: fadeInDown .5s ease forwards;
   -webkit-animation-delay: .35s;
           animation-delay: .35s;
 }
@@ -447,7 +551,7 @@ main {
   background-color: #ffdd65;
 }
 
-@-webkit-keyframes fadeInRight {
+@-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
     left: 20%;
@@ -458,7 +562,7 @@ main {
   }
 }
 
-@keyframes fadeInRight {
+@keyframes fadeInDown {
   0% {
     opacity: 0;
     left: 20%;
@@ -467,117 +571,6 @@ main {
     opacity: 1;
     left: 0;
   }
-}
-
-.sidebar {
-  left: 0;
-  top: 0;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.sidebar,
-.profile,
-.navigationLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-ul {
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-}
-
-ul li {
-  list-style: none;
-}
-
-.socialMedia {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.sidebar {
-  background-color: #788199;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71%, #788199), to(#92959d));
-  background: linear-gradient(180deg, #788199 71%, #92959d 100%);
-}
-
-.profile {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.profile .nameAndTitle h1 {
-  font-family: "Sulphur Point", sans-serif;
-  font-size: 50px;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-bottom: 0;
-  color: #ffffff;
-}
-
-.profile .nameAndTitle h1::after {
-  content: '';
-  display: block;
-  height: 0.8rem;
-  width: 35%;
-  border-bottom: 1px solid #ffffff;
-  margin: 0 auto;
-}
-
-.profile .nameAndTitle h2 {
-  font-family: "Sulphur Point", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  margin-top: 1.1rem;
-  color: #ffffff;
-}
-
-.profilePicture {
-  height: 17rem;
-  -webkit-transition: 0.2s cubic-bezier(0.01, 1.01, 0.84, 0.99);
-  transition: 0.2s cubic-bezier(0.01, 1.01, 0.84, 0.99);
-}
-
-.profilePicture img {
-  border: 4px solid #ffdd65;
-  border-radius: 50%;
-  width: 50%;
-  margin-top: 4rem;
-  -webkit-transition: 0.2s cubic-bezier(0.01, 1.01, 0.84, 0.99);
-  transition: 0.2s cubic-bezier(0.01, 1.01, 0.84, 0.99);
-}
-
-.navigationLinks li {
-  margin: 7px 0;
-}
-
-.navigationLinks li a {
-  font-family: "Khula", sans-serif;
-  font-size: 20px;
-  font-weight: 800;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-  padding: 5px 8px 0 8px;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-
-.navigationLinks li a:hover {
-  color: #000000;
-  background-color: #ffdd65;
 }
 
 .mobileHeader {
@@ -587,23 +580,27 @@ ul li {
 }
 
 .drawing {
+  margin: 0 0 0 auto;
   height: 100vh;
-  background-color: #ffdd65;
+  background-color: #e6e6e6;
   position: relative;
-}
-
-.drawing img:nth-child(1) {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
+  background-image: url(/assets/repeatbackground.png);
 }
 
 .drawing img {
-  width: 100%;
   position: absolute;
-  left: 0;
+}
+
+.drawing img.me {
+  height: 70%;
+  right: 30rem;
   bottom: 0;
+}
+
+.drawing img.coffee {
+  height: 40%;
+  left: -100rem;
+  bottom: 10rem;
 }
 
 .animate__animated {
@@ -701,15 +698,17 @@ ul li {
 h4 {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 800;
   margin: 0;
   padding: 70px 100px 2px 100px;
-  background-color: #ffdd65;
+  background-color: #e6e6e6;
+  background-image: url(/assets/slashbackground.png);
   text-align: center;
   letter-spacing: 0.2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 15px solid #ffffff;
+  text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff,   1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 
 .icons8-firebase {
@@ -822,6 +821,7 @@ h4 {
   text-decoration: none;
   color: #000000;
   font-size: 40px;
+  font-family: "Short Stack", cursive;
 }
 
 .codeLink {
