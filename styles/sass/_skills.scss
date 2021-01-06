@@ -3,34 +3,28 @@
     align-items: center;
     justify-content: center;
     // min-height: 100vh;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
     .skillsContainer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         width: 70rem;
-        .skillWrap {
-            background-image: url(/assets/skillsbg.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            border: 1px solid transparent;
-            border-radius: 50%;
-            margin: 1.7rem;
-            width: 12rem;
-            height: 12rem;
-            text-align: center;
-            color: #ffffff;
-            transition: 0.1s cubic-bezier(0,.87,1,.53)
-        }
-        .skillWrap:hover {
-            // color: #000000;
-            background-image: url(/assets/skillsbgHover.png);
-        }
     }
 }
-
 .skillWrap {
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin: 1rem;
+    width: 9rem;
+    height: 9rem;
+    text-align: center;
+    color: #2e2e2e;
+    transition: 0.1s cubic-bezier(0,.87,1,.53);
+    //flex
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -43,8 +37,9 @@
         margin-bottom: 2rem;
     }
     i {
-        font-size: 80px;
+        font-size: 70px;
         margin-top: 2rem;
+        transition: 0.1s cubic-bezier(0,.87,1,.53);
     }
     .fas {
         font-size: 70px;
@@ -63,21 +58,38 @@
         transition: 0.1s;
     }
 }
-
 .skillWrap:hover {
-    i {
-        font-size: 90px;
+    // p {
+    //     color: $grey3;
+    // }
+    i:not(.fa-sass) {
+        font-size: 88px;
+        margin-top: 2rem;
     }
     .fas {
         font-size: 80px;
     }
-    .scss i.fab {
-        font-size: 85px;
+    i.fa-sass {
+        font-size: 88px;
+        margin-top: 2rem;
     }
     // icon8
     .icons8-firebase { 
         width: 100px;
         height: 100px;
+    }
+    //colour changes for each .icons
+    i.fa-html5 {
+        color: #ff6638; //orange
+    }
+    i.fa-css3-alt {
+        color: #0084ff;
+    }
+    i.fa-sass {
+        color: #ff80c1;
+    }
+    i.fa-js-square {
+        color: #f6bd00;
     }
 }
 

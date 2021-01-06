@@ -684,8 +684,9 @@ img.me {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
 }
 
 .skills .skillsContainer {
@@ -700,26 +701,18 @@ img.me {
   width: 70rem;
 }
 
-.skills .skillsContainer .skillWrap {
-  background-image: url(/assets/skillsbg.png);
+.skillWrap {
   background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid transparent;
   border-radius: 50%;
-  margin: 1.7rem;
-  width: 12rem;
-  height: 12rem;
+  margin: 1rem;
+  width: 9rem;
+  height: 9rem;
   text-align: center;
-  color: #ffffff;
+  color: #2e2e2e;
   -webkit-transition: 0.1s cubic-bezier(0, 0.87, 1, 0.53);
   transition: 0.1s cubic-bezier(0, 0.87, 1, 0.53);
-}
-
-.skills .skillsContainer .skillWrap:hover {
-  background-image: url(/assets/skillsbgHover.png);
-}
-
-.skillWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -743,8 +736,10 @@ img.me {
 }
 
 .skillWrap i {
-  font-size: 80px;
+  font-size: 70px;
   margin-top: 2rem;
+  -webkit-transition: 0.1s cubic-bezier(0, 0.87, 1, 0.53);
+  transition: 0.1s cubic-bezier(0, 0.87, 1, 0.53);
 }
 
 .skillWrap .fas {
@@ -766,21 +761,39 @@ img.me {
   transition: 0.1s;
 }
 
-.skillWrap:hover i {
-  font-size: 90px;
+.skillWrap:hover i:not(.fa-sass) {
+  font-size: 88px;
+  margin-top: 2rem;
 }
 
 .skillWrap:hover .fas {
   font-size: 80px;
 }
 
-.skillWrap:hover .scss i.fab {
-  font-size: 85px;
+.skillWrap:hover i.fa-sass {
+  font-size: 88px;
+  margin-top: 2rem;
 }
 
 .skillWrap:hover .icons8-firebase {
   width: 100px;
   height: 100px;
+}
+
+.skillWrap:hover i.fa-html5 {
+  color: #ff6638;
+}
+
+.skillWrap:hover i.fa-css3-alt {
+  color: #0084ff;
+}
+
+.skillWrap:hover i.fa-sass {
+  color: #ff80c1;
+}
+
+.skillWrap:hover i.fa-js-square {
+  color: #f6bd00;
 }
 
 h4 {
