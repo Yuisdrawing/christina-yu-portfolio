@@ -11,6 +11,7 @@
 $(document).ready(function() {
     $('.closeIcon').first().hide();
     $('.hoverBubble').addClass('visuallyHidden');
+    $('.infoBubble').addClass('visuallyHidden');
 });
 
 // burger icon displays initially hidden elements onClick
@@ -35,15 +36,31 @@ $('.burgerIcon').click(function () {
 });
 
 
+
 $('.me').hover(
     function () {
         $('.me').attr('src', 'assets/blinkForward/blinkForward.gif');
-        
+        $('.infoBubble').removeClass('visuallyHidden');
     },
     function () {
         $('.me').attr('src', 'assets/blinkSideEye/blinkSide2.gif');
+        $('.infoBubble').addClass('visuallyHidden');
     }
 );
+$('.drawingMediums').hover(
+    function () {
+        $('.drawingMediums').attr('src', 'assets/traits/drawingMediums2.gif');
+    },
+    function () {
+        $('.drawingMediums').attr('src', 'assets/traits/drawingMediums.png');
+    }
+);
+
+
+
+
+
+
 
 $('#introNav').hover(
     function () {

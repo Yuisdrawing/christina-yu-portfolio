@@ -1,25 +1,30 @@
 .drawing {
-    margin: 0 0 0 auto;
+    margin: 0 auto 0 auto;
     height: 100vh;
-    background-color: $bgGrey;
     position: relative;
-    background-image: url(/assets/repeatbackground.png);
-    img {
-        position: absolute;
-    }
-    img.me {
-        height: 70%;
-        right: 30rem;
-        bottom: 0;
-    }
-    img.coffee {
-        height: 40%;
-        left: -100rem;
-        bottom: 10rem;
+}
+
+.drawingGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40rem;
+    //prevent content going under the sidebar:
+    margin-left: 10rem;
+    .traitsGroup {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
-
+img.traits {
+    width: 15rem;
+}
+img.me {
+    height: 60%;
+    position: absolute;
+    bottom: 0;
+}
 
 
 
@@ -27,14 +32,8 @@
 .animate__animated {
     --animate-duration: 1s;
 }
-.computer {
+.drawingMediums {
     --animate-delay: 0.2s;
-}
-.art {
-    --animate-delay: 0.4s;
-}
-.coffee {
-    --animate-delay: 0.6s;
 }
 .me {
     --animate-delay: 1s;
