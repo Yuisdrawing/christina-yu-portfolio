@@ -27,3 +27,28 @@ html {
 // }
 
 
+h2 {
+    font-family: $montserrat2;
+    font-size: 50px;
+    font-weight: 800;
+    margin: 0;
+    // margin-top: 5rem;
+    padding: 70px 100px 2px 100px;
+    background-color: $bgGrey;
+    background-image: url(/assets/slashbackground.png);
+    text-align: center;
+    letter-spacing: 0.2rem;
+    box-sizing: border-box;
+    border: 15px solid #ffffff;
+
+    //border around text
+    text-shadow: 1px 1px 0 #ffffff,
+    -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+    span {
+        color: $accentBlue;
+        text-shadow: none;
+    }
+}

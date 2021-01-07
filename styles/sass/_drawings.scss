@@ -2,6 +2,7 @@
     margin: 0 auto 0 auto;
     height: 100vh;
     position: relative;
+    margin-left: 8.5rem;
 }
 
 .drawingGroup {
@@ -9,8 +10,8 @@
     flex-direction: column;
     align-items: center;
     margin-right: 40rem;
+    margin-left: 8rem;
     //prevent content going under the sidebar:
-    margin-left: 10rem;
     .traitsGroup {
         display: flex;
         justify-content: space-around;

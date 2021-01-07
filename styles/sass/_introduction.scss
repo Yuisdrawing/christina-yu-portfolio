@@ -1,7 +1,8 @@
 main {
-    width: 93%;
+    // width: 93%;
     margin: 0 0 0 auto;
     min-height: 100vh;
+    margin-left: 8.5rem;
     // display: flex;
     // flex-direction: column;
     // align-items: center;
@@ -11,37 +12,6 @@ main {
     min-height: 100vh;
     background-color: #ffffff;
     margin-bottom: 5rem;
-    h3 {
-        font-family: $montserrat2;
-        font-size: 50px;
-        font-weight: 800;
-        margin: 0;
-        padding: 70px 100px 2px 6rem;
-        background-color: $bgGrey;
-        background-image: url(/assets/slashbackground.png);
-        letter-spacing: 0.2rem;
-        width: calc(100% + 1px);
-        box-sizing: border-box;
-        border: 15px solid #ffffff;
-
-        // text shadow from: https://css-tricks.com/adding-stroke-to-web-text/
-        text-shadow: 1px 1px 0 #ffffff,
-        -1px -1px 0 #ffffff,  
-        1px -1px 0 #ffffff,
-        -1px 1px 0 #ffffff,
-        1px 1px 0 #ffffff;
-        span {
-            color: $accentBlue;
-            text-shadow: none;
-        }
-    }
-    p {
-        font-family: $montserrat1;
-        font-size: 20px;
-        margin: 0 6rem;
-        margin-top: 40px;
-        line-height: 40px;
-    }
 }
 
 .aboutMe {
@@ -50,8 +20,22 @@ main {
     margin-top: 3rem;
     margin-bottom: 5rem;
     p {
-        width: 600px;
+        width: 800px;
         line-height: 42px;
+        padding-left: 5rem;
+        font-family: $montserrat1;
+        font-size: 20px;
+        margin: 0 6rem;
+        margin-top: 40px;
+        line-height: 45px;
+        span.aboutMeSpan {
+            font-family: $montserrat2;
+            font-weight: 500;
+            font-size: 50px;
+        }
+        span.aboutMeSpanSmall {
+            background-color: #77ffd2;
+        }
     }
     .photo {
         width: 500px;

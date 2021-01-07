@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     // min-height: 100vh;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 7rem;
     background-color: #ffffff;
     .skillsContainer {
         display: flex;
@@ -30,57 +30,32 @@
     justify-content: space-around;
     align-items: center;
     p {
-        font-family: $montserrat1;
+        font-family: $short;
         text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: 400;
         margin-bottom: 2rem;
     }
+    ///////////icon sizes////////////
     i {
         font-size: 70px;
-        margin-top: 2rem;
-        transition: 0.1s cubic-bezier(0,.87,1,.53);
     }
     .fas {
         font-size: 70px;
     }
-    .scss i.fab {
-        font-size: 75px;
-    }
-    // icon8
-    .icons8-firebase { 
-        display: inline-block;
-        width: 90px;
-        height: 90px;
-        background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIKdmlld0JveD0iMCAwIDIyNiAyMjYiCnN0eWxlPSIgZmlsbDojMDAwMDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMjI2di0yMjZoMjI2djIyNnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48Zz48cGF0aCBkPSJNMzcuNjY2NjcsMTc0LjIwODMzbDcxLjcyNjc1LC0xMzQuNDg4ODNjMS41MTEzOCwtMi44MzQ0MiA1LjU5ODIxLC0yLjc4MjYzIDcuMDM0MjUsMC4wOTQxN2wyNC44MjIzMyw0OS42NDQ2N3oiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48cGF0aCBkPSJNMzcuNjY2NjcsMTc0LjE3MDY3bDI2LjExMjQyLC0xNjEuMDIwMjljMC42ODI3MSwtNC4yMTM5NiA2LjM0MjEzLC01LjEyNzM3IDguMzE5NjIsLTEuMzQxODdsNTAuMzE3OTYsOTYuNDQ1NXoiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48cGF0aCBkPSJNMzcuNzA0MzMsMTc0LjE0MjQybDAuOTQxNjcsLTAuNzM5MjFsODIuNTMyMzcsLTY3LjUyMjIxbC0yMy4yNzgsLTQ0LjYxNjE3eiIgZmlsbD0iIzFhMWExYSI+PC9wYXRoPjxwYXRoIGQ9Ik0zNy42NjY2NywxNzQuMjA4MzNsMTI1LjU1MjQyLC0xMjEuMDY1MzdjMi42MzE5NiwtMi41Mzc3OSA3LjAyNDgzLC0xLjA0MDU0IDcuNTYxNTgsMi41NzU0NmwxNy41NTI2NywxMTguNDg5OTJsLTcwLjYyNSw0MS4xNjQ5NmMtMi44NjczOCwxLjYxMDI1IC02LjM2NTY3LDEuNjEwMjUgLTkuMjMzMDQsMHoiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==') 50% 50% no-repeat;
-        background-size: 100%;
-        margin-top: 2rem;
-        transition: 0.1s;
-    }
-}
-.skillWrap:hover {
-    // p {
-    //     color: $grey3;
-    // }
-    i:not(.fa-sass) {
-        font-size: 88px;
-        margin-top: 2rem;
-    }
-    .fas {
-        font-size: 80px;
-    }
     i.fa-sass {
-        font-size: 88px;
-        margin-top: 2rem;
+        font-size: 67px;
     }
-    // icon8
-    .icons8-firebase { 
-        width: 100px;
-        height: 100px;
+    i.fa-terminal {
+        font-size: 55px;
     }
-    //colour changes for each .icons
+    img.firebaseIcon {
+        width: 80px;
+        height: 80px;
+    }
+    /////////////colour changes for each .icons/////////////
     i.fa-html5 {
-        color: #ff6638; //orange
+        color: #ff6638;
     }
     i.fa-css3-alt {
         color: #0084ff;
@@ -91,32 +66,25 @@
     i.fa-js-square {
         color: #f6bd00;
     }
+    i.devicon-jquery-plain {
+        color: #2f60a8;
+    }
+    i.fa-cog {
+        color: #009b99;
+    }
+    i.devicon-react-original {
+        color: #5fb8d6;
+    }
+    i.devicon-git-plain {
+        color: #e45535;
+    }
+    i.fa-terminal {
+        color: #1f426e;
+    }
+    i.fa-mobile-alt {
+        color: #ff3f3f;
+    }
+    i.fa-universal-access {
+        color: #09a155;
+    }
 }
-
-
-
-
-h4 {
-    font-family: $montserrat2;
-    font-size: 50px;
-    font-weight: 800;
-    margin: 0;
-    // margin-top: 5rem;
-    padding: 70px 100px 2px 100px;
-    background-color: $bgGrey;
-    background-image: url(/assets/slashbackground.png);
-    text-align: center;
-    letter-spacing: 0.2rem;
-    box-sizing: border-box;
-    border: 15px solid #ffffff;
-    text-shadow: 1px 1px 0 #ffffff,
-    -1px -1px 0 #ffffff,  
-    1px -1px 0 #ffffff,
-    -1px 1px 0 #ffffff,
-    1px 1px 0 #ffffff;
-}
-
-
-
-
-

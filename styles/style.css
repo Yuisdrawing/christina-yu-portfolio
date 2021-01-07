@@ -262,6 +262,27 @@ html {
   height: 100vh;
 }
 
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  margin: 0;
+  padding: 70px 100px 2px 100px;
+  background-color: #e6e6e6;
+  background-image: url(/assets/slashbackground.png);
+  text-align: center;
+  letter-spacing: 0.2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 15px solid #ffffff;
+  text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff,   1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+h2 span {
+  color: #006c6f;
+  text-shadow: none;
+}
+
 .sidebar {
   left: 0;
   top: 0;
@@ -357,6 +378,7 @@ img.navIcons:hover {
   margin: 0 auto 0 auto;
   height: 100vh;
   position: relative;
+  margin-left: 8.5rem;
 }
 
 .drawingGroup {
@@ -371,7 +393,7 @@ img.navIcons:hover {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 40rem;
-  margin-left: 10rem;
+  margin-left: 8rem;
 }
 
 .drawingGroup .traitsGroup {
@@ -442,44 +464,15 @@ p.meInfoParagraph {
 }
 
 main {
-  width: 93%;
   margin: 0 0 0 auto;
   min-height: 100vh;
+  margin-left: 8.5rem;
 }
 
 .introduction {
   min-height: 100vh;
   background-color: #ffffff;
   margin-bottom: 5rem;
-}
-
-.introduction h3 {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 50px;
-  font-weight: 800;
-  margin: 0;
-  padding: 70px 100px 2px 6rem;
-  background-color: #e6e6e6;
-  background-image: url(/assets/slashbackground.png);
-  letter-spacing: 0.2rem;
-  width: calc(100% + 1px);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 15px solid #ffffff;
-  text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff,   1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
-}
-
-.introduction h3 span {
-  color: #006c6f;
-  text-shadow: none;
-}
-
-.introduction p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  margin: 0 6rem;
-  margin-top: 40px;
-  line-height: 40px;
 }
 
 .aboutMe {
@@ -493,8 +486,24 @@ main {
 }
 
 .aboutMe p {
-  width: 600px;
+  width: 800px;
   line-height: 42px;
+  padding-left: 5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin: 0 6rem;
+  margin-top: 40px;
+  line-height: 45px;
+}
+
+.aboutMe p span.aboutMeSpan {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.aboutMe p span.aboutMeSpanSmall {
+  background-color: #77ffd2;
 }
 
 .aboutMe .photo {
@@ -617,16 +626,19 @@ main {
   }
 }
 
-.mobileHeader {
-  background-color: #788199;
-  background: -webkit-gradient(linear, left top, right top, color-stop(71%, #788199), to(#92959d));
-  background: linear-gradient(90deg, #788199 71%, #92959d 100%);
+header.overheadHeader {
+  display: none;
+}
+
+.burgerIconBox {
+  display: none;
 }
 
 .drawing {
   margin: 0 auto 0 auto;
   height: 100vh;
   position: relative;
+  margin-left: 8.5rem;
 }
 
 .drawingGroup {
@@ -641,7 +653,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 40rem;
-  margin-left: 10rem;
+  margin-left: 8rem;
 }
 
 .drawingGroup .traitsGroup {
@@ -684,8 +696,8 @@ img.me {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 7rem;
   background-color: #ffffff;
 }
 
@@ -728,93 +740,81 @@ img.me {
 }
 
 .skillWrap p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Short Stack", cursive;
   text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 
 .skillWrap i {
   font-size: 70px;
-  margin-top: 2rem;
-  -webkit-transition: 0.1s cubic-bezier(0, 0.87, 1, 0.53);
-  transition: 0.1s cubic-bezier(0, 0.87, 1, 0.53);
 }
 
 .skillWrap .fas {
   font-size: 70px;
 }
 
-.skillWrap .scss i.fab {
-  font-size: 75px;
+.skillWrap i.fa-sass {
+  font-size: 67px;
 }
 
-.skillWrap .icons8-firebase {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIKdmlld0JveD0iMCAwIDIyNiAyMjYiCnN0eWxlPSIgZmlsbDojMDAwMDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMjI2di0yMjZoMjI2djIyNnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48Zz48cGF0aCBkPSJNMzcuNjY2NjcsMTc0LjIwODMzbDcxLjcyNjc1LC0xMzQuNDg4ODNjMS41MTEzOCwtMi44MzQ0MiA1LjU5ODIxLC0yLjc4MjYzIDcuMDM0MjUsMC4wOTQxN2wyNC44MjIzMyw0OS42NDQ2N3oiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48cGF0aCBkPSJNMzcuNjY2NjcsMTc0LjE3MDY3bDI2LjExMjQyLC0xNjEuMDIwMjljMC42ODI3MSwtNC4yMTM5NiA2LjM0MjEzLC01LjEyNzM3IDguMzE5NjIsLTEuMzQxODdsNTAuMzE3OTYsOTYuNDQ1NXoiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48cGF0aCBkPSJNMzcuNzA0MzMsMTc0LjE0MjQybDAuOTQxNjcsLTAuNzM5MjFsODIuNTMyMzcsLTY3LjUyMjIxbC0yMy4yNzgsLTQ0LjYxNjE3eiIgZmlsbD0iIzFhMWExYSI+PC9wYXRoPjxwYXRoIGQ9Ik0zNy42NjY2NywxNzQuMjA4MzNsMTI1LjU1MjQyLC0xMjEuMDY1MzdjMi42MzE5NiwtMi41Mzc3OSA3LjAyNDgzLC0xLjA0MDU0IDcuNTYxNTgsMi41NzU0NmwxNy41NTI2NywxMTguNDg5OTJsLTcwLjYyNSw0MS4xNjQ5NmMtMi44NjczOCwxLjYxMDI1IC02LjM2NTY3LDEuNjEwMjUgLTkuMjMzMDQsMHoiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==") 50% 50% no-repeat;
-  background-size: 100%;
-  margin-top: 2rem;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+.skillWrap i.fa-terminal {
+  font-size: 55px;
 }
 
-.skillWrap:hover i:not(.fa-sass) {
-  font-size: 88px;
-  margin-top: 2rem;
+.skillWrap img.firebaseIcon {
+  width: 80px;
+  height: 80px;
 }
 
-.skillWrap:hover .fas {
-  font-size: 80px;
-}
-
-.skillWrap:hover i.fa-sass {
-  font-size: 88px;
-  margin-top: 2rem;
-}
-
-.skillWrap:hover .icons8-firebase {
-  width: 100px;
-  height: 100px;
-}
-
-.skillWrap:hover i.fa-html5 {
+.skillWrap i.fa-html5 {
   color: #ff6638;
 }
 
-.skillWrap:hover i.fa-css3-alt {
+.skillWrap i.fa-css3-alt {
   color: #0084ff;
 }
 
-.skillWrap:hover i.fa-sass {
+.skillWrap i.fa-sass {
   color: #ff80c1;
 }
 
-.skillWrap:hover i.fa-js-square {
+.skillWrap i.fa-js-square {
   color: #f6bd00;
 }
 
-h4 {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 50px;
-  font-weight: 800;
-  margin: 0;
-  padding: 70px 100px 2px 100px;
-  background-color: #e6e6e6;
-  background-image: url(/assets/slashbackground.png);
-  text-align: center;
-  letter-spacing: 0.2rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 15px solid #ffffff;
-  text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff,   1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+.skillWrap i.devicon-jquery-plain {
+  color: #2f60a8;
+}
+
+.skillWrap i.fa-cog {
+  color: #009b99;
+}
+
+.skillWrap i.devicon-react-original {
+  color: #5fb8d6;
+}
+
+.skillWrap i.devicon-git-plain {
+  color: #e45535;
+}
+
+.skillWrap i.fa-terminal {
+  color: #1f426e;
+}
+
+.skillWrap i.fa-mobile-alt {
+  color: #ff3f3f;
+}
+
+.skillWrap i.fa-universal-access {
+  color: #09a155;
 }
 
 .projects {
   margin: 0 auto 10rem auto;
-  width: 90rem;
+  width: 80%;
 }
 
 .projectSection {
@@ -898,7 +898,6 @@ h4 {
 
 .projectDescription h5 {
   margin-bottom: 0;
-  margin-top: -3rem;
 }
 
 .projectDescription h5 a {
@@ -932,7 +931,6 @@ h4 {
 }
 
 .appDetails {
-  margin-top: -6rem;
   font-size: 14px;
   line-height: 26px;
   margin-right: 4rem;
@@ -1088,4 +1086,12 @@ h4 {
   font-size: 12px;
   color: #ffffff;
   margin-top: 0;
+}
+
+header.overheadHeader {
+  display: none;
+}
+
+.burgerIconBox {
+  display: none;
 }
