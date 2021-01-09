@@ -87,3 +87,18 @@ img.navIcons:hover {
     }
 }
 // jiggle effect from:https://jsfiddle.net/sunnypmody/8gdEr/
+
+
+// hoverBubble's opacity is set to 0
+.hoverBubble {
+    opacity: 0;
+    transition: 0.1s;
+}
+// When hovered, the respective bubbles show up
+// + is used since the bubble element is next to hovered element's closing tag
+#topNav:hover + .topBubble,
+#projectsNav:hover + .projectsBubble,
+#introNav:hover + .introBubble,
+#contactNav:hover + .contactBubble {
+    opacity: 1;
+}

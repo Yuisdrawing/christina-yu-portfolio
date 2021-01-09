@@ -50,24 +50,14 @@
             <aside class="sidebar">
                 <nav class="sideNav">
                     <ul class="navigationLinks">
-                        <li class="navLinkBubbleWrap">
-                            <a href="#introduction" id="introNav">
-                                <img src="assets/navIcons/introIcon.png" alt="" class="navIcons introIcon">
-                            </a>
-                            <div class="hoverBubble introBubble">
-                                <div class="tooltip">
-                                    <p class="bubbleText">Who are Yu?</p>
-                                </div>
-                            </div>
-                        </li>
 
                         <li class="navLinkBubbleWrap">
-                            <a href="#skills" id="skillsNav">
-                                <img src="assets/navIcons/skillsIcon.png" alt="" class="navIcons skillsIcon">
+                            <a href="#top" id="topNav">
+                                <img src="assets/navIcons/skillsIcon.png" alt="" class="navIcons topIcon">
                             </a>
-                            <div class="hoverBubble skillsBubble">
+                            <div class="hoverBubble topBubble">
                                 <div class="tooltip">
-                                    <p class="bubbleText">Skills</p>
+                                    <p class="bubbleText">Back to top</p>
                                 </div>
                             </div>
                         </li>
@@ -79,6 +69,17 @@
                             <div class="hoverBubble projectsBubble">
                                 <div class="tooltip">
                                     <p class="bubbleText">Projects</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="navLinkBubbleWrap">
+                            <a href="#introduction" id="introNav">
+                                <img src="assets/navIcons/introIcon.png" alt="" class="navIcons introIcon">
+                            </a>
+                            <div class="hoverBubble introBubble">
+                                <div class="tooltip">
+                                    <p class="bubbleText">Who are Yu?</p>
                                 </div>
                             </div>
                         </li>
@@ -101,12 +102,12 @@
 
 
             <!-- Drawings ////////////////////////////////-->
-            <section class="drawing">
+            <section class="drawing" id="drawing">
                 <div class="drawingGroup">
                     <div class="traitsGroup">
                         <img src="assets/traits/drawingMediums.png" alt=""
                             class="animate__animated animate__fadeInDown animate__delay-1s traits drawingMediums">
-                        <img src="assets/traits/drawingMediums.png" alt=""
+                        <img src="assets/traits/code.png" alt=""
                             class="animate__animated animate__fadeInDown animate__delay-1s traits coffee">
                         <img src="assets/traits/coffee.png" alt=""
                             class="animate__animated animate__fadeInDown animate__delay-1s traits computer">
@@ -130,7 +131,7 @@
                         (My highschool teachers used to just<br /> call me"Hey, Yu!!!" and they loved it.)
                     </p>
                     <p class="classifyingMyself">
-                        Click me to 
+                        Click me to see what I've been working on!
                         <!--change click to tap in MQ-->
                     </p>
                 </div>
@@ -141,7 +142,7 @@
 <!--Main content of the page-->
     <main>
         <div id="projectsHeader"></div>
-        <h2 data-aos="fade-up">Pr<span>o</span>jects</h2>
+        <h2 data-aos="fade-up"><span>Yu</span>r Pr<span>o</span>jects</h2>
         <article class="projects">
             <section class="projectSection project1 overHidden" data-aos="fade-up">
                 <a href="https://feelin-so-fly-like-a-g6.github.io/project-6/" class="thumbnail"></a>
@@ -159,9 +160,11 @@
                     <p class="appDetails">Hop on, and set sail!<br />Let's write some haiku! Enter a word that you'd
                         like to start your haiku with, and Haiku Ahoy! will suggest you words that will complete
                         your verse. Smooth sailing, sailors!
-                        <br /><br /><a href="https://github.com/feelin-so-fly-like-a-g6/project-6" class="codeLink">Check
-                            out the code</a>
                     </p>
+
+                    <a href="https://github.com/feelin-so-fly-like-a-g6/project-6" class="codeLink">Check
+                        out the code</a>
+
                     <p class="developedWith">Developed with:
                         <a href="">Dave Ratcliffe</a>
                         <span> | </span>
@@ -185,9 +188,9 @@
                     <p class="appDetails">Hey there, are you dehydrated?<br />
                         If you're not getting enough water in your system, you should consider tracking your weekly
                         water intake. Take a Sip can help.
-                        <br /><br /><a href="https://github.com/Yuisdrawing/yeonjin-yu-project-five" class="codeLink">Check
-                            out the code</a>
                     </p>
+                    <a href="https://github.com/Yuisdrawing/yeonjin-yu-project-five" class="codeLink">Check
+                        out the code</a>
                     <p class="developedWith"></p>
                 </div>
             </section>
@@ -207,10 +210,9 @@
                             that Pokemon?</a></h5>
                     <p class="appDetails">Classic pokemon guessing game.<br />Can you get all 8 of Pokemon gym
                         badges?
-                        <br /><br /><a href="https://github.com/team-teemo-top/dave-ratcliffe-yeonjin-yu-project-four"
-                            class="codeLink">Check
-                            out the code</a>
                     </p>
+                    <a href="https://github.com/team-teemo-top/dave-ratcliffe-yeonjin-yu-project-four" class="codeLink">Check
+                        out the code</a>
                     <p class="developedWith">Developed with:
                         <a href="">Dave Ratcliffe</a>
                     </p>
@@ -219,76 +221,103 @@
         
         </article>
 
-    
-
-            <div id="skills">
-            <h2 data-aos="fade-up">S<span>k</span>ills <span>+</span></h2>
-            <article class="skills overHidden" data-aos="zoom-in">
-                <div class="skillsContainer">
-                    <div class="skillWrap html5">
-                        <i class="fab fa-html5"></i>
-                        <p>HTML5</p>
-                    </div>
-                    <div class="skillWrap css3">
-                        <i class="fab fa-css3-alt"></i>
-                        <p>CSS3</p>
-                    </div>
-                    <div class="skillWrap scss">
-                        <i class="fab fa-sass"></i>
-                        <p>SCSS</p>
-                    </div>
-                    <div class="skillWrap javaScript">
-                        <i class="fab fa-js-square"></i>
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="skillWrap jQuery">
-                        <i class="devicon-jquery-plain"></i>
-                        <p>jQuery</p>
-                    </div>
-                    <div class="skillWrap api">
-                        <i class="fas fa-cog"></i>
-                        <p>Rest APIs</p>
-                    </div>
-                    <div class="skillWrap firebase">
-                        <img src="https://img.icons8.com/color/144/000000/google-firebase-console.png" class="firebaseIcon" />
-                        <p>Firebase</p>
-                    </div>
-                    <div class="skillWrap react">
-                        <i class="devicon-react-original"></i>
-                        <p>React</p>
-                    </div>
-                    <div class="skillWrap git">
-                        <i class="devicon-git-plain"></i>
-                        <p>GIT</p>
-                    </div>
-                    <div class="skillWrap terminal">
-                        <i class="fas fa-terminal"></i>
-                        <p>Terminal</p>
-                    </div>
-                    <div class="skillWrap responsive">
-                        <i class="fas fa-mobile-alt"></i>
-                        <p>Responsive<br />Design</p>
-                    </div>
-                    <div class="skillWrap accessibility">
-                        <i class="fas fa-universal-access"></i>
-                        <p>Accessibility</p>
-                    </div>
-                </div>
-
-            </article>
 
             <article class="introduction" id="introduction">
-                <h2 class="overHidden">W<span>h</span>o are <span>Yu</span>?</h2>
+                <h2 class="overHidden">So<span>...</span> W<span>h</span>o are <span>Yu</span>?</h2>
                 <!-- Short introduction about me -->
                 <div class="aboutMe">
-                    <p><span class="aboutMeSpan">I'm Christina Yu,</span><br /><br />a <span class="aboutMeSpanSmall">front-end developer</span> from Windsor, Ontario, now living in Toronto!<br />I strive to discover beauty in the world, and studied fine arts and design; and ever since I graduated from Juno's immersive Bootcamp, I now code my visions into life!
-                    </p>
+                    <!-- This aboutMe container puts the grouped texts and the picture side by side via flex -->
+                    <div class="aboutMeTexts">
+                        <!-- This aboutMeTexts container puts the texts in column via flex -->
+                        <h3>I'm Christina Yu,</h3>
+
+                        <p class="answers">a <span class="aboutMeSpanSmall">front-end developer</span> from Windsor, Ontario, now living in Toronto!</p>
+
+                        <h4 class="questions">
+                            > What did you study?
+                        </h4>
+                        <p class="answers">
+                            I strive to discover beauty in the world, and studied fine arts and design at <a href="">OCAD U</a>.
+                        </p>
+
+                        <h4 class="questions">
+                            > But didn't you say you're a web developer?
+                        </h4>
+                        <p class="answers">
+                            I certainly am! I decided to take on a different path of life by studying at <a href="">Juno College's Immersive Web Dev Bootcamp</a>, and I now code my visions into life!
+                        </p>
+
+                        <h4 class="questions">
+                            > Cool! So what else do you do?
+                        </h4>
+                        <p class="answers">
+                            When I'm not coding, you can find me drawing characters from my favourite shows, playing video games, and making icons
+                            and emoticons as a side gig.
+                            <br />I also enjoy walking down the river in the sunset occasionally. Oh yes, I live by a river!
+                        </p>
+                    </div>
+
                     <div class="photo"></div>
                 </div>
+
+                <article class="skills overHidden">
+                    <div class="skillsContainer">
+                        <div class="skillWrap html5">
+                            <i class="fab fa-html5"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="skillWrap css3">
+                            <i class="fab fa-css3-alt"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skillWrap scss">
+                            <i class="fab fa-sass"></i>
+                            <p>SCSS</p>
+                        </div>
+                        <div class="skillWrap javaScript">
+                            <i class="fab fa-js-square"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skillWrap jQuery">
+                            <i class="devicon-jquery-plain"></i>
+                            <p>jQuery</p>
+                        </div>
+                        <div class="skillWrap api">
+                            <i class="fas fa-cog"></i>
+                            <p>Rest APIs</p>
+                        </div>
+                        <div class="skillWrap firebase">
+                            <img src="https://img.icons8.com/color/144/000000/google-firebase-console.png" class="firebaseIcon" />
+                            <p>Firebase</p>
+                        </div>
+                        <div class="skillWrap react">
+                            <i class="devicon-react-original"></i>
+                            <p>React</p>
+                        </div>
+                        <div class="skillWrap git">
+                            <i class="devicon-git-plain"></i>
+                            <p>GIT</p>
+                        </div>
+                        <div class="skillWrap terminal">
+                            <i class="fas fa-terminal"></i>
+                            <p>Terminal</p>
+                        </div>
+                        <div class="skillWrap responsive">
+                            <i class="fas fa-mobile-alt"></i>
+                            <p>Responsive<br />Design</p>
+                        </div>
+                        <div class="skillWrap accessibility">
+                            <i class="fas fa-universal-access"></i>
+                            <p>Accessibility</p>
+                        </div>
+                    </div>
+                
+                </article>
+
             </article>
 
             <article class="contactMe" id="contactMe">
-                <h2 data-aos="zoom-in" class="overHidden">Contact Yu</h2>
+                <h2 data-aos="zoom-in" class="overHidden">Hey, <span>Yu</span> there<span>?</span></h2>
 
 
                 <div class="formWrap">
@@ -312,9 +341,16 @@
 
 
                         <!-- Message input -->
-                        <label class="visuallyHidden">Enter any meessage you'd like to send me.</label>
-                        <textarea type="text" name="message" id="message" placeholder="Ya got something to say?"
-                            wrap="hard" rows="10"></textarea>
+                        <!-- Empty div for the background, so the sibling element (textarea) focus will change the background -->
+                        <div class="messageInputWrapper">
+                            <label class="visuallyHidden">Enter any meessage you'd like to send me.</label>
+                            <textarea type="text" name="message" id="message" placeholder="Ya got something to say?" class="message" wrap="hard"
+                                rows="10"></textarea>
+                                <div class="messageInput">
+                                </div>
+                            <!-- onfocus="this.placeholder = ''" -->
+                        </div>
+                        
 
                         <!-- Buttons -->
                         <div class="buttons">

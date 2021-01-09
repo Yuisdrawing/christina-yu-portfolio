@@ -374,6 +374,19 @@ img.navIcons:hover {
   }
 }
 
+.hoverBubble {
+  opacity: 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#topNav:hover + .topBubble,
+#projectsNav:hover + .projectsBubble,
+#introNav:hover + .introBubble,
+#contactNav:hover + .contactBubble {
+  opacity: 1;
+}
+
 .drawing {
   margin: 0 auto 0 auto;
   height: 100vh;
@@ -472,7 +485,6 @@ main {
 .introduction {
   min-height: 100vh;
   background-color: #ffffff;
-  margin-bottom: 5rem;
 }
 
 .aboutMe {
@@ -482,33 +494,55 @@ main {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
-.aboutMe p {
-  width: 800px;
-  line-height: 42px;
-  padding-left: 5rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  margin: 0 6rem;
-  margin-top: 40px;
-  line-height: 45px;
+.aboutMe .aboutMeTexts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.aboutMe p span.aboutMeSpan {
+.aboutMe .aboutMeTexts h3 {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
   font-size: 50px;
+  margin-left: 11rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.aboutMe p span.aboutMeSpanSmall {
+.aboutMe .aboutMeTexts h4.questions {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 2rem 5rem 1rem 11rem;
+}
+
+.aboutMe .aboutMeTexts p.answers {
+  width: 800px;
+  line-height: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  margin: 0 5rem 0 11rem;
+  line-height: 30px;
+}
+
+.aboutMe .aboutMeTexts p.answers:first-of-type {
+  margin: 2rem 5rem 1rem 11rem;
+}
+
+.aboutMe .aboutMeTexts p.answers:first-of-type span.aboutMeSpanSmall {
   background-color: #77ffd2;
 }
 
 .aboutMe .photo {
-  width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   background-color: #92959d;
   margin-right: 6rem;
 }
@@ -696,7 +730,6 @@ img.me {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 4rem;
   padding-bottom: 7rem;
   background-color: #ffffff;
 }
@@ -710,7 +743,7 @@ img.me {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70rem;
+  width: 100rem;
 }
 
 .skillWrap {
@@ -718,9 +751,9 @@ img.me {
   background-repeat: no-repeat;
   border: 1px solid transparent;
   border-radius: 50%;
-  margin: 1rem;
-  width: 9rem;
-  height: 9rem;
+  width: 7rem;
+  height: 7rem;
+  margin: 0.5rem;
   text-align: center;
   color: #2e2e2e;
   -webkit-transition: 0.1s cubic-bezier(0, 0.87, 1, 0.53);
@@ -732,8 +765,6 @@ img.me {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -741,31 +772,32 @@ img.me {
 
 .skillWrap p {
   font-family: "Short Stack", cursive;
-  text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
 .skillWrap i {
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .skillWrap .fas {
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .skillWrap i.fa-sass {
-  font-size: 67px;
+  font-size: 47px;
 }
 
 .skillWrap i.fa-terminal {
-  font-size: 55px;
+  font-size: 45px;
+  margin-bottom: 5px;
 }
 
 .skillWrap img.firebaseIcon {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 
 .skillWrap i.fa-html5 {
@@ -812,6 +844,13 @@ img.me {
   color: #09a155;
 }
 
+.skillesUsed p,
+h5 a,
+p.appDetails,
+a.codeLink {
+  color: #1a1a1a;
+}
+
 .projects {
   margin: 0 auto 10rem auto;
   width: 80%;
@@ -822,18 +861,29 @@ img.me {
   display: -ms-flexbox;
   display: flex;
   margin-top: 3rem;
+  height: 500px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 30px;
 }
 
 .projectSection .thumbnail {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 10px double #ffdd65;
   width: 50%;
-  height: 500px;
   background-color: #ffdd65;
+  z-index: -10;
+  overflow: hidden;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.projectSection .thumbnail:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .projectSection .projectDescription {
@@ -845,10 +895,14 @@ img.me {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffffff;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #ffffff;
+  z-index: 10;
 }
 
 .project1 .thumbnail {
@@ -870,9 +924,10 @@ img.me {
 }
 
 .skillsUsed,
-.projectDescription h5 a,
+.projectDescription h5,
 .developedWith,
-.appDetails {
+.appDetails,
+.codeLink {
   margin: 0 2rem;
 }
 
@@ -886,10 +941,12 @@ img.me {
 }
 
 .skillsUsed p {
+  color: #1a1a1a;
   padding: 10px 10px;
   background-color: #ffdd65;
   font-size: 12px;
   margin-right: 15px;
+  margin-top: 0;
 }
 
 .projectDescription {
@@ -897,40 +954,64 @@ img.me {
 }
 
 .projectDescription h5 {
-  margin-bottom: 0;
+  position: relative;
+  text-shadow: 3px 3px #ffffff, 3px -3px #ffffff, -3px 3px #ffffff, -3px -3px #ffffff;
+  display: inline-block;
+  line-height: 1.2;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .projectDescription h5 a {
   text-decoration: none;
-  color: #000000;
   font-size: 40px;
   font-family: "Short Stack", cursive;
 }
 
-.codeLink {
+h5:hover a {
+  color: #3a99aa;
+}
+
+h5:hover::before {
+  content: " ";
+  position: absolute;
+  width: 94%;
+  height: 1px;
+  bottom: 0;
+  left: 3%;
+  border-bottom: 4px solid #3a99aa;
+  z-index: -1;
+}
+
+a.codeLink {
   font-family: "Short Stack", cursive;
   text-decoration: none;
-  color: #000000;
   font-size: 14px;
-  padding: 0.5rem;
-  background-image: url(/assets/checkCodebg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  padding: 0.5rem 0.8rem;
+  background-color: #f1a037;
+  border: 1px solid transparent;
+  border-radius: 4px 15px 4px 10px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
 .codeLink:hover {
-  background-image: url(/assets/checkCodebg2.png);
-  color: #ffffff;
+  background-color: #ffdd65;
+  -webkit-box-shadow: 0px 2px 4px 0px #f1a037;
+          box-shadow: 0px 2px 4px 0px #f1a037;
 }
 
-.developedWith {
+.codeLink:active {
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px);
+}
+
+p.developedWith {
   font-size: 14px;
   margin-bottom: 2rem;
 }
 
-.appDetails {
+p.appDetails {
   font-size: 14px;
   line-height: 26px;
   margin-right: 4rem;
@@ -961,9 +1042,7 @@ img.me {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5rem 0;
-  margin-top: 5rem;
-  width: 100%;
+  margin: 0;
   background-color: #ffffff;
 }
 
@@ -1006,45 +1085,73 @@ img.me {
   margin: 5rem;
 }
 
-.contactForm input, .contactForm textarea {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid #000000;
-  padding: 1.5rem;
+input, textarea {
   font-family: "Rubik", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: none;
+  outline: none;
+}
+
+input {
+  width: 30rem;
+  padding: 2rem 2rem 2.2rem 4rem;
+  background-image: url(/assets/formInputBg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+input:focus {
+  background-image: url(/assets/formInputBg2.png);
+}
+
+.messageInput {
+  width: 30rem;
+  height: 18.3rem;
+  background-image: url(/assets/messageInputBg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -10;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.contactForm input {
-  width: calc(35rem - 68px);
+textarea {
+  padding: 1rem 2rem 2rem 2rem;
+  resize: none;
+  width: 29rem;
+  height: 15rem;
+  position: absolute;
+  bottom: 6.5rem;
+  background-color: transparent;
 }
 
-.contactForm textarea {
-  width: 35rem;
-  resize: none;
+textarea:focus + .messageInput {
+  background-image: url(/assets/messageInputBg2.png);
 }
 
 .buttons button {
-  background-color: #ffdd65;
+  background-image: url(/assets/formbutton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   border: none;
   color: #000000;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   text-align: center;
   text-decoration: none;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 16px;
   font-weight: 800;
-  width: 35rem;
-  margin-top: 2rem;
+  width: 20rem;
+  margin-top: 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
 }
 
 .buttons button:hover {
-  background-color: #1a1a1a;
   color: #ffdd65;
 }
 
@@ -1052,32 +1159,45 @@ img.me {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .inputWrap .iconBox {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #ffffff;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  border-left: 1px solid #000000;
   text-align: center;
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  width: 68px;
+  left: -30;
 }
 
 .inputWrap .iconBox i {
   font-size: 14px;
-  margin: 0;
+  margin: 0 0 0 2.2rem;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #000000;
+  opacity: 1;
 }
 
 .designCredit {
@@ -1086,12 +1206,4 @@ img.me {
   font-size: 12px;
   color: #ffffff;
   margin-top: 0;
-}
-
-header.overheadHeader {
-  display: none;
-}
-
-.burgerIconBox {
-  display: none;
 }

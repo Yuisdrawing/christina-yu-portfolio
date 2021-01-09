@@ -3,14 +3,13 @@
     align-items: center;
     justify-content: center;
     // min-height: 100vh;
-    padding-top: 4rem;
     padding-bottom: 7rem;
     background-color: #ffffff;
     .skillsContainer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 70rem;
+        width: 100rem;
     }
 }
 .skillWrap {
@@ -18,40 +17,40 @@
     background-repeat: no-repeat;
     border: 1px solid transparent;
     border-radius: 50%;
-    margin: 1rem;
-    width: 9rem;
-    height: 9rem;
+    width: 7rem;
+    height: 7rem;
+    margin: 0.5rem;
     text-align: center;
     color: #2e2e2e;
     transition: 0.1s cubic-bezier(0,.87,1,.53);
     //flex
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     p {
         font-family: $short;
-        text-transform: uppercase;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
+        margin-top: 1rem;
         margin-bottom: 2rem;
     }
     ///////////icon sizes////////////
     i {
-        font-size: 70px;
+        font-size: 50px;
     }
     .fas {
-        font-size: 70px;
+        font-size: 50px;
     }
     i.fa-sass {
-        font-size: 67px;
+        font-size: 47px;
     }
     i.fa-terminal {
-        font-size: 55px;
+        font-size: 45px;
+        margin-bottom: 5px;
     }
     img.firebaseIcon {
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
     }
     /////////////colour changes for each .icons/////////////
     i.fa-html5 {

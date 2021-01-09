@@ -11,35 +11,49 @@ main {
 .introduction {
     min-height: 100vh;
     background-color: #ffffff;
-    margin-bottom: 5rem;
 }
 
 .aboutMe {
     display: flex;
     justify-content: space-around;
     margin-top: 3rem;
-    margin-bottom: 5rem;
-    p {
-        width: 800px;
-        line-height: 42px;
-        padding-left: 5rem;
-        font-family: $montserrat1;
-        font-size: 20px;
-        margin: 0 6rem;
-        margin-top: 40px;
-        line-height: 45px;
-        span.aboutMeSpan {
+    margin-bottom: 4rem;
+    .aboutMeTexts {
+        display: flex;
+        flex-direction: column;
+        h3 {
             font-family: $montserrat2;
             font-weight: 500;
             font-size: 50px;
+            margin-left: 11rem;
+            margin-top: 0;
+            margin-bottom: 0;
         }
-        span.aboutMeSpanSmall {
-            background-color: #77ffd2;
+        h4.questions {
+            font-family: $montserrat2;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 2rem 5rem 1rem 11rem;
+        }
+        p.answers {
+            width: 800px;
+            line-height: 22px;
+            font-family: $montserrat1;
+            font-size: 17px;
+            margin: 0 5rem 0 11rem;
+            line-height: 30px;
+        }
+        p.answers:first-of-type {
+            margin: 2rem 5rem 1rem 11rem;
+            span.aboutMeSpanSmall {
+                background-color: #77ffd2;
         }
     }
+    
+    }
     .photo {
-        width: 500px;
-        height: 500px;
+        width: 550px;
+        height: 550px;
         background-color: $grey1;
         margin-right: 6rem;
     }

@@ -10,8 +10,6 @@
 // hide close icons, links, and dark overlay on document ready
 $(document).ready(function() {
     $('.closeIcon').first().hide();
-    $('.hoverBubble').addClass('visuallyHidden');
-    $('.infoBubble').addClass('visuallyHidden');
 });
 
 // burger icon displays initially hidden elements onClick
@@ -53,56 +51,6 @@ $('.drawingMediums').hover(
     },
     function () {
         $('.drawingMediums').attr('src', 'assets/traits/drawingMediums.png');
-    }
-);
-
-
-
-
-
-
-
-$('#introNav').hover(
-    function () {
-        $('.introBubble').removeClass('visuallyHidden');
-        $('.introIcon').attr('src', 'assets/navIcons/introIcon2.png');
-    },
-    function () {
-        $('.introBubble').addClass('visuallyHidden');
-        $('.introIcon').attr('src', 'assets/navIcons/introIcon.png');
-    }
-);
-
-$('#skillsNav').hover(
-    function () {
-        $('.skillsBubble').removeClass('visuallyHidden');
-        $('.skillsIcon').attr('src', 'assets/navIcons/skillsIcon2.png');
-    },
-    function () {
-        $('.skillsBubble').addClass('visuallyHidden');
-        $('.skillsIcon').attr('src', 'assets/navIcons/skillsIcon.png');
-    }
-);
-
-$('#projectsNav').hover(
-    function () {
-        $('.projectsBubble').removeClass('visuallyHidden');
-        $('.projectsIcon').attr('src', 'assets/navIcons/projectsIcon2.png');
-    },
-    function () {
-        $('.projectsBubble').addClass('visuallyHidden');
-        $('.projectsIcon').attr('src', 'assets/navIcons/projectsIcon.png');
-    }
-);
-
-$('#contactNav').hover(
-    function () {
-        $('.contactBubble').removeClass('visuallyHidden');
-        $('.contactIcon').attr('src', 'assets/navIcons/contactIcon2.png');
-    },
-    function () {
-        $('.contactBubble').addClass('visuallyHidden');
-        $('.contactIcon').attr('src', 'assets/navIcons/contactIcon.png');
     }
 );
 
