@@ -1,41 +1,58 @@
 .drawing {
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
+    width: 80%;
     height: 100vh;
     position: relative;
-    margin-left: 8.5rem;
 }
 
-.drawingGroup {
+div.firstIntroGroup {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 80%;
+    margin-top: 8rem;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-right: 40rem;
-    margin-left: 8rem;
-    //prevent content going under the sidebar:
-    .traitsGroup {
-        display: flex;
-        justify-content: space-around;
-    }
 }
-
-img.traits {
-    width: 15rem;
+p.firstIntro {
+    padding: 0 4rem;
+    margin: 0;
+    color: $grey3;
+}
+.partOneContainer p.partOne {
+    font-family: $patrickSC;
+    font-size: 70px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+p.partTwo {
+    font-family: $ntr;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 1rem;
+}
+p.partThree {
+    font-family: $ntr;
+    font-weight: 0;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+}
+p.clickDirection {
+    font-family: $ntr;
+    font-size: 20px;
 }
 img.me {
-    height: 60%;
+    height: 80%;
     position: absolute;
     bottom: 0;
-}
-
-
-
-
-.animate__animated {
-    --animate-duration: 1s;
-}
-.drawingMediums {
-    --animate-delay: 0.2s;
-}
-.me {
-    --animate-delay: 1s;
+    margin: 0 20rem;
+    cursor: pointer;
+    z-index: 20;
 }

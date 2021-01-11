@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=`, initial-scale=1.0">
     <link rel="stylesheet" href="styles\style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400&family=Merriweather:wght@300;400;700&family=Montserrat+Alternates:ital,wght@0,300;0,400;600;800;1,300;1,400&family=Montserrat:ital,wght@0,200;0,400;1,200;1,400&family=Play:wght@400;700&family=Rubik:ital,wght@0,300;0,400;1,300;1,400;1,500&family=Sulphur+Point:wght@300;400;700&family=Short+Stack&display=swap
+    <link href="https://fonts.googleapis.com/css2?
+    family=Merriweather:wght@300;400;700&
+    family=Montserrat+Alternates:ital,wght@0,300;0,400;600;800;1,300;1,400&family=Montserrat:ital,wght@0,200;0,400;1,200;1,400&family=Play:wght@400;700&family=Rubik:ital,wght@0,300;0,400;1,300;1,400;1,500&family=Sulphur+Point:wght@300;400;700&family=Short+Stack&family=NTR&display=swap 
         rel=" stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- fade animation on scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- typed.js for typing effects-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
 
     <title>Christina Yu . Dev</title>
@@ -21,6 +26,7 @@
 
     <div class="wrapper">
 
+        <!-- Mobile menu -->
         <div class="burgerIconBox">
             <button class="mobileMenuIcon burgerIcon">
                 <i class="fa fa-bars"></i>
@@ -40,7 +46,7 @@
                 </ul>
             </nav>
         </header>
-
+        <!-- Mobile menu ends -->
 
 
 
@@ -53,7 +59,7 @@
 
                         <li class="navLinkBubbleWrap">
                             <a href="#top" id="topNav">
-                                <img src="assets/navIcons/skillsIcon.png" alt="" class="navIcons topIcon">
+                                <img src="assets/navIcons/topIcon.png" alt="" class="navIcons topIcon">
                             </a>
                             <div class="hoverBubble topBubble">
                                 <div class="tooltip">
@@ -104,214 +110,235 @@
             <!-- Drawings ////////////////////////////////-->
             <section class="drawing" id="drawing">
                 <div class="drawingGroup">
-                    <div class="traitsGroup">
-                        <img src="assets/traits/drawingMediums.png" alt=""
-                            class="animate__animated animate__fadeInDown animate__delay-1s traits drawingMediums">
-                        <img src="assets/traits/code.png" alt=""
-                            class="animate__animated animate__fadeInDown animate__delay-1s traits coffee">
-                        <img src="assets/traits/coffee.png" alt=""
-                            class="animate__animated animate__fadeInDown animate__delay-1s traits computer">
-                </div>
-                <img src="assets/blinkSideEye/blinkSide.gif" alt=""
-                    class="animate__animated animate__fadeInUp animate__delay-1s me">
-                </div>
+                    <div class="firstIntroGroup">
 
-                
-
+                        <div class="partOneContainer" id="typed-strings">
+                            <p class="firstIntro partOne">My name is<br /> Christina Yu...</p>
+                        </div>
+                        <span id="typed"></span>
+                       
+                        <p class="firstIntro partTwo">
+                        It's not you, it's Yu.<br />
+                        So yes, it's me.</p>
+                        <p class="firstIntro partThree">
+                        (My highschool teachers used to just<br /> call me"Hey, Yu!!!" and they loved it.)</p>
+                        <p class="clickDirection"><i class="fas fa-caret-left"></i> Why don't you click me to see what I've been working on?</p>
+                    </div>
+                        
+                    <!-- gif of me blinking -->
+                    <div class="blinking">
+                        <a href="#projectsHeader">
+                            <img src="assets/blinkSideEye/blinkSide.gif" alt="" class="me">
+                        </a>
+                        
+                    </div>
+                        
+                        
+                    
+                </div>
+                <!-- <h1 class="typingEffect">I'm Christina Yu.</h1>
+<p class="meInfoParagraph">
+    It's not you, it's Yu.<br />
+    So yes, it's me.<br />
+    (My highschool teachers used to just<br /> call me"Hey, Yu!!!" and they loved it.)
+</p> -->
             </section>
             <!-- Drawings end ///////////////////////////-->
-            <!--Bubbles containing information when hovered starts-->
-            
-            <section class="moreInfo">
-                <div class="infoBubble meInfo">
-                    <h1 class="typingEffect">I'm Christina Yu.</h1>
-                    <p class="meInfoParagraph">
-                        It's not you, it's Yu.<br />
-                        So yes, it's me.<br />
-                        (My highschool teachers used to just<br /> call me"Hey, Yu!!!" and they loved it.)
-                    </p>
-                    <p class="classifyingMyself">
-                        Click me to see what I've been working on!
-                        <!--change click to tap in MQ-->
-                    </p>
-                </div>
-            </section>
-            <!--infoBubbles end here-->
 
         </div>
-<!--Main content of the page-->
-    <main>
-        <div id="projectsHeader"></div>
-        <h2 data-aos="fade-up"><span>Yu</span>r Pr<span>o</span>jects</h2>
-        <article class="projects">
-            <section class="projectSection project1 overHidden" data-aos="fade-up">
-                <a href="https://feelin-so-fly-like-a-g6.github.io/project-6/" class="thumbnail"></a>
-                <div class="projectDescription">
-                    <div class="skillsUsed">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>React</p>
-                        <p>JavaScript</p>
-                        <p>Rest APIs</p>
-                        <p>Firebase</p>
-                        <p>Team programming</p>
+        <!--Main content of the page-->
+        <main>
+            <div id="projectsHeader"></div>
+            <h2 data-aos="fade-up"><span>Yu</span>r Pr<span>o</span>jects</h2>
+            <article class="projects">
+                <section class="projectSection project1 overHidden" data-aos="fade-up">
+                    <a href="https://feelin-so-fly-like-a-g6.github.io/project-6/" class="thumbnail"
+                        data-aos="fade-down"></a>
+                    <div class="projectDescription">
+                        <div class="skillsUsed">
+                            <p data-aos="fade-up" data-aos-delay="0">HTML5</p>
+                            <p data-aos="fade-up" data-aos-delay="50">CSS3</p>
+                            <p data-aos="fade-up" data-aos-delay="100">React</p>
+                            <p data-aos="fade-up" data-aos-delay="150">JavaScript</p>
+                            <p data-aos="fade-up" data-aos-delay="200">Rest APIs</p>
+                            <p data-aos="fade-up" data-aos-delay="250">Firebase</p>
+                            <p data-aos="fade-up" data-aos-delay="300">Team programming</p>
+                        </div>
+                        <h5 data-aos="fade-up"><a href="https://feelin-so-fly-like-a-g6.github.io/project-6/">Haiku
+                                Ahoy!</a></h5>
+                        <p class="appDetails" data-aos="fade-up">Hop on, and set sail!<br />Let's write some haiku!
+                            Enter a word that you'd
+                            like to start your haiku with, and Haiku Ahoy! will suggest you words that will complete
+                            your verse. Smooth sailing, sailors!
+                        </p>
+
+                        <a href="https://github.com/feelin-so-fly-like-a-g6/project-6" class="codeLink">Check
+                            out the code <i class="fas fa-angle-double-right"></i></a>
+
+                        <p class="developedWith" data-aos="fade-up">Developed with:
+                            <a href="">Dave Ratcliffe</a>
+                            <span> | </span>
+                            <a href="">Ermek Barmashev</a>
+                            <span> | </span>
+                            <a href="">Syl Aucoin</a>
+                        </p>
                     </div>
-                    <h5><a href="https://feelin-so-fly-like-a-g6.github.io/project-6/">Haiku Ahoy!</a></h5>
-                    <p class="appDetails">Hop on, and set sail!<br />Let's write some haiku! Enter a word that you'd
-                        like to start your haiku with, and Haiku Ahoy! will suggest you words that will complete
-                        your verse. Smooth sailing, sailors!
-                    </p>
-
-                    <a href="https://github.com/feelin-so-fly-like-a-g6/project-6" class="codeLink">Check
-                        out the code</a>
-
-                    <p class="developedWith">Developed with:
-                        <a href="">Dave Ratcliffe</a>
-                        <span> | </span>
-                        <a href="">Ermek Barmashev</a>
-                        <span> | </span>
-                        <a href="">Syl Aucoin</a>
-                    </p>
-                </div>
-            </section>
-            <section class="projectSection project2 overHidden" data-aos="fade-up">
-                <a href="https://yuisdrawing.github.io/yeonjin-yu-project-five/" class="thumbnail"></a>
-                <div class="projectDescription">
-                    <div class="skillsUsed">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>SCSS</p>
-                        <p>JavaScript</p>
-                        <p>React</p>
+                </section>
+                <section class="projectSection project2 overHidden" data-aos="fade-up">
+                    <a href="https://yuisdrawing.github.io/yeonjin-yu-project-five/" class="thumbnail"
+                        data-aos="fade-down"></a>
+                    <div class="projectDescription">
+                        <div class="skillsUsed">
+                            <p data-aos="fade-up" data-aos-delay="0">HTML5</p>
+                            <p data-aos="fade-up" data-aos-delay="50">CSS3</p>
+                            <p data-aos="fade-up" data-aos-delay="100">SCSS</p>
+                            <p data-aos="fade-up" data-aos-delay="150">JavaScript</p>
+                            <p data-aos="fade-up" data-aos-delay="200">React</p>
+                        </div>
+                        <h5 data-aos="fade-up"><a href="https://yuisdrawing.github.io/yeonjin-yu-project-five/">Take a
+                                Sip.</a></h5>
+                        <p class="appDetails" data-aos="fade-up">Hey there, are you dehydrated?<br />
+                            If you're not getting enough water in your system, you should consider tracking your weekly
+                            water intake. Take a Sip can help.
+                        </p>
+                        <a href="https://github.com/Yuisdrawing/yeonjin-yu-project-five" class="codeLink">Check
+                            out the code <i class="fas fa-angle-double-right"></i></a>
+                        <p class="developedWith"></p>
                     </div>
-                    <h5><a href="https://yuisdrawing.github.io/yeonjin-yu-project-five/">Take a Sip.</a></h5>
-                    <p class="appDetails">Hey there, are you dehydrated?<br />
-                        If you're not getting enough water in your system, you should consider tracking your weekly
-                        water intake. Take a Sip can help.
-                    </p>
-                    <a href="https://github.com/Yuisdrawing/yeonjin-yu-project-five" class="codeLink">Check
-                        out the code</a>
-                    <p class="developedWith"></p>
-                </div>
-            </section>
-            <section class="projectSection project3 overHidden" data-aos="fade-up">
-                <a href="https://team-teemo-top.github.io/dave-ratcliffe-yeonjin-yu-project-four/" class="thumbnail"></a>
-                <div class="projectDescription">
-                    <div class="skillsUsed">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>SCSS</p>
-                        <p>JavaScript</p>
-                        <p>jQuery</p>
-                        <p>Rest APIs</p>
-                        <p>Pair programming</p>
+                </section>
+                <section class="projectSection project3 overHidden" data-aos="fade-up">
+                    <a href="https://team-teemo-top.github.io/dave-ratcliffe-yeonjin-yu-project-four/" class="thumbnail"
+                        data-aos="fade-down"></a>
+                    <div class="projectDescription" data-aos="fade-up">
+                        <div class="skillsUsed">
+                            <p data-aos="fade-up" data-aos-delay="0">HTML5</p>
+                            <p data-aos="fade-up" data-aos-delay="50">CSS3</p>
+                            <p data-aos="fade-up" data-aos-delay="100">SCSS</p>
+                            <p data-aos="fade-up" data-aos-delay="150">JavaScript</p>
+                            <p data-aos="fade-up" data-aos-delay="200">jQuery</p>
+                            <p data-aos="fade-up" data-aos-delay="250">Rest APIs</p>
+                            <p data-aos="fade-up" data-aos-delay="300">Pair programming</p>
+                        </div>
+                        <h5 data-aos="fade-up"><a
+                                href="https://team-teemo-top.github.io/dave-ratcliffe-yeonjin-yu-project-four/">Who's
+                                that Pokemon?</a></h5>
+                        <p class="appDetails" data-aos="fade-up">Classic pokemon guessing game.<br />Can you get all 8
+                            of Pokemon gym
+                            badges?
+                        </p>
+                        <a href="https://github.com/team-teemo-top/dave-ratcliffe-yeonjin-yu-project-four"
+                            class="codeLink">Check
+                            out the code <i class="fas fa-angle-double-right"></i></a>
+                        <p class="developedWith" data-aos="fade-up">Developed with:
+                            <a href="">Dave Ratcliffe</a>
+                        </p>
                     </div>
-                    <h5><a href="https://team-teemo-top.github.io/dave-ratcliffe-yeonjin-yu-project-four/">Who's
-                            that Pokemon?</a></h5>
-                    <p class="appDetails">Classic pokemon guessing game.<br />Can you get all 8 of Pokemon gym
-                        badges?
-                    </p>
-                    <a href="https://github.com/team-teemo-top/dave-ratcliffe-yeonjin-yu-project-four" class="codeLink">Check
-                        out the code</a>
-                    <p class="developedWith">Developed with:
-                        <a href="">Dave Ratcliffe</a>
-                    </p>
-                </div>
-            </section>
-        
-        </article>
+                </section>
+
+            </article>
 
 
-            <article class="introduction" id="introduction">
-                <h2 class="overHidden">So<span>...</span> W<span>h</span>o are <span>Yu</span>?</h2>
+            <article class="introduction" id="introduction" data-aos="fade-up">
+                <h2 class="overHidden" data-aos="fade-up">So<span>...</span> W<span>h</span>o are <span>Yu</span>?</h2>
                 <!-- Short introduction about me -->
                 <div class="aboutMe">
                     <!-- This aboutMe container puts the grouped texts and the picture side by side via flex -->
                     <div class="aboutMeTexts">
                         <!-- This aboutMeTexts container puts the texts in column via flex -->
-                        <h3>I'm Christina Yu,</h3>
+                        <h3 data-aos="fade-up">I'm <span>Christina Yu</span>,</h3>
 
-                        <p class="answers">a <span class="aboutMeSpanSmall">front-end developer</span> from Windsor, Ontario, now living in Toronto!</p>
+                        <p class="answers" data-aos="fade-up">a <span class="aboutMeSpanSmall">front-end
+                                developer</span> from Windsor, Ontario, now living in Toronto!</p>
 
-                        <h4 class="questions">
+                        <h4 class="questions" data-aos="fade-right">
                             > What did you study?
                         </h4>
-                        <p class="answers">
-                            I strive to discover beauty in the world, and studied fine arts and design at <a href="">OCAD U</a>.
+                        <p class="answers" data-aos="fade-up">
+                            I strive to discover beauty in the world, and studied fine arts and design at <a
+                                href="https://www.ocadu.ca/">OCAD U</a>.
                         </p>
 
-                        <h4 class="questions">
-                            > But didn't you say you're a web developer?
+                        <h4 class="questions" data-aos="fade-right">
+                            > But didn't you say you are a web developer?
                         </h4>
-                        <p class="answers">
-                            I certainly am! I decided to take on a different path of life by studying at <a href="">Juno College's Immersive Web Dev Bootcamp</a>, and I now code my visions into life!
+                        <p class="answers" data-aos="fade-up">
+                            I certainly am! I decided to take on a different path of life by studying at <a href="https://junocollege.com/bootcamp">Juno
+                                College's Immersive Web Dev Bootcamp</a>, and I now code my visions into life!
+                                <br />I love creating things and meticulously perfecting them. I'm always in a search of ways to make my creations look good in every possible angle.
                         </p>
 
-                        <h4 class="questions">
+                        <h4 class="questions" data-aos="fade-right">
                             > Cool! So what else do you do?
                         </h4>
-                        <p class="answers">
-                            When I'm not coding, you can find me drawing characters from my favourite shows, playing video games, and making icons
+                        <p class="answers" data-aos="fade-up">
+                            When I'm not coding, you can find me drawing characters from my favourite shows, playing
+                            video games, and making icons
                             and emoticons as a side gig.
-                            <br />I also enjoy walking down the river in the sunset occasionally. Oh yes, I live by a river!
+                            <br />I also enjoy walking down the river in the sunset occasionally. Oh yes, I live by a
+                            river!
                         </p>
+                        <div class="resumeButtonsGroup">
+                            <a href="assets/christina_yu_resume.pdf" class="resumeButton">Download my CV <i class="fas fa-angle-double-right"></i></a>
+                            <a href="" class="resumeButton">My LinkedIn <i class="fas fa-angle-double-right"></i></a>
+                        </div>
                     </div>
 
-                    <div class="photo"></div>
+                    <div class="photo" data-aos="fade-up"></div>
                 </div>
 
                 <article class="skills overHidden">
                     <div class="skillsContainer">
                         <div class="skillWrap html5">
-                            <i class="fab fa-html5"></i>
-                            <p>HTML5</p>
+                            <i class="fab fa-html5" data-aos="fade-up"></i>
+                            <p data-aos="fade-up" data-aos-delay="200">HTML5</p>
                         </div>
                         <div class="skillWrap css3">
-                            <i class="fab fa-css3-alt"></i>
-                            <p>CSS3</p>
+                            <i class="fab fa-css3-alt" data-aos="fade-up" data-aos-delay="50"></i>
+                            <p data-aos="fade-up" data-aos-delay="250">CSS3</p>
                         </div>
                         <div class="skillWrap scss">
-                            <i class="fab fa-sass"></i>
-                            <p>SCSS</p>
+                            <i class="fab fa-sass" data-aos="fade-up" data-aos-delay="100"></i>
+                            <p data-aos="fade-up" data-aos-delay="300">SCSS</p>
                         </div>
                         <div class="skillWrap javaScript">
-                            <i class="fab fa-js-square"></i>
-                            <p>JavaScript</p>
+                            <i class="fab fa-js-square" data-aos="fade-up" data-aos-delay="150"></i>
+                            <p data-aos="fade-up" data-aos-delay="350">JavaScript</p>
                         </div>
                         <div class="skillWrap jQuery">
-                            <i class="devicon-jquery-plain"></i>
-                            <p>jQuery</p>
+                            <i class="devicon-jquery-plain" data-aos="fade-up" data-aos-delay="200"></i>
+                            <p data-aos="fade-up" data-aos-delay="400">jQuery</p>
                         </div>
                         <div class="skillWrap api">
-                            <i class="fas fa-cog"></i>
-                            <p>Rest APIs</p>
+                            <i class="fas fa-cog" data-aos="fade-up" data-aos-delay="250"></i>
+                            <p data-aos="fade-up" data-aos-delay="450">Rest APIs</p>
                         </div>
                         <div class="skillWrap firebase">
-                            <img src="https://img.icons8.com/color/144/000000/google-firebase-console.png" class="firebaseIcon" />
-                            <p>Firebase</p>
+                            <img src="https://img.icons8.com/color/144/000000/google-firebase-console.png"
+                                class="firebaseIcon" data-aos="fade-up" data-aos-delay="300" />
+                            <p data-aos="fade-up" data-aos-delay="500">Firebase</p>
                         </div>
                         <div class="skillWrap react">
-                            <i class="devicon-react-original"></i>
-                            <p>React</p>
+                            <i class="devicon-react-original" data-aos="fade-up" data-aos-delay="350"></i>
+                            <p data-aos="fade-up" data-aos-delay="550">React</p>
                         </div>
                         <div class="skillWrap git">
-                            <i class="devicon-git-plain"></i>
-                            <p>GIT</p>
+                            <i class="devicon-git-plain" data-aos="fade-up" data-aos-delay="400"></i>
+                            <p data-aos="fade-up" data-aos-delay="600">GIT</p>
                         </div>
                         <div class="skillWrap terminal">
-                            <i class="fas fa-terminal"></i>
-                            <p>Terminal</p>
+                            <i class="fas fa-terminal" data-aos="fade-up" data-aos-delay="450"></i>
+                            <p data-aos="fade-up" data-aos-delay="650">Terminal</p>
                         </div>
                         <div class="skillWrap responsive">
-                            <i class="fas fa-mobile-alt"></i>
-                            <p>Responsive<br />Design</p>
+                            <i class="fas fa-mobile-alt" data-aos="fade-up" data-aos-delay="500"></i>
+                            <p data-aos="fade-up" data-aos-delay="700">Responsive<br />Design</p>
                         </div>
                         <div class="skillWrap accessibility">
-                            <i class="fas fa-universal-access"></i>
-                            <p>Accessibility</p>
+                            <i class="fas fa-universal-access" data-aos="fade-up" data-aos-delay="550"></i>
+                            <p data-aos="fade-up" data-aos-delay="750">Accessibility</p>
                         </div>
                     </div>
-                
+
                 </article>
 
             </article>
@@ -320,55 +347,63 @@
                 <h2 data-aos="zoom-in" class="overHidden">Hey, <span>Yu</span> there<span>?</span></h2>
 
 
-                <div class="formWrap">
-                    <form class="contactForm overHidden" name="contactForm" action="mailto:christina.yu.code@gmail.com"
-                        method="post" enctype="text/plain" data-aos="zoom-in-up">
+                <div class="formWrap overHidden">
+                    <form class="contactForm overHidden" name="contactForm" action="https://formspree.io/f/xoqpypjb"
+                        method="POST" enctype="text/plain" data-aos="zoom-in-up">
 
                         <!-- Name input -->
-                        <div class="inputWrap nameBox">
+                        <div class="inputWrap nameBox overHidden" data-aos="fade-up">
                             <div class="iconBox"><i class="fas fa-user"></i></div>
-                            <label class="visuallyHidden">Enter your Name.</label>
-                            <input type="text" name="name" id="name" placeholder="Your name" tabindex="0">
+                            <label class="visuallyHidden srOnly">Enter your Name.</label>
+                            <input type="text" name="userName" id="name" placeholder="Your name" tabindex="0" required>
                         </div>
 
 
                         <!-- Email input -->
-                        <div class="inputWrap emailBox">
+                        <div class="inputWrap emailBox overHidden" data-aos="fade-up">
                             <div class="iconBox"><i class="far fa-envelope"></i></div>
-                            <label class="visuallyHidden">Enter your Email Address.</label>
-                            <input type="email" name="email" id="email" placeholder="Your email" tabindex="0"><br>
+                            <label class="visuallyHidden srOnly">Enter your Email Address.</label>
+                            <input type="email" name="userEmail" id="email" placeholder="Your email" tabindex="0" required><br>
                         </div>
 
 
                         <!-- Message input -->
                         <!-- Empty div for the background, so the sibling element (textarea) focus will change the background -->
-                        <div class="messageInputWrapper">
-                            <label class="visuallyHidden">Enter any meessage you'd like to send me.</label>
-                            <textarea type="text" name="message" id="message" placeholder="Ya got something to say?" class="message" wrap="hard"
-                                rows="10"></textarea>
-                                <div class="messageInput">
-                                </div>
+                        <div class="messageInputWrapper overHidden">
+                            <label class="visuallyHidden srOnly">Enter any meessage you'd like to send me.</label>
+                            <textarea type="text" name="message" id="message" placeholder="Ya got something to say?"
+                                class="message" wrap="hard" rows="10" data-aos="fade-up" minlength="5" maxlength="500" required></textarea>
+                            <div class="messageInput overHidden" data-aos="fade-up">
+                            </div>
                             <!-- onfocus="this.placeholder = ''" -->
                         </div>
-                        
+
 
                         <!-- Buttons -->
-                        <div class="buttons">
-                            <button type="submit" name="sumbit">let Yu hear you.</button>
+                        <div class="buttons overHidden">
+                            <button type="submit" name="sumbit" type="submit "value="send">Message me. Seriously.</button>
                         </div>
                     </form>
-                    <aside class="sideMessage overHidden" data-aos="zoom-in-up">
-                        <h6>Get in touch.</h6>
-                        <a href="mailto:christina.yu.code@gmail.com">christina.yu.code@gmail.com</a>
-                        <ul class="socialMedia">
-                            <li><a href="https://www.linkedin.com/in/christina-yu-31b4bb108/"><i
-                                        class="fab fa-linkedin-in"></i></a></li>
+
+
+                    <aside class="sideMessage overHidden">
+                        <h6 data-aos="fade-down">get in <span>touch</span>.</h6>
+                        <p>Looking for a web developer?
+                            <br />
+                            Or are you simply looking to strike up a conversation?
+                            <br />
+                            Maybe you'd like to share your own projects or artworks?
+                            <br />
+                            Whatever it is, I'd love to chat!
+                        </p>
+                        <a href="mailto:christina.yu.code@gmail.com" data-aos="fade-down" data-aos-delay="500"><i class="fas fa-angle-double-right"></i> christina.yu.code@gmail.com</a>
+                        <ul class="socialMedia" data-aos="fade-down">
+
+                            <li><a href="https://www.linkedin.com/in/christina-yu-31b4bb108/"><i class="fab fa-linkedin-in"></i></a></li>
 
                             <li><a href="https://twitter.com/yuiscoding"><i class="fab fa-twitter"></i></a></li>
 
                             <li><a href="https://github.com/Yuisdrawing"><i class="fab fa-github"></i></a></li>
-
-                            <li><a href="https://christina-yu-code.medium.com/"><i class="fab fa-medium-m"></i></a></li>
                         </ul>
                     </aside>
                 </div>
@@ -388,6 +423,12 @@
     </main>
 
     <footer>
+        <div class="footerTexts">
+            <p>Magically designed and created by © 2020 CHRISTINA YU</p>
+        <p class="credit">Navigation bar icons by <a href="https://creativemarket.com/miumiu">miumiu</a></p>
+        <p class="credit">Hand-drawn style boxes by <a href="https://creativemarket.com/Medialoot">Medialoot</a></p>
+        </div>
+        
     </footer>
 
     </div>

@@ -1,3 +1,11 @@
+//font imports for those that don't display properly through html
+@import url('https://fonts.googleapis.com/css2?family=Dekko&family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=NTR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dekko&family=Farsan&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Fredoka+One&family=NTR&display=swap');
+
+
 html,
 body {
     height: 100%;
@@ -13,8 +21,20 @@ html {
   position: relative;
 }
 
+main {
+    min-height: 100vh;
+    // margin to avoid content being under sidebar
+    margin-left: 8.5rem;
+}
+
+.noDisplay {
+  display: none;
+}
+
 .overHidden {
+  // this class will hide all overflows
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .landingWrapper {
@@ -28,9 +48,9 @@ html {
 
 
 h2 {
-    font-family: $montserrat2;
+    font-family: $fredoka;
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 400;
     margin: 0;
     // margin-top: 5rem;
     padding: 70px 100px 2px 100px;

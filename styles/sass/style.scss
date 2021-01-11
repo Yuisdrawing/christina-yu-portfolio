@@ -4,15 +4,20 @@
 @import "global";
 @import "sidebar";
 @import "drawings";
-@import "infoBubbles";
+@import "infoSection";
 @import "introduction";
-@import "header";
 @import "mobileHeader";
 @import "drawings";
 @import "skills";
 @import "projects";
 @import "form";
 @import "footer";
+
+//Media queries
 @import "mediaQueries/headerMQ";
+@import "mediaQueries/drawingMQ";
+@import "mediaQueries/projectsMQ";
+@import "mediaQueries/introMQ";
+@import "mediaQueries/formMQ";
 @import "mediaQueries/mainMQ";
 @import "mediaQueries/footerMQ";

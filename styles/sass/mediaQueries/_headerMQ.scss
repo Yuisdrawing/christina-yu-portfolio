@@ -1,3 +1,23 @@
-@media (max-width: 1450px) {
-    
+@media (max-width: 1200px) {
+    // get rid of sidebar and rearrange the site
+    aside.sidebar {
+        display: none;
+    }
+    //drawings
+    .drawing {
+        margin-top: 3.6rem;
+    }
+    //infoBubbles
+    .infoSection {
+        width: 30rem;
+    }
+    //projects
+    main {
+        margin: 0;
+    }
+
+
+    .burgerIconBox {
+        display: initial;
+    }
 }
