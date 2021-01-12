@@ -415,6 +415,10 @@ img.navIcons:hover {
   opacity: 1;
 }
 
+.blinkingMobile {
+  display: none;
+}
+
 .drawing {
   margin: 0 auto;
   width: 100%;
@@ -734,6 +738,10 @@ a.resumeButton:active {
     opacity: 1;
     left: 0;
   }
+}
+
+.blinkingMobile {
+  display: none;
 }
 
 .drawing {
@@ -1463,11 +1471,17 @@ footer {
     height: auto;
     position: static;
   }
+  .blinkingDesktop {
+    display: none;
+  }
+  .blinkingMobile {
+    display: initial;
+  }
   img.me {
     position: static;
     margin: 0 auto;
     height: auto;
-    width: 550px;
+    width: 250px;
   }
   div.firstIntroGroup {
     position: static;

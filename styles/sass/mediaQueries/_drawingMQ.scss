@@ -21,11 +21,23 @@
         height: auto;
         position: static;
     }
+    .blinkingDesktop {
+        display: none;
+    }
+    .blinkingMobile {
+        display: initial;
+    }
+    // .mobileDisaply {
+    //     display: initial;
+    // }
+    // .desktopDisplay {
+    //     display: none;
+    // }
     img.me {
         position: static;
         margin: 0 auto;
         height: auto;
-        width: 550px;
+        width: 250px;
     }
     div.firstIntroGroup {
         position : static;
