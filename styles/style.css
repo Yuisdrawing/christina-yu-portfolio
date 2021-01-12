@@ -686,6 +686,7 @@ a.resumeButton:active {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
+  list-style-type: none;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
