@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 const typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
-    typeSpeed: 80
+    typeSpeed: 45
 });
 
 
@@ -91,7 +91,7 @@ $('.me').hover(function () {
 
 
 
-const $element = $('.me');
+const $element = $('');
 const imagePath = '/images';
 const totalFrames = 18;
 const animationDuration = 1300;

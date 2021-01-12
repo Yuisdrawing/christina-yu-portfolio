@@ -1,0 +1,21 @@
+@media (max-width: 1000px) {
+    //flex direction into column for mobiles and tablets
+    .formWrap {
+        flex-direction: column;
+    }
+    .contactForm {
+        margin: 5rem 5rem 0 5rem;
+    }
+    // reset width for sidemessages
+    .sideMessage p {
+        width: auto;
+    }
+    // more room on top/bottom for social media icons
+    ul.socialMedia {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    ul.socialMedia .fab {
+        margin: 10px;
+    }
+}

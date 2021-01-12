@@ -1,0 +1,65 @@
+@media (max-width: 1875px) {
+    .aboutMe {
+        justify-content: center;
+    }
+    //resizing the containers for the texts so the picture doesn't get squished
+    .photo {
+        margin-right: 0.5rem;
+    }
+    //text margins
+}
+
+@media (max-width: 1660px) {
+    .aboutMe {
+        justify-content: center;
+    }
+    //resizing the containers for the texts so the picture doesn't get squished
+    .photo {
+        margin-right: 0.5rem;
+        width: 350px;
+        height: 550px;
+    }
+    .aboutMeTexts {
+        margin-left: 0;
+    }
+    p.answers {
+    width: 600px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    //changing the flex direction of textbox and the picture to column reverse so the picture goes on top
+    .aboutMe {
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+
+    //adjusting the picture sizes
+    .photo {
+        margin: 0 auto;
+        width: 550px;
+        height: 650px;
+    }
+    //getting rid of margin on text container so they come to the center
+    .aboutMeTexts {
+        margin: 0 auto;
+    }
+    h3 {
+        margin: 3rem auto 1rem auto;
+    }
+    h4.questions {
+        margin: 2rem 0 0.3rem 2rem;
+    }
+    p.answers:first-of-type {
+        margin: 1rem auto 1rem auto;
+    }
+    p.answers {
+        width: auto;
+        margin: 0 2rem 1rem 3rem;
+    }
+    // resume and linkedin button to the center
+    .resumeButtonsGroup {
+        margin: 3rem auto 2rem auto;
+    }
+}

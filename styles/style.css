@@ -240,6 +240,13 @@ html {
   overflow: hidden;
 }
 
+*, *::after, *::before {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+}
+
+/* credit:https://gist.github.com/msuchodolski/41c9338f3a732379dc570142826ed76e */
 html,
 body {
   height: 100%;
@@ -250,6 +257,12 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.visuallyHidden {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 
 .wrapper {
@@ -404,7 +417,7 @@ img.navIcons:hover {
 
 .drawing {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
@@ -414,8 +427,9 @@ div.firstIntroGroup {
   right: 0;
   top: 0;
   width: 45%;
-  height: 80%;
-  margin-top: 8rem;
+  height: 100%;
+  margin-right: 10rem;
+  margin-left: 10rem;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,11 +452,16 @@ p.firstIntro {
   color: #2e2e2e;
 }
 
-p.partOne {
+#typed {
   font-family: "Patrick Hand SC", cursive;
   font-size: 70px;
-  margin-bottom: 2rem;
-  position: relative;
+  color: #2e2e2e;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.typed-cursor {
+  font-size: 60px;
 }
 
 p.partTwo {
@@ -450,7 +469,7 @@ p.partTwo {
   font-weight: 400;
   font-size: 30px;
   line-height: 40px;
-  margin-bottom: 1rem;
+  margin: 2rem auto;
 }
 
 p.partThree {
@@ -458,20 +477,24 @@ p.partThree {
   font-weight: 0;
   font-size: 18px;
   font-weight: 200;
-  margin-bottom: 4rem;
-  margin-left: 2rem;
+  margin: 0 auto 4rem auto;
 }
 
 p.clickDirection {
   font-family: "NTR", sans-serif;
   font-size: 20px;
+  --animate-delay: 2s;
+}
+
+p.mobileDisplay {
+  display: none;
 }
 
 img.me {
   height: 80%;
   position: absolute;
   bottom: 0;
-  margin: 0 20rem;
+  margin: 0 23vw 0 20rem;
   cursor: pointer;
   z-index: 20;
 }
@@ -491,7 +514,7 @@ img.me {
   margin-bottom: 4rem;
 }
 
-.aboutMe .aboutMeTexts {
+.aboutMeTexts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,54 +522,55 @@ img.me {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 3rem;
 }
 
-.aboutMe .aboutMeTexts h3 {
+h3 {
   font-family: "Patrick Hand SC", cursive;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 77px;
   line-height: 40px;
-  margin-left: 15rem;
+  margin-left: 5rem;
   margin-top: 2rem;
   margin-bottom: 0;
   color: #2e2e2e;
 }
 
-.aboutMe .aboutMeTexts h3 span {
+h3 span {
   color: #e4487c;
 }
 
-.aboutMe .aboutMeTexts h4.questions {
+h4.questions {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  margin: 2rem 5rem 0.3rem 11rem;
+  margin: 2rem 5rem 0.3rem 2rem;
   color: #2e2e2e;
 }
 
-.aboutMe .aboutMeTexts p.answers {
+p.answers {
   width: 800px;
   font-family: "NTR", sans-serif;
   font-size: 22px;
-  margin: 0 5rem 1rem 12.2rem;
+  margin: 0 5rem 1rem 3.2rem;
   line-height: 36px;
 }
 
-.aboutMe .aboutMeTexts p.answers a {
+p.answers a {
   color: #006c6f;
 }
 
-.aboutMe .aboutMeTexts p.answers:first-of-type {
-  margin: 1.4rem 5rem 1rem 16rem;
+p.answers:first-of-type {
+  margin: 1.4rem 0 1rem 4rem;
 }
 
-.aboutMe .aboutMeTexts p.answers:first-of-type span.aboutMeSpanSmall {
+p.answers:first-of-type span.aboutMeSpanSmall {
   color: #006c6f;
   font-weight: 600;
 }
 
-.aboutMe .photo {
+.photo {
   width: 500px;
   height: 700px;
   background-color: #92959d;
@@ -554,7 +578,7 @@ img.me {
 }
 
 .resumeButtonsGroup {
-  margin-left: 12rem;
+  margin-left: 2rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
@@ -712,7 +736,7 @@ a.resumeButton:active {
 
 .drawing {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
@@ -722,8 +746,9 @@ div.firstIntroGroup {
   right: 0;
   top: 0;
   width: 45%;
-  height: 80%;
-  margin-top: 8rem;
+  height: 100%;
+  margin-right: 10rem;
+  margin-left: 10rem;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -746,11 +771,16 @@ p.firstIntro {
   color: #2e2e2e;
 }
 
-p.partOne {
+#typed {
   font-family: "Patrick Hand SC", cursive;
   font-size: 70px;
-  margin-bottom: 2rem;
-  position: relative;
+  color: #2e2e2e;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.typed-cursor {
+  font-size: 60px;
 }
 
 p.partTwo {
@@ -758,7 +788,7 @@ p.partTwo {
   font-weight: 400;
   font-size: 30px;
   line-height: 40px;
-  margin-bottom: 1rem;
+  margin: 2rem auto;
 }
 
 p.partThree {
@@ -766,20 +796,24 @@ p.partThree {
   font-weight: 0;
   font-size: 18px;
   font-weight: 200;
-  margin-bottom: 4rem;
-  margin-left: 2rem;
+  margin: 0 auto 4rem auto;
 }
 
 p.clickDirection {
   font-family: "NTR", sans-serif;
   font-size: 20px;
+  --animate-delay: 2s;
+}
+
+p.mobileDisplay {
+  display: none;
 }
 
 img.me {
   height: 80%;
   position: absolute;
   bottom: 0;
-  margin: 0 20rem;
+  margin: 0 23vw 0 20rem;
   cursor: pointer;
   z-index: 20;
 }
@@ -1120,12 +1154,6 @@ p.appDetails {
   text-decoration: none;
 }
 
-.visuallyHidden {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
 .formWrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1263,7 +1291,7 @@ input:focus {
   background-image: url(/assets/formInputBg2.png);
 }
 
-.messageInput {
+.messageInputBackground {
   width: 30rem;
   height: 18.3rem;
   background-image: url(/assets/messageInputBg.png);
@@ -1380,7 +1408,6 @@ footer {
   font-family: "Patrick Hand SC", cursive;
   font-size: 20px;
   margin: 0;
-  padding-top: 1rem;
 }
 
 .footerTexts p.credit {
@@ -1392,12 +1419,13 @@ footer {
   color: #92959d;
 }
 
+.footerTexts p.mycredit {
+  padding-top: 0.5rem;
+}
+
 @media (max-width: 1200px) {
   aside.sidebar {
     display: none;
-  }
-  .drawing {
-    margin-top: 3.6rem;
   }
   .infoSection {
     width: 30rem;
@@ -1407,5 +1435,140 @@ footer {
   }
   .burgerIconBox {
     display: initial;
+  }
+}
+
+@media (max-width: 1550px) {
+  img.me {
+    margin: 0 23vw 0 10rem;
+  }
+  div.firstIntroGroup {
+    width: 55%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .drawing {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  img.me {
+    margin: 0 0 0 0;
+  }
+  div.firstIntroGroup {
+    position: static;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+  img.me {
+    height: 30%;
+    position: static;
+    bottom: 0;
+    margin: 0 23vw 0 20rem;
+    cursor: pointer;
+    z-index: 20;
+  }
+}
+
+@media (max-width: 1100px) {
+  img.me {
+    margin: 0 0 0 0;
+  }
+}
+
+@media (max-width: 1660px) {
+  .projects {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1875px) {
+  .aboutMe {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .photo {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 1660px) {
+  .aboutMe {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .photo {
+    margin-right: 0.5rem;
+    width: 350px;
+    height: 550px;
+  }
+  .aboutMeTexts {
+    margin-left: 0;
+  }
+  p.answers {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .photo {
+    margin: 0 auto;
+    width: 550px;
+    height: 650px;
+  }
+  .aboutMeTexts {
+    margin: 0 auto;
+  }
+  h3 {
+    margin: 3rem auto 1rem auto;
+  }
+  h4.questions {
+    margin: 2rem 0 0.3rem 2rem;
+  }
+  p.answers:first-of-type {
+    margin: 1rem auto 1rem auto;
+  }
+  p.answers {
+    width: auto;
+    margin: 0 2rem 1rem 3rem;
+  }
+  .resumeButtonsGroup {
+    margin: 3rem auto 2rem auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .formWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactForm {
+    margin: 5rem 5rem 0 5rem;
+  }
+  .sideMessage p {
+    width: auto;
+  }
+  ul.socialMedia {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  ul.socialMedia .fab {
+    margin: 10px;
   }
 }

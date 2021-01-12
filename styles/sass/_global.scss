@@ -6,6 +6,13 @@
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Fredoka+One&family=NTR&display=swap');
 
 
+*, *::after, *::before {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+}
+/* credit:https://gist.github.com/msuchodolski/41c9338f3a732379dc570142826ed76e */
+
 html,
 body {
     height: 100%;
@@ -15,6 +22,12 @@ body {
 }
 html {
   scroll-behavior: smooth;
+}
+
+.visuallyHidden {
+    position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
 }
 
 .wrapper {

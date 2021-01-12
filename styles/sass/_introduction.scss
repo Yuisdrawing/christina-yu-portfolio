@@ -8,59 +8,61 @@
     justify-content: space-around;
     margin-top: 3rem;
     margin-bottom: 4rem;
-    .aboutMeTexts {
-        display: flex;
-        flex-direction: column;
-        h3 {
-            font-family: $patrickSC;
-            text-transform: uppercase;
-            font-weight: 500;
-            font-size: 77px;
-            line-height: 40px;
-            margin-left: 15rem;
-            margin-top: 2rem;
-            margin-bottom: 0;
-            color: $grey3;
-            span {
-                color: $pink1;
-            }
-        }
-        h4.questions {
-            font-family: $montserrat2;
-            font-size: 20px;
-            font-weight: 600;
-            margin: 2rem 5rem 0.3rem 11rem;
-            color: $grey3;
-        }
-        p.answers {
-            width: 800px;
-            font-family: $ntr;
-            font-size: 22px;
-            margin: 0 5rem 1rem 12.2rem;
-            line-height: 36px;
-            a {
-                color: $accentBlue;
-            }
-        }
-        p.answers:first-of-type {
-            margin: 1.4rem 5rem 1rem 16rem;
-            span.aboutMeSpanSmall {
-                color: $accentBlue;
-                font-weight: 600;
-            }
-        }
+}
+
+.aboutMeTexts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+h3 {
+    font-family: $patrickSC;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 77px;
+    line-height: 40px;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    color: $grey3;
+    span {
+        color: $pink1;
     }
-    .photo {
-        width: 500px;
-        height: 700px;
-        background-color: $grey1;
-        margin-right: 6rem;
+}
+h4.questions {
+    font-family: $montserrat2;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2rem 5rem 0.3rem 2rem;
+    color: $grey3;
+}
+p.answers {
+    width: 800px;
+    font-family: $ntr;
+    font-size: 22px;
+    margin: 0 5rem 1rem 3.2rem;
+    line-height: 36px;
+    a {
+        color: $accentBlue;
     }
+}
+p.answers:first-of-type {
+    margin: 1.4rem 0 1rem 4rem;
+    span.aboutMeSpanSmall {
+        color: $accentBlue;
+        font-weight: 600;
+    }
+}
+.photo {
+    width: 500px;
+    height: 700px;
+    background-color: $grey1;
+    margin-right: 6rem;
 }
 
 
 .resumeButtonsGroup {
-    margin-left: 12rem;
+    margin-left: 2rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }

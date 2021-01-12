@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=`, initial-scale=1.0">
     <link rel="stylesheet" href="styles\style.css">
+
+    <!-- font imports -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?
     family=Merriweather:wght@300;400;700&
     family=Montserrat+Alternates:ital,wght@0,300;0,400;600;800;1,300;1,400&family=Montserrat:ital,wght@0,200;0,400;1,200;1,400&family=Play:wght@400;700&family=Rubik:ital,wght@0,300;0,400;1,300;1,400;1,500&family=Sulphur+Point:wght@300;400;700&family=Short+Stack&family=NTR&display=swap 
         rel=" stylesheet">
+    <!-- devicons for icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animate.style import -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- fade animation on scroll -->
+    <!-- aos.css fade animation on scroll imports -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- typed.js for typing effects-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
@@ -39,10 +43,10 @@
         <header class="overheadHeader">
             <nav class="overheadNav">
                 <ul class="overheadNavLinks">
-                    <li><a href="#introduction" class="navLinks">Who are Yu?</a></li>
-                    <li><a href="#skills" class="navLinks">Skills</a></li>
-                    <li><a href="#projectsHeader" class="navLinks">Projects</a></li>
-                    <li><a href="#contactMe" class="navLinks">Contact</a></li>
+                    <li><a href="#top" title="Redirects you to the top of this web page" class="navLinks">Back to the top</a></li>
+                    <li><a href="#projectsHeader" title="Redirects you to the projects page" class="navLinks">Projects</a></li>
+                    <li><a href="#introduction" title="Redirects you to the introduction page" class="navLinks">Who are Yu?</a></li>
+                    <li><a href="#contactMe" title="Redirects you to the contact forms and information page" class="navLinks">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -112,17 +116,21 @@
                 <div class="drawingGroup">
                     <div class="firstIntroGroup">
 
-                        <div class="partOneContainer" id="typed-strings">
-                            <p class="firstIntro partOne">My name is<br /> Christina Yu...</p>
+                        <!-- noFlexContainer so span#typed is beside the text, not under (because of flex from div.firstIntroGroup) -->
+                        <div class="noFlexContainer">
+                            <div class="partOneContainer" id="typed-strings">
+                                <p class="firstIntro partOne" id="partOne">My name is<br /> Christina Yu...</p>
+                            </div>
+                            <span id="typed"></span>
                         </div>
-                        <span id="typed"></span>
-                       
-                        <p class="firstIntro partTwo">
+                        <p class="firstIntro partTwo animate__animated animate__fadeInUp animate__delay-3s">
                         It's not you, it's Yu.<br />
                         So yes, it's me.</p>
-                        <p class="firstIntro partThree">
-                        (My highschool teachers used to just<br /> call me"Hey, Yu!!!" and they loved it.)</p>
-                        <p class="clickDirection"><i class="fas fa-caret-left"></i> Why don't you click me to see what I've been working on?</p>
+                        <p class="firstIntro partThree animate__animated animate__fadeInUp animate__delay-5s">
+                        (My highschool teachers used to just<br /> call me "Hey, Yu!!!" and they loved it.)</p>
+                        <p class="clickDirection animate__animated animate__fadeInUp animate__delay-3s"><i class="fas fa-caret-left"></i> Why don't you click me to see what I've been working on?</p>
+                        <p class="clickDirection mobileDisplay animate__animated animate__fadeInUp animate__delay-3s"><i class="fas fa-caret-left"></i> Why
+                            don't you click me to see what I've been working on?</p>
                     </div>
                         
                     <!-- gif of me blinking -->
@@ -136,12 +144,7 @@
                         
                     
                 </div>
-                <!-- <h1 class="typingEffect">I'm Christina Yu.</h1>
-<p class="meInfoParagraph">
-    It's not you, it's Yu.<br />
-    So yes, it's me.<br />
-    (My highschool teachers used to just<br /> call me"Hey, Yu!!!" and they loved it.)
-</p> -->
+
             </section>
             <!-- Drawings end ///////////////////////////-->
 
@@ -237,8 +240,9 @@
 
             </article>
 
-
-            <article class="introduction" id="introduction" data-aos="fade-up">
+            <!-- Empty div with id of introduction for the navbar anchor, so it scrolls to the nice area -->
+            <div id="introduction"></div>
+            <article class="introduction" data-aos="fade-up">
                 <h2 class="overHidden" data-aos="fade-up">So<span>...</span> W<span>h</span>o are <span>Yu</span>?</h2>
                 <!-- Short introduction about me -->
                 <div class="aboutMe">
@@ -283,7 +287,8 @@
                         </div>
                     </div>
 
-                    <div class="photo" data-aos="fade-up"></div>
+                    <div class="photo" data-aos="fade-up">
+                    </div>
                 </div>
 
                 <article class="skills overHidden">
@@ -348,37 +353,30 @@
 
 
                 <div class="formWrap overHidden">
-                    <form class="contactForm overHidden" name="contactForm" action="https://formspree.io/f/xoqpypjb"
-                        method="POST" enctype="text/plain" data-aos="zoom-in-up">
-
+                    <form class="contactForm overHidden" enctype="multipart/form-data" action="https://formspree.io/f/xoqpypjb" method="POST" data-aos="zoom-in-up">
                         <!-- Name input -->
                         <div class="inputWrap nameBox overHidden" data-aos="fade-up">
                             <div class="iconBox"><i class="fas fa-user"></i></div>
                             <label class="visuallyHidden srOnly">Enter your Name.</label>
                             <input type="text" name="userName" id="name" placeholder="Your name" tabindex="0" required>
                         </div>
-
-
                         <!-- Email input -->
                         <div class="inputWrap emailBox overHidden" data-aos="fade-up">
                             <div class="iconBox"><i class="far fa-envelope"></i></div>
                             <label class="visuallyHidden srOnly">Enter your Email Address.</label>
-                            <input type="email" name="userEmail" id="email" placeholder="Your email" tabindex="0" required><br>
+                            <input type="email" name="_replyto" id="email" placeholder="Your email" tabindex="0" required><br>
                         </div>
-
-
                         <!-- Message input -->
-                        <!-- Empty div for the background, so the sibling element (textarea) focus will change the background -->
+                        
                         <div class="messageInputWrapper overHidden">
                             <label class="visuallyHidden srOnly">Enter any meessage you'd like to send me.</label>
                             <textarea type="text" name="message" id="message" placeholder="Ya got something to say?"
                                 class="message" wrap="hard" rows="10" data-aos="fade-up" minlength="5" maxlength="500" required></textarea>
-                            <div class="messageInput overHidden" data-aos="fade-up">
+                            <!-- Empty div for the background, so the sibling element (textarea) focus will change the background -->
+                            <div class="messageInputBackground overHidden" data-aos="fade-up">
                             </div>
                             <!-- onfocus="this.placeholder = ''" -->
                         </div>
-
-
                         <!-- Buttons -->
                         <div class="buttons overHidden">
                             <button type="submit" name="sumbit" type="submit "value="send">Message me. Seriously.</button>
@@ -424,7 +422,7 @@
 
     <footer>
         <div class="footerTexts">
-            <p>Magically designed and created by © 2020 CHRISTINA YU</p>
+            <p class="mycredit">Magically designed and created by © 2020 CHRISTINA YU</p>
         <p class="credit">Navigation bar icons by <a href="https://creativemarket.com/miumiu">miumiu</a></p>
         <p class="credit">Hand-drawn style boxes by <a href="https://creativemarket.com/Medialoot">Medialoot</a></p>
         </div>

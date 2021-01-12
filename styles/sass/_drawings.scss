@@ -1,6 +1,6 @@
 .drawing {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     height: 100vh;
     position: relative;
 }
@@ -10,49 +10,57 @@ div.firstIntroGroup {
     right: 0;
     top: 0;
     width: 45%;
-    height: 80%;
-    margin-top: 8rem;
+    height: 100%;
+    margin-right: 10rem;
+    margin-left: 10rem;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 p.firstIntro {
     padding: 0 4rem;
     margin: 0;
     color: $grey3;
 }
-.partOneContainer p.partOne {
+#typed {
     font-family: $patrickSC;
     font-size: 70px;
-    margin-bottom: 2rem;
-    position: relative;
+    color: $grey3;
+    box-sizing: border-box;
+}
+.typed-cursor {
+    font-size: 60px;
 }
 p.partTwo {
     font-family: $ntr;
     font-weight: 400;
     font-size: 30px;
     line-height: 40px;
-    margin-bottom: 1rem;
+    margin: 2rem auto;
 }
 p.partThree {
     font-family: $ntr;
     font-weight: 0;
     font-size: 18px;
     font-weight: 200;
-    margin-bottom: 4rem;
-    margin-left: 2rem;
+    margin: 0 auto 4rem auto;
 }
 p.clickDirection {
     font-family: $ntr;
     font-size: 20px;
+    --animate-delay: 2s;
+}
+p.mobileDisplay {
+    display: none;
 }
 img.me {
     height: 80%;
     position: absolute;
     bottom: 0;
-    margin: 0 20rem;
+    margin: 0 23vw 0 20rem;
     cursor: pointer;
     z-index: 20;
 }
