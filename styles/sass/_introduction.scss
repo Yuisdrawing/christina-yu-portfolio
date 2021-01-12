@@ -55,8 +55,11 @@ p.answers:first-of-type {
 }
 .photo {
     width: 500px;
-    height: 700px;
-    background-color: $grey1;
+    height: 500px;
+    background-image: url(/assets/profile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
     margin-right: 6rem;
 }
 

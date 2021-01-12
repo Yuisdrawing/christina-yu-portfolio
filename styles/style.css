@@ -572,8 +572,10 @@ p.answers:first-of-type span.aboutMeSpanSmall {
 
 .photo {
   width: 500px;
-  height: 700px;
-  background-color: #92959d;
+  height: 500px;
+  background-image: url(/assets/profile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   margin-right: 6rem;
 }
 
@@ -1449,26 +1451,36 @@ footer {
 }
 
 @media (max-width: 1200px) {
+  .landingWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+  }
   .drawing {
     margin: 0 auto;
     width: 100%;
     height: auto;
+    position: static;
   }
   img.me {
-    margin: 0 0 0 0;
+    position: static;
+    margin: 0 auto;
+    height: auto;
+    width: 550px;
   }
   div.firstIntroGroup {
     position: static;
     width: 100%;
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 3rem;
   }
 }
 
 @media (max-width: 1100px) {
   img.me {
-    margin: 0 0 0 0;
+    margin: 0 auto;
   }
 }
 
