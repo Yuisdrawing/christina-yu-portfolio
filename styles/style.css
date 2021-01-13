@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=NTR&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dekko&family=Farsan&family=Patrick+Hand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Fredoka+One&family=NTR&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -255,6 +254,11 @@ body {
   background-image: url(/assets/repeatbackground.png);
 }
 
+.hovered {
+  background-color: #3a99aa;
+  background-image: url(/assets/repeatbackground2.png);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -415,11 +419,23 @@ img.navIcons:hover {
   opacity: 1;
 }
 
-.blinkingMobile {
-  display: none;
+.drawing {
+  width: 100%;
+  height: 100vh;
+  margin-left: 5rem;
 }
 
 .drawingGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+}
+
+.blinkContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,24 +443,31 @@ img.navIcons:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 40rem;
 }
 
-.drawing {
-  margin: 0 auto;
-  width: 100%;
-  height: 100vh;
+img.me {
+  width: 30rem;
+  border: 6px solid #2e2e2e;
+  background-color: #a9aebe;
+  border-radius: 50%;
+  margin-top: 4rem;
+  cursor: pointer;
+  z-index: 20;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
-div.firstIntroGroup {
-  width: 45%;
-  height: 100%;
-  margin-right: 10rem;
-  margin-left: 10rem;
+img.me:hover {
+  background-color: #f1a037;
+  border: 6px solid #cc4d77;
+}
+
+div.firstIntroTextContainer {
+  width: 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,11 +483,19 @@ div.firstIntroGroup {
           align-items: center;
 }
 
-p.firstIntro {
-  padding: 0 4rem;
-  margin: 0;
-  color: #2e2e2e;
+i.fa-caret-up {
+  --animate-delay: 2s;
+  font-size: 50px;
+}
+
+p.clickDirection {
+  width: 30rem;
+  font-family: "Fredoka One", cursive;
+  font-size: 24px;
+  font-weight: 200;
   text-align: center;
+  margin: 0;
+  --animate-delay: 2s;
 }
 
 .noFlexContainer {
@@ -473,55 +504,36 @@ p.firstIntro {
 
 #typed {
   font-family: "Patrick Hand SC", cursive;
-  font-size: 80px;
-  color: #2e2e2e;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  font-size: 120px;
+  line-height: 85px;
   text-align: center;
-  line-height: 75px;
+  color: #2e2e2e;
 }
 
 .typed-cursor {
   font-size: 60px;
 }
 
+p.firstIntro {
+  margin: 0;
+  color: #2e2e2e;
+  text-align: center;
+}
+
 p.partTwo {
   font-family: "NTR", sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 40px;
-  margin: 0 auto;
+  margin: 1.5rem 0;
 }
 
 p.partThree {
   font-family: "NTR", sans-serif;
   font-weight: 0;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 200;
-  margin: 0 auto;
-}
-
-p.clickDirection {
-  font-family: "NTR", sans-serif;
-  font-size: 20px;
-  --animate-delay: 2s;
-}
-
-p.mobileDisplay {
-  display: none;
-}
-
-img.me {
-  width: 30rem;
-  border: 6px solid #2e2e2e;
-  background-color: #a9aebe;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 20;
-}
-
-img.me:hover {
-  background-color: #f1a037;
+  margin-bottom: 3rem;
 }
 
 .introduction {
@@ -762,11 +774,23 @@ a.resumeButton:active {
   }
 }
 
-.blinkingMobile {
-  display: none;
+.drawing {
+  width: 100%;
+  height: 100vh;
+  margin-left: 5rem;
 }
 
 .drawingGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+}
+
+.blinkContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,24 +798,31 @@ a.resumeButton:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 40rem;
 }
 
-.drawing {
-  margin: 0 auto;
-  width: 100%;
-  height: 100vh;
+img.me {
+  width: 30rem;
+  border: 6px solid #2e2e2e;
+  background-color: #a9aebe;
+  border-radius: 50%;
+  margin-top: 4rem;
+  cursor: pointer;
+  z-index: 20;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
-div.firstIntroGroup {
-  width: 45%;
-  height: 100%;
-  margin-right: 10rem;
-  margin-left: 10rem;
+img.me:hover {
+  background-color: #f1a037;
+  border: 6px solid #cc4d77;
+}
+
+div.firstIntroTextContainer {
+  width: 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -807,11 +838,19 @@ div.firstIntroGroup {
           align-items: center;
 }
 
-p.firstIntro {
-  padding: 0 4rem;
-  margin: 0;
-  color: #2e2e2e;
+i.fa-caret-up {
+  --animate-delay: 2s;
+  font-size: 50px;
+}
+
+p.clickDirection {
+  width: 30rem;
+  font-family: "Fredoka One", cursive;
+  font-size: 24px;
+  font-weight: 200;
   text-align: center;
+  margin: 0;
+  --animate-delay: 2s;
 }
 
 .noFlexContainer {
@@ -820,55 +859,36 @@ p.firstIntro {
 
 #typed {
   font-family: "Patrick Hand SC", cursive;
-  font-size: 80px;
-  color: #2e2e2e;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  font-size: 120px;
+  line-height: 85px;
   text-align: center;
-  line-height: 75px;
+  color: #2e2e2e;
 }
 
 .typed-cursor {
   font-size: 60px;
 }
 
+p.firstIntro {
+  margin: 0;
+  color: #2e2e2e;
+  text-align: center;
+}
+
 p.partTwo {
   font-family: "NTR", sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 40px;
-  margin: 0 auto;
+  margin: 1.5rem 0;
 }
 
 p.partThree {
   font-family: "NTR", sans-serif;
   font-weight: 0;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 200;
-  margin: 0 auto;
-}
-
-p.clickDirection {
-  font-family: "NTR", sans-serif;
-  font-size: 20px;
-  --animate-delay: 2s;
-}
-
-p.mobileDisplay {
-  display: none;
-}
-
-img.me {
-  width: 30rem;
-  border: 6px solid #2e2e2e;
-  background-color: #a9aebe;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 20;
-}
-
-img.me:hover {
-  background-color: #f1a037;
+  margin-bottom: 3rem;
 }
 
 .skills {

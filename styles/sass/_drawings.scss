@@ -1,34 +1,63 @@
-.blinkingMobile {
-    display: none;
-}
-.drawingGroup {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
 .drawing {
-    margin: 0 auto;
     width: 100%;
     height: 100vh;
+    margin-left: 5rem;
+}
+//blinkContainer + textContainer
+.drawingGroup {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+// blinking gif + click direction container
+.blinkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
 }
 
-div.firstIntroGroup {
-    width: 45%;
-    height: 100%;
-    margin-right: 10rem;
-    margin-left: 10rem;
+////// blinking gif styling
+img.me {
+    width: 30rem;
+    border: 6px solid $grey3;
+    background-color: $blue2;
+    border-radius: 50%;
+    margin-top: 4rem;
+    cursor: pointer;
+    z-index: 20;
+    transition: 0.3s ease;
+}
+img.me:hover {
+    background-color: $orange1;
+    border: 6px solid $pink2;
+}
+
+
+///////////// text container
+div.firstIntroTextContainer {
+    width: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-p.firstIntro {
-    padding: 0 4rem;
-    margin: 0;
-    color: $grey3;
+
+// Text stylings:
+// fontawesome arrow
+i.fa-caret-up {
+    --animate-delay: 2s;
+    font-size: 50px;
+}
+p.clickDirection {
+    width: 30rem;
+    font-family: $ntra;
+    font-size: 24px;
+    font-weight: 200;
     text-align: center;
+    margin: 0;
+    --animate-delay: 2s;
 }
 //typed.js string styling
 .noFlexContainer {
@@ -36,45 +65,32 @@ p.firstIntro {
 }
 #typed {
     font-family: $patrickSC;
-    font-size: 80px;
-    color: $grey3;
-    box-sizing: border-box;
+    font-size: 120px;
+    line-height: 85px;
     text-align: center;
-    line-height: 75px;
+    color: $grey3;
 }
 .typed-cursor {
     font-size: 60px;
 }
+p.firstIntro {
+    margin: 0;
+    color: $grey3;
+    text-align: center;
+}
 p.partTwo {
     font-family: $ntr;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 50px;
     line-height: 40px;
-    margin: 0 auto;
+    margin: 1.5rem 0;
 }
 p.partThree {
     font-family: $ntr;
     font-weight: 0;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 200;
-    margin: 0 auto;
+    margin-bottom: 3rem;
 }
-p.clickDirection {
-    font-family: $ntr;
-    font-size: 20px;
-    --animate-delay: 2s;
-}
-p.mobileDisplay {
-    display: none;
-}
-img.me {
-    width: 30rem;
-    border: 6px solid $grey3;
-    background-color: $blue2;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 20;
-}
-img.me:hover {
-    background-color: $orange1;
-}
+
+

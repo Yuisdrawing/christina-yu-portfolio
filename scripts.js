@@ -70,6 +70,8 @@ $('.me').hover(function () {
         $('.me').attr('src', 'assets/blinkSideEye/blinkSide2.gif');
 });
 
+
+
 // const me = document.getElementsByClassName('me')[0];
 
 
@@ -88,33 +90,3 @@ $('.me').hover(function () {
 //         me.onClick = null;
 //     };
 // }
-
-
-
-const $element = $('');
-const imagePath = '/images';
-const totalFrames = 18;
-const animationDuration = 1300;
-const timePerFrame = animationDuration / totalFrames;
-let timeWhenLastUpdate;
-let timeFromLastUpdate;
-let frameNumber = 1;
-
-function step(startTime) {
-    if (!timeWhenLastUpdate) timeWhenLastUpdate = startTime;
-
-    timeFromLastUpdate = startTime - timeWhenLastUpdate;
-
-    if (timeFromLastUpdate > timePerFrame) {
-        $element.attr('src', imagePath + `/Eye-${frameNumber}.svg`);
-        timeWhenLastUpdate = startTime;
-
-        if (frameNumber >= totalFrames) {
-            frameNumber = 1;
-        } else {
-            frameNumber = frameNumber + 1;
-        }
-    }
-
-    requestAnimationFrame(step);
-}

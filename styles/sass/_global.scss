@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=NTR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dekko&family=Farsan&family=Patrick+Hand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Fredoka+One&family=NTR&display=swap');
 
 
 *, *::after, *::before {
@@ -19,6 +18,10 @@ body {
     margin: 0;
     background-color: $grey2;
     background-image: url(/assets/repeatbackground.png);
+}
+.hovered {
+    background-color: $blue3;
+    background-image: url(/assets/repeatbackground2.png);
 }
 html {
   scroll-behavior: smooth;

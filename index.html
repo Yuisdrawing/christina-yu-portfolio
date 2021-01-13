@@ -113,21 +113,25 @@
 
             <!-- Drawings ////////////////////////////////-->
             <section class="drawing" id="drawing">
+                <!-- Container that will flex row the blinkgif and the text container side by side -->
                 <div class="drawingGroup">
-                    
-                    <!-- gif of me blinking -->
-                    <div class="blinking blinkingDesktop animate__animated animate__fadeIn">
-                        <a href="#projectsHeader">
-                            <img src="assets/blinkSideEye/blinkSide.gif" alt="" class="me">
-                        </a>
-                    
+
+                    <!-- Container of blinking gif and the direction to click it - will be flex row in desktop mode and column in mobile mode -->
+                    <div class="blinkContainer">
+                        <!-- gif of me blinking -->
+                        <div class="blinking blinkingDesktop animate__animated animate__fadeIn">
+                            <a href="#projectsHeader">
+                                <img src="assets/blinkSideEye/blinkSide.gif" alt="" class="me" id="me">
+                            </a>
+                        </div>
+                        <!-- fontawesome arrow and click direction-->
+                        <i class="fas fa-caret-up animate__animated animate__fadeInUp animate__delay-3s"></i>
+                        <p class="clickDirection desktopDisplay animate__animated animate__fadeInUp animate__delay-3s"> Why don't you click me to see what I've been working on?</p>
                     </div>
-
-                    <div class="firstIntroGroup">
-
-                        <p class="clickDirection desktopDisplay animate__animated animate__fadeInUp animate__delay-3s"><i
-                                class="fas fa-caret-up"></i> Why don't you click me to see what I've been working on?</p>
-
+                    
+                    <!-- Text container -->
+                    <div class="firstIntroTextContainer">
+                        <!-- typed.js effect for the name -->
                         <!-- noFlexContainer so span#typed is beside the text, not under (because of flex from div.firstIntroGroup) -->
                         <div class="noFlexContainer">
                             <div class="partOneContainer" id="typed-strings">
@@ -135,15 +139,15 @@
                             </div>
                             <span id="typed"></span>
                         </div>
+
+                        <!-- and p with no special effects -->
                         <p class="firstIntro partTwo animate__animated animate__fadeInUp animate__delay-2s">
                         It's not you, it's Yu.<br />
                         So yes, it's me.</p>
+
                         <p class="firstIntro partThree animate__animated animate__fadeInUp animate__delay-4s">
                         (My highschool teachers used to just<br /> call me "Hey, Yu!!!" and they loved it.)</p>
-
-                    </div>
-                        
-                    
+                    </div>  
                 </div>
 
             </section>
