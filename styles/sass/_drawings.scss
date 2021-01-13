@@ -1,23 +1,23 @@
 .blinkingMobile {
     display: none;
 }
-
+.drawingGroup {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
 .drawing {
     margin: 0 auto;
     width: 100%;
     height: 100vh;
-    position: relative;
 }
 
 div.firstIntroGroup {
-    position: absolute;
-    right: 0;
-    top: 0;
     width: 45%;
     height: 100%;
     margin-right: 10rem;
     margin-left: 10rem;
-    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,12 +28,19 @@ p.firstIntro {
     padding: 0 4rem;
     margin: 0;
     color: $grey3;
+    text-align: center;
+}
+//typed.js string styling
+.noFlexContainer {
+    text-align: center;
 }
 #typed {
     font-family: $patrickSC;
-    font-size: 70px;
+    font-size: 80px;
     color: $grey3;
     box-sizing: border-box;
+    text-align: center;
+    line-height: 75px;
 }
 .typed-cursor {
     font-size: 60px;
@@ -43,14 +50,14 @@ p.partTwo {
     font-weight: 400;
     font-size: 30px;
     line-height: 40px;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 p.partThree {
     font-family: $ntr;
     font-weight: 0;
     font-size: 18px;
     font-weight: 200;
-    margin: 0 auto 4rem auto;
+    margin: 0 auto;
 }
 p.clickDirection {
     font-family: $ntr;
@@ -61,10 +68,13 @@ p.mobileDisplay {
     display: none;
 }
 img.me {
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    margin: 0 23vw 0 20rem;
+    width: 30rem;
+    border: 6px solid $grey3;
+    background-color: $blue2;
+    border-radius: 50%;
     cursor: pointer;
     z-index: 20;
+}
+img.me:hover {
+    background-color: $orange1;
 }

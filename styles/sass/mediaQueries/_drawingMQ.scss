@@ -1,55 +1,55 @@
-@media (max-width: 1550px) {
-    // re-positioning drawing .me and the giant white textbox
-    img.me {
-        margin: 0 23vw 0 10rem;
-    }
-    div.firstIntroGroup {
-        width: 55%;
-        margin-right: 0;
-    }
-}
+// @media (max-width: 1550px) {
+//     // re-positioning drawing .me and the giant white textbox
+//     img.me {
+//         margin: 0 23vw 0 10rem;
+//     }
+//     div.firstIntroGroup {
+//         width: 55%;
+//         margin-right: 0;
+//     }
+// }
 
 
-@media (max-width: 1200px) {
-    .landingWrapper {
-        display: flex;
-        height: auto;
-    }
-    .drawing {
-        margin: 0 auto;
-        width: 100%;
-        height: auto;
-        position: static;
-    }
-    .blinkingDesktop {
-        display: none;
-    }
-    .blinkingMobile {
-        display: initial;
-    }
-    // .mobileDisaply {
-    //     display: initial;
-    // }
-    // .desktopDisplay {
-    //     display: none;
-    // }
-    img.me {
-        position: static;
-        margin: 0 auto;
-        height: auto;
-        width: 250px;
-    }
-    div.firstIntroGroup {
-        position : static;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 3rem;
-    }
-}
+// @media (max-width: 1200px) {
+//     .landingWrapper {
+//         display: flex;
+//         height: auto;
+//     }
+//     .drawing {
+//         margin: 0 auto;
+//         width: 100%;
+//         height: auto;
+//         position: static;
+//     }
+//     .blinkingDesktop {
+//         display: none;
+//     }
+//     .blinkingMobile {
+//         display: initial;
+//     }
+//     // .mobileDisaply {
+//     //     display: initial;
+//     // }
+//     // .desktopDisplay {
+//     //     display: none;
+//     // }
+//     img.me {
+//         position: static;
+//         margin: 0 auto;
+//         height: auto;
+//         width: 250px;
+//     }
+//     div.firstIntroGroup {
+//         position : static;
+//         width: 100%;
+//         margin-right: auto;
+//         margin-left: auto;
+//         margin-top: 3rem;
+//     }
+// }
 
-@media (max-width: 1100px) {
-    img.me {
-        margin: 0 auto;
-    }
-}
+// @media (max-width: 1100px) {
+//     img.me {
+//         margin: 0 auto;
+//     }
+// }
