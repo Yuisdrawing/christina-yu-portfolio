@@ -96,7 +96,7 @@ h2 {
     }
 }
 
-// // h2 font size changes for mobile ver.
-// @media (max-width: 800px) {
-//    h2 {padding: 70px 50px 10px 50px;}
-// }
+// h2 font size changes for mobile ver.
+@media (max-width: 550px) {
+   h2 {font-size: 40px;}
+}
