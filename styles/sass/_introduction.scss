@@ -59,7 +59,7 @@ p.answers:first-of-type {
     background-image: url(/assets/profile.png);
     background-size: contain;
     background-repeat: no-repeat;
-
+    margin-top: 3rem;
     margin-right: 6rem;
 }
 
@@ -90,7 +90,7 @@ a.resumeButton {
     }
 }
 a.resumeButton:hover {
-    box-shadow: inset 13em 0 0 0.01px $grey2;
+    box-shadow: inset 16em 0 0 0.01px $grey2;
     // border: 1px solid $blue2;
     color: #000000;
     i {

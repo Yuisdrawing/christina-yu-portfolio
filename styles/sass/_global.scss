@@ -43,6 +43,12 @@ main {
     // margin to avoid content being under sidebar
     margin-left: 8.5rem;
 }
+@media (max-width: 1200px) {
+  main {
+      // sidebar margin needs to go in mobile ver.
+      margin-left: 0;
+  }
+}
 
 .noDisplay {
   display: none;
@@ -70,7 +76,7 @@ h2 {
     font-weight: 400;
     margin: 0;
     // margin-top: 5rem;
-    padding: 70px 100px 2px 100px;
+    padding: 70px 0 10px 0;
     background-color: $bgGrey;
     background-image: url(/assets/slashbackground.png);
     text-align: center;
@@ -89,3 +95,8 @@ h2 {
         text-shadow: none;
     }
 }
+
+// // h2 font size changes for mobile ver.
+// @media (max-width: 800px) {
+//    h2 {padding: 70px 50px 10px 50px;}
+// }

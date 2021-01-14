@@ -70,3 +70,20 @@ $('#me').hover(function () {
         $('#me').attr('src', 'assets/blinkSideEye/blinkSide2.gif');
 });
 
+
+
+// changing mobileMe gif on click
+
+const mobileMe = document.getElementById('mobileMe');
+
+mobileMe.addEventListener('click', function() {
+    changeImage();
+});
+
+function changeImage() {
+    if (mobileMe.src = 'assets/blinkSideEye/blinkSide2.gif') {
+        mobileMe.src = 'assets/blinkForward/blinkForward.gif';
+    } else {
+        mobileMe.src = 'assets/blinkSideEye/blinkSide2.gif';
+    }
+}

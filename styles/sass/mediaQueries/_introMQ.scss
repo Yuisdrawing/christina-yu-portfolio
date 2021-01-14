@@ -39,7 +39,7 @@
     .photo {
         margin: 0 auto;
         width: 550px;
-        height: 650px;
+        height: 600px;
     }
     //getting rid of margin on text container so they come to the center
     .aboutMeTexts {
@@ -61,5 +61,14 @@
     // resume and linkedin button to the center
     .resumeButtonsGroup {
         margin: 3rem auto 2rem auto;
+    }
+}
+
+@media (max-width: 800px) {
+    //adjusting the picture sizes
+    .photo {
+        margin: 0 auto;
+        width: 450px;
+        height: 500px;
     }
 }

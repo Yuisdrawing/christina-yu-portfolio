@@ -45,7 +45,8 @@ div.firstIntroTextContainer {
 
 // Text stylings:
 // fontawesome arrow
-i.fa-caret-up {
+i.fa-caret-up,
+i.fa-caret-down {
     --animate-delay: 2s;
     color: $orange1;
     font-size: 50px;
@@ -101,6 +102,6 @@ p.partThree {
 .mobileDisplay {
     display: none;
 }
-.mobileDisplay.fa-caret-up:before {
+.mobileDisplay.fa-caret-down:before {
     display: none;
 }
