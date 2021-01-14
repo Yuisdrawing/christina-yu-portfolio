@@ -33,7 +33,6 @@ img.me:hover {
     border: 6px solid $pink2;
 }
 
-
 ///////////// text container
 div.firstIntroTextContainer {
     width: 40rem;
@@ -48,13 +47,15 @@ div.firstIntroTextContainer {
 // fontawesome arrow
 i.fa-caret-up {
     --animate-delay: 2s;
+    color: $orange1;
     font-size: 50px;
 }
 p.clickDirection {
-    width: 30rem;
-    font-family: $ntra;
+    width: 20rem;
+    font-family: $ntr;
     font-size: 24px;
     font-weight: 200;
+    color: $blue4;
     text-align: center;
     margin: 0;
     --animate-delay: 2s;
@@ -71,18 +72,19 @@ p.clickDirection {
     color: $grey3;
 }
 .typed-cursor {
-    font-size: 60px;
+    font-size: 100px;
+    color: $grey3;
 }
 p.firstIntro {
     margin: 0;
-    color: $grey3;
+    color: $blue4;
     text-align: center;
 }
 p.partTwo {
     font-family: $ntr;
     font-weight: 400;
     font-size: 50px;
-    line-height: 40px;
+    line-height: 60px;
     margin: 1.5rem 0;
 }
 p.partThree {
