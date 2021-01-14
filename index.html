@@ -119,14 +119,19 @@
                     <!-- Container of blinking gif and the direction to click it - will be flex row in desktop mode and column in mobile mode -->
                     <div class="blinkContainer">
                         <!-- gif of me blinking -->
-                        <div class="blinking blinkingDesktop animate__animated animate__fadeIn">
+                        <div class="blinking animate__animated animate__fadeIn">
+                            <img src="assets/blinkSideEye/blinkSide.gif" alt="" class="me mobileDisplay" id="mobileMe">
                             <a href="#projectsHeader">
-                                <img src="assets/blinkSideEye/blinkSide.gif" alt="" class="me" id="me">
+                                <img src="assets/blinkSideEye/blinkSide.gif" alt="" class="me desktopDisplay" id="me">
                             </a>
                         </div>
                         <!-- fontawesome arrow and click direction-->
-                        <i class="fas fa-caret-up animate__animated animate__fadeInUp animate__delay-3s"></i>
-                        <p class="clickDirection desktopDisplay animate__animated animate__fadeInUp animate__delay-3s"> Why don't you click me to see what I've been working on?</p>
+                        <i class="fas fa-caret-up desktopDisplay animate__animated animate__fadeInUp animate__delay-3s"></i>
+                        <p class="clickDirection desktopDisplay animate__animated animate__fadeInUp animate__delay-3s">Why don't you click me to see what I've been working on?</p>
+
+                        <!-- For mobile: direction to tap for gif change instead -->
+                        <i class="fas fa-caret-up mobileDisplay animate__animated animate__fadeInUp"></i>
+                        <p class="tapDirection mobileDisplay animate__animated animate__fadeInUp">Tap me to look at me in the eye!</p>
                     </div>
                     
                     <!-- Text container -->
@@ -147,6 +152,10 @@
 
                         <p class="firstIntro partThree animate__animated animate__fadeInUp animate__delay-4s">
                         (My highschool teachers used to just<br /> call me "Hey, Yu!!!" and they loved it.)</p>
+
+                        <!-- Click direction for mobile version-->
+                        <p class="clickDirection mobileDisplay animate__animated animate__fadeInUp animate__delay-3s"> Why don't you click <a href="#projectsHeader">HERE</a>
+                            to see what I've been working on?</p>
                     </div>  
                 </div>
 

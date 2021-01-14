@@ -50,7 +50,8 @@ i.fa-caret-up {
     color: $orange1;
     font-size: 50px;
 }
-p.clickDirection {
+p.clickDirection,
+p.tapDirection {
     width: 20rem;
     font-family: $ntr;
     font-size: 24px;
@@ -96,3 +97,10 @@ p.partThree {
 }
 
 
+// Click directions for mobile hidden until 1200px
+.mobileDisplay {
+    display: none;
+}
+.mobileDisplay.fa-caret-up:before {
+    display: none;
+}

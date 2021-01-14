@@ -490,7 +490,8 @@ i.fa-caret-up {
   font-size: 50px;
 }
 
-p.clickDirection {
+p.clickDirection,
+p.tapDirection {
   width: 20rem;
   font-family: "NTR", sans-serif;
   font-size: 24px;
@@ -538,6 +539,14 @@ p.partThree {
   font-size: 28px;
   font-weight: 200;
   margin-bottom: 3rem;
+}
+
+.mobileDisplay {
+  display: none;
+}
+
+.mobileDisplay.fa-caret-up:before {
+  display: none;
 }
 
 .introduction {
@@ -848,7 +857,8 @@ i.fa-caret-up {
   font-size: 50px;
 }
 
-p.clickDirection {
+p.clickDirection,
+p.tapDirection {
   width: 20rem;
   font-family: "NTR", sans-serif;
   font-size: 24px;
@@ -896,6 +906,14 @@ p.partThree {
   font-size: 28px;
   font-weight: 200;
   margin-bottom: 3rem;
+}
+
+.mobileDisplay {
+  display: none;
+}
+
+.mobileDisplay.fa-caret-up:before {
+  display: none;
 }
 
 .skills {
@@ -1515,6 +1533,101 @@ footer {
   }
   .burgerIconBox {
     display: initial;
+  }
+}
+
+@media (max-width: 1400px) {
+  .blinkContainer {
+    width: 30rem;
+  }
+  img.me {
+    width: 25rem;
+  }
+  div.firstIntroTextContainer {
+    width: 30rem;
+  }
+  #typed {
+    font-size: 80px;
+    line-height: 65px;
+  }
+  .typed-cursor {
+    font-size: 80px;
+  }
+  p.partTwo {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  p.partThree {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .landingWrapper {
+    height: auto;
+  }
+  .drawing {
+    margin-left: 0;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .drawingGroup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .desktopDisplay,
+  .desktopDisplay.fa-caret-up:before {
+    display: none;
+  }
+  .mobileDisplay,
+  .mobileDisplay.fa-caret-up:before {
+    display: initial;
+  }
+  .blinkContainer {
+    width: 40rem;
+    margin-top: 3rem;
+  }
+  img.me {
+    width: 35rem;
+  }
+  div.firstIntroTextContainer {
+    width: 40rem;
+  }
+  #typed {
+    font-size: 120px;
+    line-height: 100px;
+  }
+  .typed-cursor {
+    font-size: 100px;
+  }
+  p.partTwo {
+    font-size: 55px;
+    line-height: 55px;
+  }
+  p.partThree {
+    font-size: 28px;
+    margin: 0;
+  }
+  p.clickDirection {
+    width: 30rem;
+    font-family: "NTR", sans-serif;
+    font-size: 34px;
+    font-weight: 200;
+    color: #54598a;
+    text-align: center;
+    margin: 10rem 0;
+    --animate-delay: 2s;
   }
 }
 

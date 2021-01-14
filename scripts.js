@@ -64,29 +64,9 @@ $('.contactIcon').hover(function () {
 
 
 // on drawing page: change .gif file for blinking image of me
-$('.me').hover(function () {
-    $('.me').attr('src', 'assets/blinkForward/blinkForward.gif');
+$('#me').hover(function () {
+    $('#me').attr('src', 'assets/blinkForward/blinkForward.gif');
 }, function() {
-        $('.me').attr('src', 'assets/blinkSideEye/blinkSide2.gif');
+        $('#me').attr('src', 'assets/blinkSideEye/blinkSide2.gif');
 });
 
-
-
-// const me = document.getElementsByClassName('me')[0];
-
-
-// me.onclick = function () {
-//     if ($(window).width() > 1200) {
-//         me.src = "assets/blinkForward/blinkForward.gif";
-//         let start = Date.now();
-//         let timer = setInterval(function () {
-//             let timePassed = Date.now() - start;
-//             me.style.right = timePassed / 1 + 'px';
-//             if (timePassed > 700) clearInterval(timer);
-//         });
-//     }
-//     else if (me.src = "assets/blinkForward/blinkForward.gif") {
-//         me.display = 'block'
-//         me.onClick = null;
-//     };
-// }
