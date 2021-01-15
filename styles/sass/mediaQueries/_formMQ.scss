@@ -1,10 +1,13 @@
+@media (max-width: 1200px) {
+    .contactForm {
+        margin: 5rem 0 0 0;
+    }
+}
+
 @media (max-width: 1000px) {
     //flex direction into column for mobiles and tablets
     .formWrap {
         flex-direction: column;
-    }
-    .contactForm {
-        margin: 5rem 5rem 0 5rem;
     }
     // reset width for sidemessages
     .sideMessage p {
@@ -17,5 +20,107 @@
     }
     ul.socialMedia .fab {
         margin: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    input {
+    width: 25rem;
+    padding: 1.7rem 2rem 1.7rem 4rem;
+    }
+    .messageInputBackground {
+        width: 25rem;
+        height: 16.3rem;
+    }
+    textarea {
+        padding: 1rem 2rem 2rem 2rem;
+        resize: none;
+        width: 24rem;
+        height: 12.6rem;
+        bottom: 8rem;
+    }
+}
+
+@media (max-width: 450px) {
+    input, textarea {
+        font-size: 24px;
+        &:-webkit-autofill::first-line {
+            font-size: 18px;
+        }
+    }
+    input {
+    width: 20rem;
+    padding: 1rem 2rem 1.3rem 3rem;
+    }
+    .messageInputBackground {
+        width: 20rem;
+        height: 13.3rem;
+    }
+    textarea {
+        padding: 1rem 2rem 2rem 2rem;
+        width: 19rem;
+        height: 10rem;
+    }
+    .inputWrap {
+        margin-bottom: 0.5rem;
+        .iconBox {
+            i {
+                font-size: 16px;
+                // the margin put the icon inside of the input
+                margin: 0 0 0 1.7rem;
+            }
+        }
+    }
+    .sideMessage {
+        p {
+            width: 16rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+    ul.socialMedia {
+        margin-top: 2.5rem;
+        margin-bottom: 6rem;
+    }
+}
+
+@media (max-width: 350px) {
+    input, textarea {
+        font-size: 24px;
+        &:-webkit-autofill::first-line {
+            font-size: 18px;
+        }
+    }
+    input {
+    width: 20rem;
+    padding: 1rem 2rem 1.3rem 3rem;
+    }
+    .messageInputBackground {
+        width: 20rem;
+        height: 13.3rem;
+    }
+    textarea {
+        padding: 1rem 2rem 2rem 2rem;
+        width: 19rem;
+        height: 10rem;
+    }
+    .inputWrap {
+        margin-bottom: 0.5rem;
+        .iconBox {
+            i {
+                font-size: 16px;
+                // the margin put the icon inside of the input
+                margin: 0 0 0 1.7rem;
+            }
+        }
+    }
+    .sideMessage {
+        p {
+            width: 16rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+    ul.socialMedia {
+        margin-top: 2.5rem;
+        margin-bottom: 6rem;
     }
 }

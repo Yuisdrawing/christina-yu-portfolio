@@ -102,4 +102,60 @@
         margin-right: 0;
         margin-top: 1.8rem;
     }
+    p.answers {
+        width: auto;
+        margin: 0 0.5rem 1rem 1rem;
+        line-height: 35px;
+    }
+    p.answers:first-of-type {
+        margin: 1.4rem 1rem 1rem 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .resumeButtonsGroup {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    h3 {
+        font-size: 50px;
+        margin: 1rem auto 1rem auto;
+    }
+    p.answers:first-of-type {
+        margin: 0.4rem 1rem 1rem 1rem;
+    }
+    p.answers {
+        line-height: 30px;
+    }
+    a.resumeButton {
+        font-size: 16px;
+        padding: 1.5rem 1.5rem;
+        margin-right: 0;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h3 {
+        font-size: 40px;
+        margin: 1rem auto 1rem auto;
+    }
+    .photo {
+        margin: 0 auto;
+        width: 200px;
+        height: 220px;
+    }
+    //getting rid of margin on text container so they come to the center
+    .aboutMeTexts {
+        margin: 0 auto;
+    }
+    h4.questions {
+        margin: 2rem 0 0.3rem 0.3rem;
+    }
+    // resume and linkedin button to the center
+    .resumeButtonsGroup {
+        margin: 3rem auto 2rem auto;
+    }
 }

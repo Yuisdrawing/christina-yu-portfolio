@@ -325,6 +325,21 @@ h2 span {
 @media (max-width: 550px) {
   h2 {
     font-size: 40px;
+    border: 10px solid #ffffff;
+  }
+}
+
+@media (max-width: 450px) {
+  h2 {
+    padding: 40px 0 10px 0;
+  }
+}
+
+@media (max-width: 350px) {
+  h2 {
+    padding: 40px 0 10px 0;
+    font-size: 30px;
+    border: 5px solid #ffffff;
   }
 }
 
@@ -954,7 +969,6 @@ p.partThree {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100rem;
 }
 
 .skillWrap {
@@ -1551,6 +1565,201 @@ footer {
   }
 }
 
+@media (max-width: 1875px) {
+  .aboutMe {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .photo {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 1660px) {
+  .aboutMe {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .photo {
+    margin-right: 0.5rem;
+    width: 350px;
+    height: 550px;
+  }
+  .aboutMeTexts {
+    margin-left: 0;
+  }
+  p.answers {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .photo {
+    margin: 0 auto;
+    width: 550px;
+    height: 600px;
+  }
+  .aboutMeTexts {
+    margin: 0 auto;
+  }
+  h3 {
+    margin: 3rem auto 1rem auto;
+  }
+  h4.questions {
+    margin: 2rem 0 0.3rem 2rem;
+  }
+  p.answers:first-of-type {
+    margin: 1rem auto 1rem auto;
+  }
+  p.answers {
+    width: auto;
+    margin: 0 2rem 1rem 3rem;
+  }
+  .resumeButtonsGroup {
+    margin: 3rem auto 2rem auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .photo {
+    margin: 0 auto;
+    width: 450px;
+    height: 470px;
+  }
+}
+
+@media (max-width: 715px) {
+  .photo {
+    margin: 0 auto;
+    width: 300px;
+    height: 320px;
+  }
+  h3 {
+    font-size: 60px;
+  }
+  p.answers:first-of-type {
+    margin: 1.4rem 4rem 1rem 4rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .resumeButtonsGroup {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  a.resumeButton {
+    text-align: center;
+    font-size: 20px;
+    padding: 2rem 2rem;
+    margin-right: 0;
+    margin-top: 1.8rem;
+  }
+  p.answers {
+    width: auto;
+    margin: 0 0.5rem 1rem 1rem;
+    line-height: 35px;
+  }
+  p.answers:first-of-type {
+    margin: 1.4rem 1rem 1rem 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .resumeButtonsGroup {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  h3 {
+    font-size: 50px;
+    margin: 1rem auto 1rem auto;
+  }
+  p.answers:first-of-type {
+    margin: 0.4rem 1rem 1rem 1rem;
+  }
+  p.answers {
+    line-height: 30px;
+  }
+  a.resumeButton {
+    font-size: 16px;
+    padding: 1.5rem 1.5rem;
+    margin-right: 0;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  h3 {
+    font-size: 40px;
+    margin: 1rem auto 1rem auto;
+  }
+  .photo {
+    margin: 0 auto;
+    width: 200px;
+    height: 220px;
+  }
+  .aboutMeTexts {
+    margin: 0 auto;
+  }
+  h4.questions {
+    margin: 2rem 0 0.3rem 0.3rem;
+  }
+  .resumeButtonsGroup {
+    margin: 3rem auto 2rem auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .skillWrap {
+    width: 6rem;
+    height: 6rem;
+  }
+  .skillWrap p {
+    font-size: 14px;
+    margin-top: 0.5rem;
+  }
+  .skillWrap i {
+    font-size: 40px;
+  }
+  .skillWrap .fas {
+    font-size: 40px;
+  }
+  .skillWrap i.fa-sass {
+    font-size: 37px;
+  }
+  .skillWrap i.fa-terminal {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .skillWrap img.firebaseIcon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @media (max-width: 1400px) {
   .blinkContainer {
     width: 30rem;
@@ -1697,114 +1906,6 @@ footer {
   }
 }
 
-@media (max-width: 1875px) {
-  .aboutMe {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .photo {
-    margin-right: 0.5rem;
-  }
-}
-
-@media (max-width: 1660px) {
-  .aboutMe {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .photo {
-    margin-right: 0.5rem;
-    width: 350px;
-    height: 550px;
-  }
-  .aboutMeTexts {
-    margin-left: 0;
-  }
-  p.answers {
-    width: 600px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .aboutMe {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  .photo {
-    margin: 0 auto;
-    width: 550px;
-    height: 600px;
-  }
-  .aboutMeTexts {
-    margin: 0 auto;
-  }
-  h3 {
-    margin: 3rem auto 1rem auto;
-  }
-  h4.questions {
-    margin: 2rem 0 0.3rem 2rem;
-  }
-  p.answers:first-of-type {
-    margin: 1rem auto 1rem auto;
-  }
-  p.answers {
-    width: auto;
-    margin: 0 2rem 1rem 3rem;
-  }
-  .resumeButtonsGroup {
-    margin: 3rem auto 2rem auto;
-  }
-}
-
-@media (max-width: 800px) {
-  .photo {
-    margin: 0 auto;
-    width: 450px;
-    height: 470px;
-  }
-}
-
-@media (max-width: 715px) {
-  .photo {
-    margin: 0 auto;
-    width: 300px;
-    height: 320px;
-  }
-  h3 {
-    font-size: 60px;
-  }
-  p.answers:first-of-type {
-    margin: 1.4rem 4rem 1rem 4rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 550px) {
-  .resumeButtonsGroup {
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  a.resumeButton {
-    text-align: center;
-    font-size: 20px;
-    padding: 2rem 2rem;
-    margin-right: 0;
-    margin-top: 1.8rem;
-  }
-}
-
 @media (max-width: 1000px) {
   .formWrap {
     -webkit-box-orient: vertical;
@@ -1813,7 +1914,7 @@ footer {
             flex-direction: column;
   }
   .contactForm {
-    margin: 5rem 5rem 0 5rem;
+    margin: 5rem 0 0 0;
   }
   .sideMessage p {
     width: auto;
@@ -1824,5 +1925,97 @@ footer {
   }
   ul.socialMedia .fab {
     margin: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  input {
+    width: 25rem;
+    padding: 1.7rem 2rem 1.7rem 4rem;
+  }
+  .messageInputBackground {
+    width: 25rem;
+    height: 16.3rem;
+  }
+  textarea {
+    padding: 1rem 2rem 2rem 2rem;
+    resize: none;
+    width: 24rem;
+    height: 12.6rem;
+    bottom: 8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  input, textarea {
+    font-size: 24px;
+  }
+  input:-webkit-autofill::first-line, textarea:-webkit-autofill::first-line {
+    font-size: 18px;
+  }
+  input {
+    width: 20rem;
+    padding: 1rem 2rem 1.3rem 3rem;
+  }
+  .messageInputBackground {
+    width: 20rem;
+    height: 13.3rem;
+  }
+  textarea {
+    padding: 1rem 2rem 2rem 2rem;
+    width: 19rem;
+    height: 10rem;
+  }
+  .inputWrap {
+    margin-bottom: 0.5rem;
+  }
+  .inputWrap .iconBox i {
+    font-size: 16px;
+    margin: 0 0 0 1.7rem;
+  }
+  .sideMessage p {
+    width: 16rem;
+    margin-bottom: 2.5rem;
+  }
+  ul.socialMedia {
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  input, textarea {
+    font-size: 24px;
+  }
+  input:-webkit-autofill::first-line, textarea:-webkit-autofill::first-line {
+    font-size: 18px;
+  }
+  input {
+    width: 20rem;
+    padding: 1rem 2rem 1.3rem 3rem;
+  }
+  .messageInputBackground {
+    width: 20rem;
+    height: 13.3rem;
+  }
+  textarea {
+    padding: 1rem 2rem 2rem 2rem;
+    width: 19rem;
+    height: 10rem;
+  }
+  .inputWrap {
+    margin-bottom: 0.5rem;
+  }
+  .inputWrap .iconBox i {
+    font-size: 16px;
+    margin: 0 0 0 1.7rem;
+  }
+  .sideMessage p {
+    width: 16rem;
+    margin-bottom: 2.5rem;
+  }
+  ul.socialMedia {
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
   }
 }

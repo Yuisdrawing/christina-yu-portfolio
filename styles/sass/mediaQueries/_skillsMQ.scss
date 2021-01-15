@@ -1,0 +1,28 @@
+@media (max-width: 450px) {
+    .skillWrap {
+        width: 6rem;
+        height: 6rem;
+        p {
+            font-size: 14px;
+            margin-top: 0.5rem;
+        }
+        ///////////icon sizes////////////
+        i {
+            font-size: 40px;
+        }
+        .fas {
+            font-size: 40px;
+        }
+        i.fa-sass {
+            font-size: 37px;
+        }
+        i.fa-terminal {
+            font-size: 35px;
+            margin-bottom: 5px;
+        }
+        img.firebaseIcon {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
