@@ -1,9 +1,3 @@
-@media (max-width: 1200px) {
-    .contactForm {
-        margin: 5rem 0 0 0;
-    }
-}
-
 @media (max-width: 1000px) {
     //flex direction into column for mobiles and tablets
     .formWrap {
@@ -12,6 +6,9 @@
     // reset width for sidemessages
     .sideMessage p {
         width: auto;
+    }
+    .contactForm {
+        margin: 5rem 0 0 0;
     }
     // more room on top/bottom for social media icons
     ul.socialMedia {
