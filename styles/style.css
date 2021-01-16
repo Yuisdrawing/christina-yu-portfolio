@@ -1822,8 +1822,7 @@ footer {
     display: initial;
   }
   .blinkContainer {
-    width: 40rem;
-    margin-top: 3rem;
+    display: none;
   }
   .noFlexContainer {
     margin-top: 2rem;
@@ -1833,7 +1832,8 @@ footer {
     margin: 0;
   }
   div.firstIntroTextContainer {
-    width: 40rem;
+    width: auto;
+    margin-top: 3rem;
   }
   #typed {
     font-size: 120px;
@@ -1844,20 +1844,20 @@ footer {
   }
   p.partTwo {
     font-size: 55px;
-    line-height: 55px;
+    line-height: 65px;
   }
   p.partThree {
     font-size: 26px;
     margin-bottom: 7rem;
   }
   p.clickDirection {
-    width: 30rem;
+    width: auto;
     font-size: 34px;
     color: #2e2e2e;
     margin-bottom: 10rem;
   }
   p.tapDirection {
-    width: 30rem;
+    width: auto;
     font-size: 24px;
     margin-top: 2rem;
     margin-bottom: -1rem;
@@ -1865,15 +1865,8 @@ footer {
 }
 
 @media (max-width: 700px) {
-  .blinkContainer {
-    width: 30rem;
-    margin-top: 3rem;
-  }
   img.me {
     width: 25rem;
-  }
-  div.firstIntroTextContainer {
-    width: 30rem;
   }
   #typed {
     font-size: 90px;
@@ -1890,13 +1883,65 @@ footer {
     font-size: 22px;
   }
   p.clickDirection {
-    width: 25rem;
     font-size: 30px;
     color: #2e2e2e;
   }
   p.tapDirection {
-    width: 30rem;
     font-size: 28px;
+  }
+}
+
+@media (max-width: 499px) {
+  img.me {
+    width: 20rem;
+  }
+  #typed {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .typed-cursor {
+    font-size: 60px;
+  }
+  p.partTwo {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  p.partThree {
+    font-size: 18px;
+  }
+  p.clickDirection {
+    font-size: 30px;
+    color: #2e2e2e;
+  }
+  p.tapDirection {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  img.me {
+    width: 15rem;
+  }
+  #typed {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .typed-cursor {
+    font-size: 30px;
+  }
+  p.partTwo {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  p.partThree {
+    font-size: 15px;
+  }
+  p.clickDirection {
+    font-size: 20px;
+    color: #2e2e2e;
+  }
+  p.tapDirection {
+    font-size: 15px;
   }
 }
 
