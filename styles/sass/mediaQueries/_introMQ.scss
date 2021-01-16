@@ -15,9 +15,10 @@
     }
     //resizing the containers for the texts so the picture doesn't get squished
     .photo {
-        margin-right: 0.5rem;
-        width: 350px;
-        height: 550px;
+        margin-right: 2rem;
+        width: 300px;
+        height: 300px;
+        box-shadow: 15px 15px $pink1;
     }
     .aboutMeTexts {
         margin-left: 0;
@@ -38,8 +39,9 @@
     //adjusting the picture sizes
     .photo {
         margin: 0 auto;
-        width: 550px;
-        height: 600px;
+        width: 400px;
+        height: 400px;
+        box-shadow: -25px -25px $pink1;
     }
     //getting rid of margin on text container so they come to the center
     .aboutMeTexts {
@@ -64,21 +66,12 @@
     }
 }
 
-@media (max-width: 800px) {
-    //adjusting the picture sizes
-    .photo {
-        margin: 0 auto;
-        width: 450px;
-        height: 470px;
-    }
-}
-
 @media (max-width: 715px) {
     //adjusting the picture sizes
     .photo {
-        margin: 0 auto;
         width: 300px;
-        height: 320px;
+        height: 300px;
+        box-shadow: -15px -15px $pink1;
     }
     h3 {
         font-size: 60px;
@@ -143,9 +136,8 @@
         margin: 1rem auto 1rem auto;
     }
     .photo {
-        margin: 0 auto;
         width: 200px;
-        height: 220px;
+        height: 200px;
     }
     //getting rid of margin on text container so they come to the center
     .aboutMeTexts {

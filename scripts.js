@@ -64,26 +64,26 @@ $('.contactIcon').hover(function () {
 
 
 // on drawing page: change .gif file for blinking image of me
-$('#me').hover(function () {
-    $('#me').attr('src', 'assets/blinkForward/blinkForward.gif');
+$('.me').hover(function () {
+    $('.me').attr('src', 'assets/blinkForward/blinkForward.gif');
 }, function() {
-        $('#me').attr('src', 'assets/blinkSideEye/blinkSide2.gif');
+        $('.me').attr('src', 'assets/blinkSideEye/blinkSide2.gif');
 });
 
 
 
-// changing mobileMe gif on click
+// // changing mobileMe gif on click
 
-const mobileMe = document.getElementById('mobileMe');
+// const mobileMe = document.getElementById('mobileMe');
 
-mobileMe.addEventListener('click', function() {
-    changeImage();
-});
+// mobileMe.addEventListener('click', function() {
+//     changeImage();
+// });
 
-function changeImage() {
-    if (mobileMe.src = 'assets/blinkSideEye/blinkSide2.gif') {
-        mobileMe.src = 'assets/blinkForward/blinkForward.gif';
-    } else {
-        mobileMe.src = 'assets/blinkSideEye/blinkSide2.gif';
-    }
-}
+// function changeImage() {
+//     if (mobileMe.src = 'assets/blinkSideEye/blinkSide2.gif') {
+//         mobileMe.src = 'assets/blinkForward/blinkForward.gif';
+//     } else {
+//         mobileMe.src = 'assets/blinkSideEye/blinkSide2.gif';
+//     }
+// }

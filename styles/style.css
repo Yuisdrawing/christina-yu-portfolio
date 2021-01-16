@@ -656,6 +656,8 @@ p.answers:first-of-type span.aboutMeSpanSmall {
   background-repeat: no-repeat;
   margin-top: 3rem;
   margin-right: 6rem;
+  -webkit-box-shadow: 25px 25px #e4487c;
+          box-shadow: 25px 25px #e4487c;
 }
 
 .resumeButtonsGroup {
@@ -1583,9 +1585,11 @@ footer {
             justify-content: center;
   }
   .photo {
-    margin-right: 0.5rem;
-    width: 350px;
-    height: 550px;
+    margin-right: 2rem;
+    width: 300px;
+    height: 300px;
+    -webkit-box-shadow: 15px 15px #e4487c;
+            box-shadow: 15px 15px #e4487c;
   }
   .aboutMeTexts {
     margin-left: 0;
@@ -1606,8 +1610,10 @@ footer {
   }
   .photo {
     margin: 0 auto;
-    width: 550px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
+    -webkit-box-shadow: -25px -25px #e4487c;
+            box-shadow: -25px -25px #e4487c;
   }
   .aboutMeTexts {
     margin: 0 auto;
@@ -1630,19 +1636,12 @@ footer {
   }
 }
 
-@media (max-width: 800px) {
-  .photo {
-    margin: 0 auto;
-    width: 450px;
-    height: 470px;
-  }
-}
-
 @media (max-width: 715px) {
   .photo {
-    margin: 0 auto;
     width: 300px;
-    height: 320px;
+    height: 300px;
+    -webkit-box-shadow: -15px -15px #e4487c;
+            box-shadow: -15px -15px #e4487c;
   }
   h3 {
     font-size: 60px;
@@ -1717,9 +1716,8 @@ footer {
     margin: 1rem auto 1rem auto;
   }
   .photo {
-    margin: 0 auto;
     width: 200px;
-    height: 220px;
+    height: 200px;
   }
   .aboutMeTexts {
     margin: 0 auto;
@@ -1983,33 +1981,34 @@ footer {
     height: 16.3rem;
   }
   textarea {
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 1rem 1.3rem 2rem 1.5rem;
     resize: none;
     width: 24rem;
-    height: 12.6rem;
-    bottom: 8rem;
+    height: 15rem;
+    bottom: 6.4rem;
   }
 }
 
 @media (max-width: 450px) {
   input, textarea {
-    font-size: 24px;
+    font-size: 20px;
   }
   input:-webkit-autofill::first-line, textarea:-webkit-autofill::first-line {
     font-size: 18px;
   }
   input {
     width: 20rem;
-    padding: 1rem 2rem 1.3rem 3rem;
+    padding: 1rem 1rem 1.7rem 3rem;
   }
   .messageInputBackground {
     width: 20rem;
     height: 13.3rem;
   }
   textarea {
-    padding: 1rem 2rem 2rem 2rem;
-    width: 19rem;
-    height: 10rem;
+    padding: 0 0 2rem 1.2rem;
+    width: 18.5rem;
+    height: 11.8rem;
+    bottom: 6rem;
   }
   .inputWrap {
     margin-bottom: 0.5rem;
@@ -2021,6 +2020,9 @@ footer {
   .sideMessage p {
     width: 16rem;
     margin-bottom: 2.5rem;
+  }
+  .sideMessage h6 {
+    margin: 4rem 0 2rem 0;
   }
   ul.socialMedia {
     margin-top: 2.5rem;
@@ -2030,37 +2032,94 @@ footer {
 
 @media (max-width: 350px) {
   input, textarea {
-    font-size: 24px;
+    font-size: 16px;
   }
   input:-webkit-autofill::first-line, textarea:-webkit-autofill::first-line {
-    font-size: 18px;
+    font-size: 14px;
   }
   input {
-    width: 20rem;
-    padding: 1rem 2rem 1.3rem 3rem;
+    width: 15rem;
+    padding: 0.8rem 1rem 1.1rem 2.7rem;
   }
   .messageInputBackground {
-    width: 20rem;
-    height: 13.3rem;
+    width: 15rem;
+    height: 10rem;
   }
   textarea {
-    padding: 1rem 2rem 2rem 2rem;
-    width: 19rem;
-    height: 10rem;
+    padding: 0 0.7rem 0.6rem 1rem;
+    width: 14rem;
+    height: 8rem;
+    bottom: 5rem;
   }
   .inputWrap {
     margin-bottom: 0.5rem;
   }
   .inputWrap .iconBox i {
-    font-size: 16px;
-    margin: 0 0 0 1.7rem;
+    font-size: 12px;
+    margin: 0 0 0 1.2rem;
   }
   .sideMessage p {
     width: 16rem;
     margin-bottom: 2.5rem;
+    font-size: 16px;
   }
-  ul.socialMedia {
-    margin-top: 2.5rem;
-    margin-bottom: 6rem;
+  .sideMessage h6 {
+    font-size: 45px;
+  }
+  .sideMessage a {
+    font-size: 20px;
+  }
+  .sideMessage a i {
+    font-size: 14px;
+  }
+  .buttons button {
+    padding: 1.2rem 0;
+    font-size: 12px;
+    width: 12rem;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 270px) {
+  input {
+    width: 13rem;
+    padding: 0.8rem 1rem 1.1rem 2.7rem;
+  }
+  .messageInputBackground {
+    width: 13rem;
+    height: 10rem;
+  }
+  textarea {
+    padding: 0 0.7rem 0.6rem 1rem;
+    width: 12.5rem;
+    height: 8rem;
+    bottom: 5rem;
+  }
+  .inputWrap {
+    margin-bottom: 0.5rem;
+  }
+  .inputWrap .iconBox i {
+    font-size: 12px;
+    margin: 0 0 0 1.2rem;
+  }
+  .sideMessage p {
+    width: 16rem;
+    margin-bottom: 2.5rem;
+    font-size: 16px;
+  }
+  .sideMessage h6 {
+    font-size: 45px;
+  }
+  .sideMessage a {
+    font-size: 20px;
+  }
+  .sideMessage a i {
+    font-size: 14px;
+  }
+  .buttons button {
+    padding: 1.2rem 0;
+    font-size: 12px;
+    width: 12rem;
+    line-height: 20px;
   }
 }
