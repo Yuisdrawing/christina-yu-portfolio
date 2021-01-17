@@ -53,4 +53,25 @@
             height: 15rem;
         }
     }
+    .skillsUsed {
+        p {
+            padding: 6px 10px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+    }
+    .skillsUsed,
+    .projectDescription h5,
+    .developedWith,
+    .appDetails,
+    .codeLink {
+        margin: 0.7rem 1.8rem;
+    }
+    .projectDescription h5 a {
+        font-size: 40px;
+        line-height: 30px;
+    }
+    p.appDetails {
+        margin-right: 2rem;
+    }
 }
