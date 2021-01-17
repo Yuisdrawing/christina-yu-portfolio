@@ -26,6 +26,7 @@ section.projectSection {
         transform: scale(1);
         -webkit-transition: .3s ease-in-out;
         transition: .2s ease-in-out;
+        display: inline-block;
     }
     .thumbnail:hover {
         -webkit-transform: scale(1.1);
