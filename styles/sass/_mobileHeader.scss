@@ -47,8 +47,8 @@
     list-style-type: none;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -80%);
-    transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
     width: 100%;
     padding-inline-start: 0;
         li {
@@ -57,6 +57,7 @@
             animation-delay: .35s;
             transition: 0.2s;
             padding: 1rem 2rem;
+            text-align: center;
             a {
                 color: #ffffff;
                 font-family: $patrick;
@@ -65,7 +66,7 @@
                 text-transform: uppercase;
                 text-decoration: none;
                 transition: 0.2s;
-                margin-right: 3rem;
+                text-align: center;
             }
         }
         li:hover {

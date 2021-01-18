@@ -766,8 +766,8 @@ a.resumeButton:active {
   list-style-type: none;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -60%);
-          transform: translate(-50%, -60%);
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
   width: 100%;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
@@ -782,6 +782,7 @@ a.resumeButton:active {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   padding: 1rem 2rem;
+  text-align: center;
 }
 
 .overheadNavLinks li a {
@@ -793,7 +794,7 @@ a.resumeButton:active {
   text-decoration: none;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  margin-right: 3rem;
+  text-align: center;
 }
 
 .overheadNavLinks li:hover {
@@ -1567,7 +1568,6 @@ footer {
   }
   .overheadNavLinks li a {
     font-size: 24px;
-    margin-right: 3rem;
   }
 }
 
