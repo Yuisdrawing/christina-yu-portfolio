@@ -547,7 +547,8 @@ p.tapDirection {
   color: #2e2e2e;
 }
 
-p.firstIntro {
+p.firstIntro,
+h1 {
   margin: 0;
   color: #54598a;
   text-align: center;
@@ -927,7 +928,8 @@ p.tapDirection {
   color: #2e2e2e;
 }
 
-p.firstIntro {
+p.firstIntro,
+h1 {
   margin: 0;
   color: #54598a;
   text-align: center;
