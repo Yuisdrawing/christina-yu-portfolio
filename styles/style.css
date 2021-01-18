@@ -1526,7 +1526,7 @@ textarea:focus + .messageInput {
 
 footer {
   background-color: #2e2e2e;
-  margin: 0;
+  margin: 0 0 0 8.5rem;
 }
 
 .footerTexts {
@@ -2190,6 +2190,12 @@ footer {
     font-size: 12px;
     width: 12rem;
     line-height: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  footer {
+    margin: 0;
   }
 }
 
