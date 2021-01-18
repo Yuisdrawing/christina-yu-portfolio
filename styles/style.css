@@ -766,8 +766,8 @@ a.resumeButton:active {
   list-style-type: none;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -80%);
-          transform: translate(-50%, -80%);
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
   width: 100%;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
