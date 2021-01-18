@@ -1798,6 +1798,12 @@ footer {
   }
 }
 
+@media (max-width: 1200px) {
+  .skillWrap p {
+    font-family: "Patrick Hand", cursive;
+  }
+}
+
 @media (max-width: 1400px) {
   .blinkContainer {
     width: 30rem;
