@@ -766,8 +766,8 @@ a.resumeButton:active {
   list-style-type: none;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -70%);
-          transform: translate(-50%, -70%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
@@ -1563,6 +1563,27 @@ footer {
 }
 
 @media (max-width: 400px) {
+  .overheadNavLinks li {
+    margin-bottom: 1rem;
+  }
+  .overheadNavLinks li a {
+    font-size: 24px;
+  }
+}
+
+@media (max-height: 550px) {
+  .overheadNavLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .overheadNavLinks li {
     margin-bottom: 1rem;
   }
