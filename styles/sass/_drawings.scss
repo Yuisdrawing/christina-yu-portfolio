@@ -62,6 +62,9 @@ p.tapDirection {
     margin: 0;
     --animate-delay: 2s;
 }
+p.clickDirection a {
+    color: $accentBlue;
+}
 //typed.js string styling
 .noFlexContainer {
     text-align: center;

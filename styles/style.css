@@ -530,6 +530,10 @@ p.tapDirection {
   --animate-delay: 2s;
 }
 
+p.clickDirection a {
+  color: #006c6f;
+}
+
 .noFlexContainer {
   text-align: center;
 }
@@ -909,6 +913,10 @@ p.tapDirection {
   text-align: center;
   margin: 0;
   --animate-delay: 2s;
+}
+
+p.clickDirection a {
+  color: #006c6f;
 }
 
 .noFlexContainer {
@@ -1914,6 +1922,14 @@ footer {
     font-size: 24px;
     margin-top: 2rem;
     margin-bottom: -1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  p.clickDirection {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 10rem;
   }
 }
 

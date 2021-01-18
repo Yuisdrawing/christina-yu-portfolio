@@ -68,6 +68,14 @@
     }
 }
 
+@media (max-width: 800px) {
+    p.clickDirection {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 10rem;
+    }
+}
+
 @media (max-width: 700px) {
      // container + img sizes
     //disable anchor on gif
