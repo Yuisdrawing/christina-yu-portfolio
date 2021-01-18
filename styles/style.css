@@ -759,23 +759,29 @@ a.resumeButton:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   position: absolute;
   list-style-type: none;
-  top: 50%;
+  top: 43%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
+  width: 100%;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 
 .overheadNavLinks li {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   -webkit-animation: fadeInDown .5s ease forwards;
           animation: fadeInDown .5s ease forwards;
   -webkit-animation-delay: .35s;
           animation-delay: .35s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 1rem 2rem;
 }
 
 .overheadNavLinks li a {
@@ -785,15 +791,17 @@ a.resumeButton:active {
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   margin-right: 3rem;
-  padding: 0 2rem;
 }
 
-.overheadNavLinks li a:hover {
-  color: #000000;
+.overheadNavLinks li:hover {
   background-color: #ffdd65;
+}
+
+.overheadNavLinks li:hover a {
+  color: #000000;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -1551,6 +1559,19 @@ footer {
 
 .footerTexts p.mycredit {
   padding-top: 0.5rem;
+}
+
+@media (max-width: 400px) {
+  .overheadNavLinks {
+    top: 32%;
+  }
+  .overheadNavLinks li {
+    margin-bottom: 1rem;
+  }
+  .overheadNavLinks li a {
+    font-size: 24px;
+    margin-right: 3rem;
+  }
 }
 
 @media (max-width: 1200px) {
