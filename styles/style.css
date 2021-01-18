@@ -435,7 +435,7 @@ img.navIcons:hover {
 }
 
 .hoverBubble {
-  opacity: 0;
+  display: none;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
@@ -444,7 +444,7 @@ img.navIcons:hover {
 #projectsNav:hover + .projectsBubble,
 #introNav:hover + .introBubble,
 #contactNav:hover + .contactBubble {
-  opacity: 1;
+  display: initial;
 }
 
 .drawing {
@@ -1452,8 +1452,10 @@ textarea {
   background-color: transparent;
 }
 
-textarea:focus + .messageInput {
+textarea:focus + .messageInputBackground {
   background-image: url(/assets/messageInputBg2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .buttons button {
@@ -1462,12 +1464,13 @@ textarea:focus + .messageInput {
   background-repeat: no-repeat;
   border: none;
   color: #000000;
-  padding: 2rem 0;
+  background-color: #ffffff;
+  padding: 1.7rem 0;
   text-align: center;
   text-decoration: none;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 16px;
-  font-weight: 800;
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 24px;
+  font-weight: 600;
   width: 17rem;
   margin-top: 0;
   -webkit-transition: 0.2s;
@@ -1560,6 +1563,10 @@ footer {
 
 .footerTexts p.mycredit {
   padding-top: 0.5rem;
+}
+
+.footerTexts p.containerCredit {
+  padding-bottom: 0.5rem;
 }
 
 @media (max-width: 400px) {

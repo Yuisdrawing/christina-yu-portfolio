@@ -118,8 +118,10 @@ textarea {
     bottom: 7.5rem;
     background-color: transparent;
 }
-textarea:focus + .messageInput {
+textarea:focus + .messageInputBackground {
     background-image: url(/assets/messageInputBg2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
@@ -131,12 +133,13 @@ textarea:focus + .messageInput {
         background-repeat: no-repeat;
         border: none;
         color: #000000;
-        padding: 2rem 0;
+        background-color: #ffffff;
+        padding: 1.7rem 0;
         text-align: center;
         text-decoration: none;
-        font-family: $montserrat2;
-        font-size: 16px;
-        font-weight: 800;
+        font-family: $patrickSC;
+        font-size: 24px;
+        font-weight: 600;
         width: 17rem;
         margin-top: 0;
         transition: 0.2s;

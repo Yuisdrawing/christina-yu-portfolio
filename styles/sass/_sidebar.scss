@@ -89,9 +89,9 @@ img.navIcons:hover {
 // jiggle effect from:https://jsfiddle.net/sunnypmody/8gdEr/
 
 
-// hoverBubble's opacity is set to 0
+// hoverBubbles disappear when not needed
 .hoverBubble {
-    opacity: 0;
+    display: none;
     transition: 0.1s;
 }
 // When hovered, the respective bubbles show up
@@ -100,5 +100,5 @@ img.navIcons:hover {
 #projectsNav:hover + .projectsBubble,
 #introNav:hover + .introBubble,
 #contactNav:hover + .contactBubble {
-    opacity: 1;
+    display: initial;
 }
