@@ -19,6 +19,7 @@ const typed = new Typed('#typed', {
 });
 
 
+
 // burger icon displays initially hidden elements onClick
 // then burger icon hides as well
 // then reappears when close icon is clicked
