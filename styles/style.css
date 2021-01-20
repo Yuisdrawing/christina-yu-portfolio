@@ -1346,6 +1346,7 @@ p.appDetails {
   font-size: 22px;
   text-decoration: none;
   color: #000000;
+  margin-bottom: 1rem;
 }
 
 .sideMessage a i {
