@@ -1102,6 +1102,18 @@ a.codeLink {
   width: 80%;
 }
 
+p.projectNote {
+  text-align: center;
+  font-family: "NTR", sans-serif;
+  font-size: 24px;
+  margin-top: 3rem;
+}
+
+p.projectNote span {
+  color: #e4487c;
+  font-weight: 800;
+}
+
 section.projectSection {
   display: -webkit-box;
   display: -ms-flexbox;

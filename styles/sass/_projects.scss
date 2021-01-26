@@ -9,6 +9,16 @@ a.codeLink {
     margin: 0 auto 10rem auto;
     width: 80%;
 }
+p.projectNote {
+    text-align: center;
+    font-family: $ntr;
+    font-size: 24px;
+    margin-top: 3rem;
+    span {
+        color: $pink1;
+        font-weight: 800;
+    }
+}
 section.projectSection {
     display: flex;
     margin-top: 3rem;
